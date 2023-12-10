@@ -1,0 +1,25 @@
+import React from 'react';
+
+//props --> {name: 'hello', children: 'Ford'}
+//const Car = (props)
+const Car = ({color,children:marque}) =>{
+
+   const colorInfo=color ? (<p>Couleur: color </p>):(<p>color undefined</p>)
+ 
+   if(marque)
+   {
+       return(
+        <div className="cars">
+            <p>marque: {marque} </p>
+            {colorInfo}
+            <p>----------------</p>
+        </div>
+    ) 
+   }else{
+     return <p>pas de data</p>
+   }
+   
+}
+
+
+export default Car;

@@ -1,0 +1,22 @@
+//Array
+const colors=["red","blue","green"]
+
+//Arra-like
+const rgb={
+  0:"red",
+  1:"blue",
+  2:"green",
+  length:3,
+};
+--convert array to array-like
+--cette conversion nous permet d'acceder au methode d'Array   bg 
+ const rgbToArray=Array.from(rgb)
+ console.log(rgbToArray.length())//3
+ console.log(rgbToArray.slice(1)) //blue green
+
+--const divs=document.querySelectorAll(".message");
+--divs <-- node list 
+  const divsToArray=Array.from(divs)
+  
+const name="Aymane"
+console.log(Array.from(name)) // ["A","y","m","a","n","e"]

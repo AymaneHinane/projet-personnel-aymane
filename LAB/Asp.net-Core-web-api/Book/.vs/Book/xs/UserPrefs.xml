@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{09DE0A1B-2620-42BC-99C4-5C3AE0203A76}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Book/Repository/BookRepository.cs">
+    <Files>
+      <File FileName="Book/Controllers/BooksController.cs" Line="88" Column="3" />
+      <File FileName="Book/Program.cs" Line="17" Column="1" />
+      <File FileName="Book/Repository/BookRepository.cs" Line="27" Column="32" />
+      <File FileName="Book/appsettings.json" Line="7" Column="4" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Book" expanded="True">
+            <Node name="Book" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Repository" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint enabled="false" file="/Users/aymanehinane/Desktop/Asp.net-Core-web-api/Book/Book/Repository/BookRepository.cs" relfile="Book/Repository/BookRepository.cs" line="82" column="1" />
+      <Breakpoint enabled="false" file="/Users/aymanehinane/Desktop/Asp.net-Core-web-api/Book/Book/Repository/BookRepository.cs" relfile="Book/Repository/BookRepository.cs" line="29" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Book PreferredExecutionTarget="/Applications/Safari.app" />
+</Properties>

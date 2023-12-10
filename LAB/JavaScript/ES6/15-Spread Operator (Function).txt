@@ -1,0 +1,6 @@
+const addNumbers=(a,b,c)=>{
+   return a+b+c;
+}
+
+   const numbers=[12,23,16]
+   const result=addNumbers(...numbers);

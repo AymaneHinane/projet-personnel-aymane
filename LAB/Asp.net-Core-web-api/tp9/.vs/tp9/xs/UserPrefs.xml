@@ -1,0 +1,43 @@
+﻿<Properties StartupConfiguration="{F4BF1714-FAA1-4257-8D16-6ADB02F30194}|test6">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="tp9/Controllers/BookController.cs">
+    <Files>
+      <File FileName="tp9/DB/DbContext.cs" Line="84" Column="1" />
+      <File FileName="tp9/Controllers/BookController.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="tp9" expanded="True">
+            <Node name="tp9" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True">
+                <Node name="BookController.cs" selected="True" />
+              </Node>
+              <Node name="DB" expanded="True" />
+              <Node name="DTO" expanded="True">
+                <Node name="DtoConfiguration" expanded="True" />
+              </Node>
+              <Node name="ExtensionMethod" expanded="True" />
+              <Node name="Library" expanded="True" />
+              <Node name="Migrations" expanded="True">
+                <Node name="20230220135331_newMIng.cs" expanded="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.tp9 PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+</Properties>

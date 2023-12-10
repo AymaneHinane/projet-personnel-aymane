@@ -1,0 +1,5 @@
+
+Anonymous Functions:
+
+var name=function(){}  --> est protger contre le hoisting
+

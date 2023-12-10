@@ -1,0 +1,36 @@
+
+let book={
+    nom:'',
+    auteur:'',
+    genre:'',
+    prix:'',
+    qte:''
+}
+
+const form=document.querySelector('.container-form form');
+const input=form.querySelectorAll('input,select')
+
+
+for(let i=0;i<input.length;i++)
+{
+
+   input[i].addEventListener('change',function(){
+       book={...book,[this.name]:this.value}
+   })
+}
+
+const valider=document.getElementsByTagName('button')[0]
+
+valider.onclick=(e)=>{
+    console.log(book)
+    for(let i=0;i<input.length;i++)
+    {
+        if(input[i].type === 'text')
+            input[i].value=''     
+        else if(input[i].type === 'range')
+           input[i].value='0'
+        else if(input[i].id === 'select')
+           input[i].value='0'
+    } 
+ e.preventDefault()
+}

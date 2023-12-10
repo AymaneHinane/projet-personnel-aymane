@@ -1,0 +1,43 @@
+﻿<Properties StartupConfiguration="{B75F8F2B-3CAD-480D-8F32-AAD7C8400AFB}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="test/DB/DBContext.cs">
+    <Files>
+      <File FileName="test/Controllers/Test.cs" Line="90" Column="2" />
+      <File FileName="test/Extension.cs" Line="20" Column="1" />
+      <File FileName="test/Models/User.cs" Line="3" Column="55" />
+      <File FileName="test/DB/DBContext.cs" Line="78" Column="3" />
+      <File FileName="test/Models/ProductCommande.cs" Line="1" Column="1" />
+      <File FileName="test/Models/Product.cs" Line="20" Column="3" />
+      <File FileName="test/Repository/ProductRepository/ProductRepository.cs" Line="1" Column="1" />
+      <File FileName="test/Repository/ClientRepository/ClientRepository.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="test" expanded="True">
+            <Node name="test" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="DB" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="ModelsSearch" expanded="True" />
+              <Node name="Repository" expanded="True">
+                <Node name="ClientRepository" expanded="True" />
+                <Node name="ProductRepository" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.test PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

@@ -1,0 +1,89 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "AspBookApp.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/AspBookApp.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AspBookApp.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AspBookApp.Shared/1.0.0": {
+      "type": "project",
+      "path": "../AspBookApp.Shared/AspBookApp.Shared.csproj",
+      "msbuildProject": "../AspBookApp.Shared/AspBookApp.Shared.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "AspBookApp.Shared >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/aymanehinane/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Service.Contracts/AspBookApp.Service.Contracts.csproj",
+      "projectName": "AspBookApp.Service.Contracts",
+      "projectPath": "/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Service.Contracts/AspBookApp.Service.Contracts.csproj",
+      "packagesPath": "/Users/aymanehinane/.nuget/packages/",
+      "outputPath": "/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Service.Contracts/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/aymanehinane/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Shared/AspBookApp.Shared.csproj": {
+              "projectPath": "/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Shared/AspBookApp.Shared.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

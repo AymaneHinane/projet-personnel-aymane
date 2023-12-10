@@ -1,0 +1,64 @@
+inline css
+
+<h1 style={{fontSize:'30px',color:'red'}}>Commentaire</h1>
+
+const color='red';
+<div style={{color: color}}> </div>
+----------------------------------
+
+const titreRouge={
+    fontSize:'30px',
+    color:'red'
+}
+
+<h1 style={titreRouge}>Commentaire</h1>
+
+-------------------------------------
+
+const themeStyles= {
+   backgroundColor: dark ? 'black' : 'white',
+   color: dark ? 'white' : 'black'
+}
+
+  <div style={themeStyles}>......</div>
+-----------------------------------
+import  '../myCss.css'
+
+render(){
+   const myClass= this.props.head? 'blue':'red';
+
+   return(
+       <div>
+           <h1 className="blue">Commentaire</h1>
+           <p className={myClass}>je suis rouge ou bleu</p>
+       </div>
+   )
+}
+----------------------------------
+
+ <p className={`red bigFont`}>hello wold</p>
+ <p className={`${myClass} bigFont`}>hello wold</p>
+
+-----------------------------------
+
+-->parent.js <-- import styles from './myCss.module.css'
+<h1 className={styles.green}> Commentaire 1 </h1> //yes
+-->child.js
+<h1 className={styles.green}> Commentaire 2 </h1> //error
+
+NB:
+les modules stop la propagation du css au enfants
+
+
+
+
+
+
+
+
+
+
+
+
+
+

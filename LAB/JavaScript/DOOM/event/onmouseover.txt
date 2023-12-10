@@ -1,0 +1,7 @@
+//"changer la couleur de mon boutton lorsque "
+//"je le sourvole"
+var button = document.querySelector("button");
+button.onmouseover=function()
+{
+    button.style.backgroundColor="blue";
+}

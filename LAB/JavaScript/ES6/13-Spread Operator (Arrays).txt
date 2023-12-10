@@ -1,0 +1,8 @@
+//spread operator --> ...
+
+const numbers=[12,45,67]
+const names=["Arbaoui Mehdi","John Doe"]
+const number=123;
+
+const combinedValues=[...numbers,...names,number]
+console.log(combinedValues) // [12, 45, 67, "Arbaoui Mehdi", "John Doe", 123]

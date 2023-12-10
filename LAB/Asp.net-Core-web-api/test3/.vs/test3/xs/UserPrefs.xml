@@ -1,0 +1,45 @@
+﻿<Properties StartupConfiguration="{50ECE606-F88A-4A4A-9764-EF913930AF8E}|Default">
+  <MonoDevelop.Ide.ItemProperties.test3 PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="test3/Services/GenericServices/GenericRepository.cs">
+    <Files>
+      <File FileName="test3/appsettings.Development.json" Line="5" Column="40" />
+      <File FileName="test3/Program.cs" Line="39" Column="11" />
+      <File FileName="test3/Services/GenericServices/IGenericRepository.cs" Line="4" Column="19" />
+      <File FileName="test3/Services/GenericServices/GenericRepository.cs" Line="29" Column="55" />
+      <File FileName="test3/Services/PharmacieServices/IPharmacieRepository.cs" Line="7" Column="19" />
+      <File FileName="test3/Services/PharmacieServices/PharmacieRepository.cs" Line="13" Column="10" />
+      <File FileName="test3/Controllers/PharmacieController.cs" Line="49" Column="15" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="test3" expanded="True">
+            <Node name="test3" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="DB" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="GenericServices" expanded="True" />
+                <Node name="MedicamentService" expanded="True" />
+                <Node name="PharmacieServices" expanded="True" />
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

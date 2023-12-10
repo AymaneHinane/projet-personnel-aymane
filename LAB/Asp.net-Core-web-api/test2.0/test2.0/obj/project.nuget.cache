@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "w6tj9Ivfg2qmzHIV+QdUY7hCGvqrNLlfRyAA/El7luDp+sPX8ZW5vaG8uvMW0J6MY24gB+6QtEDdUmqN+aNZ/A==",
+  "success": true,
+  "projectFilePath": "/Users/aymanehinane/Desktop/Asp.net-Core-web-api/test2.0/test2.0/test2.0.csproj",
+  "expectedPackageFiles": [
+    "/Users/aymanehinane/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/aymanehinane/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/aymanehinane/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/Users/aymanehinane/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/Users/aymanehinane/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/Users/aymanehinane/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

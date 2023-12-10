@@ -1,0 +1,20 @@
+<div class="container-fluid">
+    <div class="row justify-content-center no-gutters" >
+
+
+        <div class="col" [style]="{'margin-top':'17px'}" >
+            <app-inventory-management-table 
+      
+              (UpdateRawMaterialStockEvent)="rawMaterialStock = $event" 
+              (UpdateFinishedProductStockEvent)="finishedProductStock = $event">
+            </app-inventory-management-table>
+        </div>
+        <div class="col-10 shadow-sm  p-1 mb-4  bg-body-tertiary rounded" [style]="{'margin-top':'25px'}">
+            <app-inventory-management-form  [rawMaterialStock]="rawMaterialStock" [finishedProductStock]="finishedProductStock" 
+            ></app-inventory-management-form>
+        </div>
+
+
+
+    </div>
+</div>

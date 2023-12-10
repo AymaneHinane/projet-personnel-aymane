@@ -1,0 +1,29 @@
+import React,{useState} from 'react'
+
+
+
+const FunctionState=()=>{
+
+     const [counter,setCounter]=useState(0)
+     console.log(counter)
+     
+     const addOne=()=>{
+         //setCounter(counter+1)
+         setCounter(prevCounter=>prevCounter+1)
+     }
+
+    return (
+        <div>
+            <h1>Fuction State: {counter}</h1>
+            <button onClick={()=>setCounter(prevCounter=>prevCounter+1)}>increment</button>
+            {/* <button onClick={addOne}>increment</button>*/}
+        </div>
+    )
+}
+
+export default FunctionState
+
+
+--------------------------------------------------------------
+
+const [countOne,setCountOne] = useState({value:0,btnColor:'success',increment:25});

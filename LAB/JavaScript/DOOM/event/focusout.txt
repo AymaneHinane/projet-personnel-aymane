@@ -1,0 +1,4 @@
+//lorseque l'element n'est plus on focus
+btn.addEventListener('focusout',(e)=>{
+    console.log(e.target)
+})

@@ -1,0 +1,72 @@
+
+
+class LifeCycle extends Component {
+
+    constructor(props)
+    {
+        super(props)
+        console.log('constructor parent')
+        this.state= {
+            step:1
+        }
+    }
+
+
+
+    componentDidMount()
+    {
+        console.log('componentDidMount parent: pour faire des requete reseau')
+      /* this.setState({
+           step:this.state.step+1
+       })*/
+       this.setState((preState)=>({ 
+        step:preState.step+1
+        }))
+        
+    }
+
+    componentDidUpdate(prevProps,prevState)
+    {
+        //set State boucle inifini
+        //Elle vous donne l’opportunité de travailler sur le DOM une fois 
+        //que le composant a été mis à jour. C’est aussi un bon endroit pour
+        // faire des requêtes réseau
+          console.log(this.state)
+         console.log(prevState)
+    }
+   
+    /*
+      componentDidUpdate(prevProps) {
+     // Utilisation classique (pensez bien à comparer les props) :
+     if (this.props.userID !== prevProps.userID) {
+       this.fetchData(this.props.userID);
+       }
+       //sinon une boucle a l'infini
+}
+    */
+
+    render() { 
+        console.log(this.state.step+' render parent')
+        return (
+            <div>
+                {console.log(this.state.step+ ' mise a jour du DOM parent')}
+                bonjour
+                
+            </div>
+        )
+    }
+}
+
+export default LifeCycle
+
+------------------------------------------
+
+constructor parent
+1 render parent
+1 mise a jour du DOM parent
+componentDidMount parent: pour faire des requete reseau
+2 render parent
+2 mise a jour du DOM parent
+{step: 2}
+{step: 1}
+

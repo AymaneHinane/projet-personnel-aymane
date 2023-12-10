@@ -1,0 +1,47 @@
+
+
+<div class="container-fluid" [style]="{'margin-top':'20px'}">
+    <div class="row">
+        <div class="col-3">
+            <div class="mb-3">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="entrer le matricule du camion"
+                #truckInput  (input)="addNewTransferDetails('TruckNumber',truckInput.value )"/>
+              </div>
+        </div>
+        <div class="col-3">
+            <div class="mb-3">
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="entrer le poid du camion"
+                #exitStockWeightInput  (input)="addNewTransferDetails('ExitStockWeight',convertToNumber(exitStockWeightInput.value) )"/>
+              </div>
+        </div>
+        <div class="col-3">
+            <button type="button" class="btn btn-outline-success" (click)="addTransferOperation()"
+            [disabled]="!(transferOperationInsert && transferOperationInsert.TruckNumber != null && transferOperationInsert.ExitStockWeight != null && transferOperationInsert.ExitStockWeight > 0 && transferOperationInsert.RecipientTransfers.length! > 0 && this.verifyIfAllRecipientHaveQte(this.transferOperationInsert.RecipientTransfers) )"
+            >confirmer le depart </button>
+
+            
+        </div>
+    </div>
+
+    <div class="row" >
+        <div class="col-md-3" *ngFor="let item of recipientInfo" [style]="{'margin-top':'5px'}">
+          <div class="row">
+            <div class="col-12" [style]="{'padding-top':'4px'}">
+              <input class="form-check-input" type="checkbox" [value]="inputCheck.checked" id="flexCheckDefault" 
+              #inputCheck  (change)="updateRecipientSelected(item.id,inputCheck.checked)">
+              <label class="form-check-label" for="flexCheckDefault" [style]="{'margin-left':'10px'}">
+                {{item.name}}
+              </label>
+            </div>
+            <div class="col-8">
+              <input type="email" class="form-control" id="checkbox_input" placeholder="entrer la quantite" 
+              [disabled]="ifRecipientSelcted(item.id) == -1" [value]="getRecipientSelected(item.id)?.DeliveredStock"
+              #quantityInput (input)="updateRecipientQuantity(item.id,convertToNumber(quantityInput.value))">
+            </div>
+          </div>
+        </div>
+      </div>
+            
+</div>
+
+

@@ -1,0 +1,49 @@
+
+//si 'this' est appellait depuis le global execution contexte elle ferat reference a l'objet window
+//Global Execution Context
+var a=5;
+console.log(this.a);//5
+console.log(window.a);//5
+
+
+
+//Object Execution Context
+function print()
+{
+  console.log(this.name)
+}
+//---le context d'execution du this est mon object
+var name="yohane"
+var person={
+  name:"aymane",
+  getName:print
+}
+
+
+this.person.getName() //aymane
+var getName=this.person.getName;
+getName();//yohane
+person.getName();//aymane
+
+_________________________________________________________
+
+const person={
+    name:"aymane",
+    print:function(){
+       console.log(this.name)
+    }
+}
+
+
+let name="yohane"
+const person2={
+    name:"yohane"
+}
+
+
+person.print.call(person2) // yohane
+
+
+
+
+  

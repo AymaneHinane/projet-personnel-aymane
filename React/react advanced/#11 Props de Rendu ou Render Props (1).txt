@@ -1,0 +1,24 @@
+
+// (sayen) prendra comme valeur un Bolean
+
+ <Vegeta render={(sayen)=>sayen && "sayen"} age={18} />
+
+return (
+            <div>
+                 <p>hello wold {name} {age} {render(false)}</p>
+            </div>
+        )
+
+---------------------------------------------------------------------------
+
+ <Vegeta name2="aymane" name={()=>"vegeta"} />
+
+render() {
+        const {name,name2}=this.props
+        console.log(this.props)
+        return (
+            <div>
+                 <p>hello wold {name()} {name2} </p>
+            </div>
+        )
+    }

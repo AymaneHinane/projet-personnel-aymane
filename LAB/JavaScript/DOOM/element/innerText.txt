@@ -1,0 +1,16 @@
+
+The innerText property sets or returns the text content of the specified node, 
+and all its descendants
+
+pour recuperer du text
+--var x = document.getElementById("myBtn").innerText;g
+
+pour inserer du text
+--x.innerText=message
+
+___________________________________
+const p=document.querySelector('p')
+p.innerText +=' ninja'
+console.log(p.innerText)
+
+

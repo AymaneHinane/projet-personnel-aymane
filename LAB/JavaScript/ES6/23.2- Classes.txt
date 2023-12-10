@@ -1,0 +1,14 @@
+class Car{
+    constructor(name,year)
+    {
+        this.name=name;
+        this.year=year;
+    }
+
+    start(){
+        console.log(`${this.name} ${this.year} is starting`);
+    }
+}
+
+const car_1=new Car("Mercedes",2019);
+car_1.start();

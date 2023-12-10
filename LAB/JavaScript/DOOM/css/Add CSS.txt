@@ -1,0 +1,24 @@
+--to add style propertie directaly
+myElement.style.backgroundColor = "#D93600";
+
+--to add multiple CSS styles
+  document.getElementById("myElement").style.cssText = `
+     display: block; 
+     position: absolute;
+`;
+
+--to adding class values
+  divElement.classList.add("bar");
+  divElement.className='bar'
+
+--to removing class values
+  divElement.classList.remove("foo");
+
+--Toggling Class Values
+  divElement.classList.toggle("foo");
+
+--Checking if a Class Value Exists
+  if (divElement.classList.contains("bar") == true)
+    {
+	// do something
+    } 

@@ -1,0 +1,55 @@
+<div class="container">
+
+
+   <div class="row">   
+    <div class="col-3">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">UserName</label>
+        <input [(ngModel)]="userCreate.username" type="email" class="form-control" id="exampleFormControlInput1" placeholder="username">
+      </div>
+    </div> 
+
+    <div class="col-3">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Password (10 car*)</label>
+        <input [(ngModel)]="userCreate.password" type="email" class="form-control" id="exampleFormControlInput1" placeholder="password">
+      </div>
+    </div>
+
+    <div class="col-3">
+        <label for="exampleFormControlInput1" class="form-label">Role</label>
+      <select class="form-select" aria-label="Default select example" [(ngModel)]="roleSelected">
+        <option selected>selectionnez un role</option>
+        <option [value]="role.name" *ngFor="let role of roles">{{role.name}}</option>
+
+      </select>
+    </div>
+
+    <div class="col-3 align-self-center ">
+        <button (click)="addNewUser()" [style]="{'margin-top':'15px','width':'100%'}" type="button" class="btn btn-outline-success">Ajouter</button>
+    </div>
+
+   </div>
+
+
+    <div class="row">
+      
+        <div class="col-12">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">username</th>
+                    <th scope="col">role</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let user of users">
+                    <td>{{user.username}}</td>
+                    <td>{{user.role}}</td>
+                  </tr>
+  
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>

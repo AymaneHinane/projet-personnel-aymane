@@ -1,0 +1,523 @@
+2023-08-28 01:49:23.2856 ERROR Something went wrong: System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Project.Service.Event.StockUpdateWhenTransferUpdatedEventHandler.UpdateStockWhenShipped(Transfer transfer) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Event/StockUpdateWhenTransferUpdatedEventHandler.cs:line 53
+   at Project.Service.Event.StockUpdateWhenTransferUpdatedEventHandler.Handle(TransferUpdatedDomainEvent notification, CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Event/StockUpdateWhenTransferUpdatedEventHandler.cs:line 41
+   at MediatR.Mediator.PublishCore(IEnumerable`1 allHandlers, INotification notification, CancellationToken cancellationToken)
+   at Project.Repository.RepositoryContext.PublishDomainEventsAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 79
+   at Project.Repository.RepositoryContext.SaveChangesStockAsync(CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 56
+   at Project.Repository.TransferRepositoryManager.SaveAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/Transfer/TransferRepositoryManager.cs:line 27
+   at Project.Service.TransferService.UpdateTransfer(Guid transferId, TransferUpdateDto transferUpdate) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Transfer/TransferService.cs:line 88
+   at Project.Presentation.TransferController.UpdateTransfer(Guid id, TransferUpdateDto transferUpdate) in /Users/aymanehinane/Desktop/Project/project/Project.Presentation/Controllers/TransferController.cs:line 73
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-08-28 15:26:39.6641 ERROR Something went wrong: System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Project.Service.Event.StockUpdateWhenTransferUpdatedEventHandler.UpdateStockWhenShipped(Transfer transfer) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Event/StockUpdateWhenTransferUpdatedEventHandler.cs:line 53
+   at Project.Service.Event.StockUpdateWhenTransferUpdatedEventHandler.Handle(TransferUpdatedDomainEvent notification, CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Event/StockUpdateWhenTransferUpdatedEventHandler.cs:line 41
+   at MediatR.Mediator.PublishCore(IEnumerable`1 allHandlers, INotification notification, CancellationToken cancellationToken)
+   at Project.Repository.RepositoryContext.PublishDomainEventsAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 79
+   at Project.Repository.RepositoryContext.SaveChangesStockAsync(CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 56
+   at Project.Repository.TransferRepositoryManager.SaveAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/Transfer/TransferRepositoryManager.cs:line 27
+   at Project.Service.TransferService.UpdateTransfer(Guid transferId, TransferUpdateDto transferUpdate) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Transfer/TransferService.cs:line 88
+   at Project.Presentation.TransferController.UpdateTransfer(Guid id, TransferUpdateDto transferUpdate) in /Users/aymanehinane/Desktop/Project/project/Project.Presentation/Controllers/TransferController.cs:line 73
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-08-28 16:50:52.0626 ERROR Something went wrong: Project.Entities.Exceptions.BadRequestException: stock insuffisant
+   at Project.Service.WarehouseService.UpdateStock(Guid warehouseId, Guid productId, Category category, ProductUpdateDto productUpdateDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Inventory/WarehouseService.cs:line 126
+   at Project.Service.Event.StockUpdateWhenTransferCreatedEventHandler.Handle(TransferCreatedDomainEvent transferCreatedDomainEvent, CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Event/StockUpdateWhenTransferCreatedEventHandler.cs:line 40
+   at MediatR.Mediator.PublishCore(IEnumerable`1 allHandlers, INotification notification, CancellationToken cancellationToken)
+   at Project.Repository.RepositoryContext.PublishDomainEventsAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 79
+   at Project.Repository.RepositoryContext.SaveChangesStockAsync(CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 56
+   at Project.Repository.TransferRepositoryManager.SaveAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/Transfer/TransferRepositoryManager.cs:line 27
+   at Project.Service.TransferService.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Transfer/TransferService.cs:line 40
+   at Project.Presentation.TransferController.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Presentation/Controllers/TransferController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-08-28 16:52:32.5279 ERROR Something went wrong: Project.Entities.Exceptions.NotPermited: stock insuffisant
+   at Project.Service.WarehouseService.UpdateStock(Guid warehouseId, Guid productId, Category category, ProductUpdateDto productUpdateDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Inventory/WarehouseService.cs:line 126
+   at Project.Service.Event.StockUpdateWhenTransferCreatedEventHandler.Handle(TransferCreatedDomainEvent transferCreatedDomainEvent, CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Event/StockUpdateWhenTransferCreatedEventHandler.cs:line 40
+   at MediatR.Mediator.PublishCore(IEnumerable`1 allHandlers, INotification notification, CancellationToken cancellationToken)
+   at Project.Repository.RepositoryContext.PublishDomainEventsAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 79
+   at Project.Repository.RepositoryContext.SaveChangesStockAsync(CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 56
+   at Project.Repository.TransferRepositoryManager.SaveAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/Transfer/TransferRepositoryManager.cs:line 27
+   at Project.Service.TransferService.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Transfer/TransferService.cs:line 40
+   at Project.Presentation.TransferController.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Presentation/Controllers/TransferController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-08-28 16:55:47.6840 ERROR Something went wrong: Project.Entities.Exceptions.MethodNotAllowed: stock insuffisant
+   at Project.Service.WarehouseService.UpdateStock(Guid warehouseId, Guid productId, Category category, ProductUpdateDto productUpdateDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Inventory/WarehouseService.cs:line 126
+   at Project.Service.Event.StockUpdateWhenTransferCreatedEventHandler.Handle(TransferCreatedDomainEvent transferCreatedDomainEvent, CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Event/StockUpdateWhenTransferCreatedEventHandler.cs:line 40
+   at MediatR.Mediator.PublishCore(IEnumerable`1 allHandlers, INotification notification, CancellationToken cancellationToken)
+   at Project.Repository.RepositoryContext.PublishDomainEventsAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 79
+   at Project.Repository.RepositoryContext.SaveChangesStockAsync(CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 56
+   at Project.Repository.TransferRepositoryManager.SaveAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/Transfer/TransferRepositoryManager.cs:line 27
+   at Project.Service.TransferService.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Transfer/TransferService.cs:line 40
+   at Project.Presentation.TransferController.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Presentation/Controllers/TransferController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-08-28 17:04:32.7063 ERROR Something went wrong: Project.Entities.Exceptions.MethodNotAllowed: stock insuffisant
+   at Project.Service.WarehouseService.UpdateStock(Guid warehouseId, Guid productId, Category category, ProductUpdateDto productUpdateDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Inventory/WarehouseService.cs:line 126
+   at Project.Service.Event.StockUpdateWhenTransferCreatedEventHandler.Handle(TransferCreatedDomainEvent transferCreatedDomainEvent, CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Event/StockUpdateWhenTransferCreatedEventHandler.cs:line 40
+   at MediatR.Mediator.PublishCore(IEnumerable`1 allHandlers, INotification notification, CancellationToken cancellationToken)
+   at Project.Repository.RepositoryContext.PublishDomainEventsAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 79
+   at Project.Repository.RepositoryContext.SaveChangesStockAsync(CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 56
+   at Project.Repository.TransferRepositoryManager.SaveAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/Transfer/TransferRepositoryManager.cs:line 27
+   at Project.Service.TransferService.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Transfer/TransferService.cs:line 40
+   at Project.Presentation.TransferController.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Presentation/Controllers/TransferController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-08-28 17:05:50.5280 ERROR Something went wrong: Project.Entities.Exceptions.MethodNotAllowed: stock insuffisant
+   at Project.Service.WarehouseService.UpdateStock(Guid warehouseId, Guid productId, Category category, ProductUpdateDto productUpdateDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Inventory/WarehouseService.cs:line 126
+   at Project.Service.Event.StockUpdateWhenTransferCreatedEventHandler.Handle(TransferCreatedDomainEvent transferCreatedDomainEvent, CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Event/StockUpdateWhenTransferCreatedEventHandler.cs:line 40
+   at MediatR.Mediator.PublishCore(IEnumerable`1 allHandlers, INotification notification, CancellationToken cancellationToken)
+   at Project.Repository.RepositoryContext.PublishDomainEventsAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 79
+   at Project.Repository.RepositoryContext.SaveChangesStockAsync(CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 56
+   at Project.Repository.TransferRepositoryManager.SaveAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/Transfer/TransferRepositoryManager.cs:line 27
+   at Project.Service.TransferService.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Transfer/TransferService.cs:line 40
+   at Project.Presentation.TransferController.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Presentation/Controllers/TransferController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-08-28 17:07:27.2632 ERROR Something went wrong: Project.Entities.Exceptions.MethodNotAllowed: stock insuffisant
+   at Project.Service.WarehouseService.UpdateStock(Guid warehouseId, Guid productId, Category category, ProductUpdateDto productUpdateDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Inventory/WarehouseService.cs:line 126
+   at Project.Service.Event.StockUpdateWhenTransferCreatedEventHandler.Handle(TransferCreatedDomainEvent transferCreatedDomainEvent, CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Event/StockUpdateWhenTransferCreatedEventHandler.cs:line 40
+   at MediatR.Mediator.PublishCore(IEnumerable`1 allHandlers, INotification notification, CancellationToken cancellationToken)
+   at Project.Repository.RepositoryContext.PublishDomainEventsAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 79
+   at Project.Repository.RepositoryContext.SaveChangesStockAsync(CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 56
+   at Project.Repository.TransferRepositoryManager.SaveAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/Transfer/TransferRepositoryManager.cs:line 27
+   at Project.Service.TransferService.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Transfer/TransferService.cs:line 40
+   at Project.Presentation.TransferController.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Presentation/Controllers/TransferController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-08-28 17:08:28.6998 ERROR Something went wrong: Project.Entities.Exceptions.MethodNotAllowed: stock insuffisant
+   at Project.Service.WarehouseService.UpdateStock(Guid warehouseId, Guid productId, Category category, ProductUpdateDto productUpdateDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Inventory/WarehouseService.cs:line 126
+   at Project.Service.Event.StockUpdateWhenTransferCreatedEventHandler.Handle(TransferCreatedDomainEvent transferCreatedDomainEvent, CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Event/StockUpdateWhenTransferCreatedEventHandler.cs:line 40
+   at MediatR.Mediator.PublishCore(IEnumerable`1 allHandlers, INotification notification, CancellationToken cancellationToken)
+   at Project.Repository.RepositoryContext.PublishDomainEventsAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 79
+   at Project.Repository.RepositoryContext.SaveChangesStockAsync(CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 56
+   at Project.Repository.TransferRepositoryManager.SaveAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/Transfer/TransferRepositoryManager.cs:line 27
+   at Project.Service.TransferService.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Transfer/TransferService.cs:line 40
+   at Project.Presentation.TransferController.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Presentation/Controllers/TransferController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-08-28 17:10:25.4935 ERROR Something went wrong: Project.Entities.Exceptions.MethodNotAllowed: stock insuffisant
+   at Project.Service.WarehouseService.UpdateStock(Guid warehouseId, Guid productId, Category category, ProductUpdateDto productUpdateDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Inventory/WarehouseService.cs:line 126
+   at Project.Service.Event.StockUpdateWhenTransferCreatedEventHandler.Handle(TransferCreatedDomainEvent transferCreatedDomainEvent, CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Event/StockUpdateWhenTransferCreatedEventHandler.cs:line 40
+   at MediatR.Mediator.PublishCore(IEnumerable`1 allHandlers, INotification notification, CancellationToken cancellationToken)
+   at Project.Repository.RepositoryContext.PublishDomainEventsAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 79
+   at Project.Repository.RepositoryContext.SaveChangesStockAsync(CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 56
+   at Project.Repository.TransferRepositoryManager.SaveAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/Transfer/TransferRepositoryManager.cs:line 27
+   at Project.Service.TransferService.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Transfer/TransferService.cs:line 40
+   at Project.Presentation.TransferController.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Presentation/Controllers/TransferController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-08-28 17:12:54.4094 ERROR Something went wrong: Project.Entities.Exceptions.MethodNotAllowed: stock insuffisant
+   at Project.Service.WarehouseService.UpdateStock(Guid warehouseId, Guid productId, Category category, ProductUpdateDto productUpdateDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Inventory/WarehouseService.cs:line 126
+   at Project.Service.Event.StockUpdateWhenTransferCreatedEventHandler.Handle(TransferCreatedDomainEvent transferCreatedDomainEvent, CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Event/StockUpdateWhenTransferCreatedEventHandler.cs:line 40
+   at MediatR.Mediator.PublishCore(IEnumerable`1 allHandlers, INotification notification, CancellationToken cancellationToken)
+   at Project.Repository.RepositoryContext.PublishDomainEventsAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 79
+   at Project.Repository.RepositoryContext.SaveChangesStockAsync(CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 56
+   at Project.Repository.TransferRepositoryManager.SaveAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/Transfer/TransferRepositoryManager.cs:line 27
+   at Project.Service.TransferService.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Transfer/TransferService.cs:line 40
+   at Project.Presentation.TransferController.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Presentation/Controllers/TransferController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-08-28 17:13:42.9564 ERROR Something went wrong: Project.Entities.Exceptions.MethodNotAllowed: stock insuffisant
+   at Project.Service.WarehouseService.UpdateStock(Guid warehouseId, Guid productId, Category category, ProductUpdateDto productUpdateDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Inventory/WarehouseService.cs:line 126
+   at Project.Service.Event.StockUpdateWhenTransferCreatedEventHandler.Handle(TransferCreatedDomainEvent transferCreatedDomainEvent, CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Event/StockUpdateWhenTransferCreatedEventHandler.cs:line 40
+   at MediatR.Mediator.PublishCore(IEnumerable`1 allHandlers, INotification notification, CancellationToken cancellationToken)
+   at Project.Repository.RepositoryContext.PublishDomainEventsAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 79
+   at Project.Repository.RepositoryContext.SaveChangesStockAsync(CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 56
+   at Project.Repository.TransferRepositoryManager.SaveAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/Transfer/TransferRepositoryManager.cs:line 27
+   at Project.Service.TransferService.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Transfer/TransferService.cs:line 40
+   at Project.Presentation.TransferController.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Presentation/Controllers/TransferController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-08-28 17:14:05.1573 ERROR Something went wrong: Project.Entities.Exceptions.MethodNotAllowed: stock insuffisant
+   at Project.Service.WarehouseService.UpdateStock(Guid warehouseId, Guid productId, Category category, ProductUpdateDto productUpdateDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Inventory/WarehouseService.cs:line 126
+   at Project.Service.Event.StockUpdateWhenTransferCreatedEventHandler.Handle(TransferCreatedDomainEvent transferCreatedDomainEvent, CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Event/StockUpdateWhenTransferCreatedEventHandler.cs:line 40
+   at MediatR.Mediator.PublishCore(IEnumerable`1 allHandlers, INotification notification, CancellationToken cancellationToken)
+   at Project.Repository.RepositoryContext.PublishDomainEventsAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 79
+   at Project.Repository.RepositoryContext.SaveChangesStockAsync(CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 56
+   at Project.Repository.TransferRepositoryManager.SaveAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/Transfer/TransferRepositoryManager.cs:line 27
+   at Project.Service.TransferService.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Transfer/TransferService.cs:line 40
+   at Project.Presentation.TransferController.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Presentation/Controllers/TransferController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-08-28 17:15:47.1532 ERROR Something went wrong: Project.Entities.Exceptions.MethodNotAllowed: stock insuffisant
+   at Project.Service.WarehouseService.UpdateStock(Guid warehouseId, Guid productId, Category category, ProductUpdateDto productUpdateDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Inventory/WarehouseService.cs:line 126
+   at Project.Service.Event.StockUpdateWhenTransferCreatedEventHandler.Handle(TransferCreatedDomainEvent transferCreatedDomainEvent, CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Event/StockUpdateWhenTransferCreatedEventHandler.cs:line 40
+   at MediatR.Mediator.PublishCore(IEnumerable`1 allHandlers, INotification notification, CancellationToken cancellationToken)
+   at Project.Repository.RepositoryContext.PublishDomainEventsAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 79
+   at Project.Repository.RepositoryContext.SaveChangesStockAsync(CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 56
+   at Project.Repository.TransferRepositoryManager.SaveAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/Transfer/TransferRepositoryManager.cs:line 27
+   at Project.Service.TransferService.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Transfer/TransferService.cs:line 40
+   at Project.Presentation.TransferController.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Presentation/Controllers/TransferController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-08-28 17:15:55.5446 ERROR Something went wrong: Project.Entities.Exceptions.MethodNotAllowed: stock insuffisant
+   at Project.Service.WarehouseService.UpdateStock(Guid warehouseId, Guid productId, Category category, ProductUpdateDto productUpdateDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Inventory/WarehouseService.cs:line 126
+   at Project.Service.Event.StockUpdateWhenTransferCreatedEventHandler.Handle(TransferCreatedDomainEvent transferCreatedDomainEvent, CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Event/StockUpdateWhenTransferCreatedEventHandler.cs:line 40
+   at MediatR.Mediator.PublishCore(IEnumerable`1 allHandlers, INotification notification, CancellationToken cancellationToken)
+   at Project.Repository.RepositoryContext.PublishDomainEventsAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 79
+   at Project.Repository.RepositoryContext.SaveChangesStockAsync(CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 56
+   at Project.Repository.TransferRepositoryManager.SaveAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/Transfer/TransferRepositoryManager.cs:line 27
+   at Project.Service.TransferService.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Transfer/TransferService.cs:line 40
+   at Project.Presentation.TransferController.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Presentation/Controllers/TransferController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-08-28 17:16:40.9903 ERROR Something went wrong: Project.Entities.Exceptions.MethodNotAllowed: stock insuffisant
+   at Project.Service.WarehouseService.UpdateStock(Guid warehouseId, Guid productId, Category category, ProductUpdateDto productUpdateDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Inventory/WarehouseService.cs:line 126
+   at Project.Service.Event.StockUpdateWhenTransferCreatedEventHandler.Handle(TransferCreatedDomainEvent transferCreatedDomainEvent, CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Event/StockUpdateWhenTransferCreatedEventHandler.cs:line 40
+   at MediatR.Mediator.PublishCore(IEnumerable`1 allHandlers, INotification notification, CancellationToken cancellationToken)
+   at Project.Repository.RepositoryContext.PublishDomainEventsAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 79
+   at Project.Repository.RepositoryContext.SaveChangesStockAsync(CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 56
+   at Project.Repository.TransferRepositoryManager.SaveAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/Transfer/TransferRepositoryManager.cs:line 27
+   at Project.Service.TransferService.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Transfer/TransferService.cs:line 40
+   at Project.Presentation.TransferController.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Presentation/Controllers/TransferController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-08-28 17:17:08.0647 ERROR Something went wrong: Project.Entities.Exceptions.MethodNotAllowed: stock insuffisant
+   at Project.Service.WarehouseService.UpdateStock(Guid warehouseId, Guid productId, Category category, ProductUpdateDto productUpdateDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Inventory/WarehouseService.cs:line 126
+   at Project.Service.Event.StockUpdateWhenTransferCreatedEventHandler.Handle(TransferCreatedDomainEvent transferCreatedDomainEvent, CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Event/StockUpdateWhenTransferCreatedEventHandler.cs:line 40
+   at MediatR.Mediator.PublishCore(IEnumerable`1 allHandlers, INotification notification, CancellationToken cancellationToken)
+   at Project.Repository.RepositoryContext.PublishDomainEventsAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 79
+   at Project.Repository.RepositoryContext.SaveChangesStockAsync(CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 56
+   at Project.Repository.TransferRepositoryManager.SaveAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/Transfer/TransferRepositoryManager.cs:line 27
+   at Project.Service.TransferService.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Transfer/TransferService.cs:line 40
+   at Project.Presentation.TransferController.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Presentation/Controllers/TransferController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-08-28 17:18:24.5782 ERROR Something went wrong: Project.Entities.Exceptions.MethodNotAllowed: stock insuffisant
+   at Project.Service.WarehouseService.UpdateStock(Guid warehouseId, Guid productId, Category category, ProductUpdateDto productUpdateDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Inventory/WarehouseService.cs:line 126
+   at Project.Service.Event.StockUpdateWhenTransferCreatedEventHandler.Handle(TransferCreatedDomainEvent transferCreatedDomainEvent, CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Event/StockUpdateWhenTransferCreatedEventHandler.cs:line 40
+   at MediatR.Mediator.PublishCore(IEnumerable`1 allHandlers, INotification notification, CancellationToken cancellationToken)
+   at Project.Repository.RepositoryContext.PublishDomainEventsAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 79
+   at Project.Repository.RepositoryContext.SaveChangesStockAsync(CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 56
+   at Project.Repository.TransferRepositoryManager.SaveAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/Transfer/TransferRepositoryManager.cs:line 27
+   at Project.Service.TransferService.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Transfer/TransferService.cs:line 40
+   at Project.Presentation.TransferController.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Presentation/Controllers/TransferController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-08-28 17:18:32.5568 ERROR Something went wrong: Project.Entities.Exceptions.MethodNotAllowed: stock insuffisant
+   at Project.Service.WarehouseService.UpdateStock(Guid warehouseId, Guid productId, Category category, ProductUpdateDto productUpdateDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Inventory/WarehouseService.cs:line 126
+   at Project.Service.Event.StockUpdateWhenTransferCreatedEventHandler.Handle(TransferCreatedDomainEvent transferCreatedDomainEvent, CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Event/StockUpdateWhenTransferCreatedEventHandler.cs:line 40
+   at MediatR.Mediator.PublishCore(IEnumerable`1 allHandlers, INotification notification, CancellationToken cancellationToken)
+   at Project.Repository.RepositoryContext.PublishDomainEventsAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 79
+   at Project.Repository.RepositoryContext.SaveChangesStockAsync(CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 56
+   at Project.Repository.TransferRepositoryManager.SaveAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/Transfer/TransferRepositoryManager.cs:line 27
+   at Project.Service.TransferService.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Transfer/TransferService.cs:line 40
+   at Project.Presentation.TransferController.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Presentation/Controllers/TransferController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-08-28 17:47:07.9253 ERROR Something went wrong: Project.Entities.Exceptions.MethodNotAllowed: stock insuffisant
+   at Project.Service.WarehouseService.UpdateStock(Guid warehouseId, Guid productId, Category category, ProductUpdateDto productUpdateDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Inventory/WarehouseService.cs:line 126
+   at Project.Service.Event.StockUpdateWhenTransferCreatedEventHandler.Handle(TransferCreatedDomainEvent transferCreatedDomainEvent, CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Event/StockUpdateWhenTransferCreatedEventHandler.cs:line 40
+   at MediatR.Mediator.PublishCore(IEnumerable`1 allHandlers, INotification notification, CancellationToken cancellationToken)
+   at Project.Repository.RepositoryContext.PublishDomainEventsAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 79
+   at Project.Repository.RepositoryContext.SaveChangesStockAsync(CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 56
+   at Project.Repository.TransferRepositoryManager.SaveAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/Transfer/TransferRepositoryManager.cs:line 27
+   at Project.Service.TransferService.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Transfer/TransferService.cs:line 40
+   at Project.Presentation.TransferController.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Presentation/Controllers/TransferController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-08-28 17:47:45.7960 ERROR Something went wrong: Project.Entities.Exceptions.MethodNotAllowed: stock insuffisant
+   at Project.Service.WarehouseService.UpdateStock(Guid warehouseId, Guid productId, Category category, ProductUpdateDto productUpdateDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Inventory/WarehouseService.cs:line 126
+   at Project.Service.Event.StockUpdateWhenTransferCreatedEventHandler.Handle(TransferCreatedDomainEvent transferCreatedDomainEvent, CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Event/StockUpdateWhenTransferCreatedEventHandler.cs:line 40
+   at MediatR.Mediator.PublishCore(IEnumerable`1 allHandlers, INotification notification, CancellationToken cancellationToken)
+   at Project.Repository.RepositoryContext.PublishDomainEventsAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 79
+   at Project.Repository.RepositoryContext.SaveChangesStockAsync(CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 56
+   at Project.Repository.TransferRepositoryManager.SaveAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/Transfer/TransferRepositoryManager.cs:line 27
+   at Project.Service.TransferService.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Transfer/TransferService.cs:line 40
+   at Project.Presentation.TransferController.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Presentation/Controllers/TransferController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-08-28 17:48:23.7413 ERROR Something went wrong: Project.Entities.Exceptions.MethodNotAllowed: stock insuffisant
+   at Project.Service.WarehouseService.UpdateStock(Guid warehouseId, Guid productId, Category category, ProductUpdateDto productUpdateDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Inventory/WarehouseService.cs:line 126
+   at Project.Service.Event.StockUpdateWhenTransferCreatedEventHandler.Handle(TransferCreatedDomainEvent transferCreatedDomainEvent, CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Event/StockUpdateWhenTransferCreatedEventHandler.cs:line 40
+   at MediatR.Mediator.PublishCore(IEnumerable`1 allHandlers, INotification notification, CancellationToken cancellationToken)
+   at Project.Repository.RepositoryContext.PublishDomainEventsAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 79
+   at Project.Repository.RepositoryContext.SaveChangesStockAsync(CancellationToken cancellationToken) in /Users/aymanehinane/Desktop/Project/project/Project.Repository/RepositoryContext.cs:line 56
+   at Project.Repository.TransferRepositoryManager.SaveAsync() in /Users/aymanehinane/Desktop/Project/project/Project.Repository/Transfer/TransferRepositoryManager.cs:line 27
+   at Project.Service.TransferService.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Transfer/TransferService.cs:line 40
+   at Project.Presentation.TransferController.TransferInsert(TransferInsertDto transferDto) in /Users/aymanehinane/Desktop/Project/project/Project.Presentation/Controllers/TransferController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-08-28 18:26:11.0265 ERROR Something went wrong: OfficeOpenXml.LicenseException: Please set the ExcelPackage.LicenseContext property. See https://epplussoftware.com/developers/licenseexception
+   at OfficeOpenXml.ExcelPackage.get_Workbook()
+   at OfficeOpenXml.ExcelPackage.CreateBlankWb()
+   at OfficeOpenXml.ExcelPackage.ConstructNewFile(String password)
+   at OfficeOpenXml.ExcelPackage..ctor()
+   at Project.Service.WarehouseService.DownloadFinishedProductExcel(Guid warehouseId) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Inventory/WarehouseService.cs:line 222
+   at Project.Presentation.WarehouseController.DownloadExcel(Guid id) in /Users/aymanehinane/Desktop/Project/project/Project.Presentation/Controllers/WarehouseController.cs:line 160
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-08-28 18:31:11.5418 ERROR Something went wrong: OfficeOpenXml.LicenseException: Please set the ExcelPackage.LicenseContext property. See https://epplussoftware.com/developers/licenseexception
+   at OfficeOpenXml.ExcelPackage.get_Workbook()
+   at OfficeOpenXml.ExcelPackage.CreateBlankWb()
+   at OfficeOpenXml.ExcelPackage.ConstructNewFile(String password)
+   at OfficeOpenXml.ExcelPackage..ctor()
+   at Project.Service.WarehouseService.DownloadFinishedProductExcel(Guid warehouseId) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Inventory/WarehouseService.cs:line 222
+   at Project.Presentation.WarehouseController.DownloadExcel(Guid id) in /Users/aymanehinane/Desktop/Project/project/Project.Presentation/Controllers/WarehouseController.cs:line 160
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-08-28 18:31:17.7052 ERROR Something went wrong: OfficeOpenXml.LicenseException: Please set the ExcelPackage.LicenseContext property. See https://epplussoftware.com/developers/licenseexception
+   at OfficeOpenXml.ExcelPackage.get_Workbook()
+   at OfficeOpenXml.ExcelPackage.CreateBlankWb()
+   at OfficeOpenXml.ExcelPackage.ConstructNewFile(String password)
+   at OfficeOpenXml.ExcelPackage..ctor()
+   at Project.Service.WarehouseService.DownloadFinishedProductExcel(Guid warehouseId) in /Users/aymanehinane/Desktop/Project/project/Project.Service/Inventory/WarehouseService.cs:line 222
+   at Project.Presentation.WarehouseController.DownloadExcel(Guid id) in /Users/aymanehinane/Desktop/Project/project/Project.Presentation/Controllers/WarehouseController.cs:line 160
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)

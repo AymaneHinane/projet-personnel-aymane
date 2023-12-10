@@ -1,0 +1,29 @@
+
+var name="aymane"
+console.log(`Hey, ${name}`)
+_____________
+var firstName="Hinane"
+var lastName="Aymane"
+var fullName=`${firstName} ${lastName}`
+console.log(fullName) //Hinane Aymane
+____________
+
+const user={
+    name:"aymane",
+    age:21
+    }
+    
+    const getInfo=person=>{
+        return `
+    <ul>
+    <li>${person.name}</li>
+    <li>${person.age}</li>
+    </ul>
+           `
+    }
+
+    console.log(getInfo(user))
+    /*<ul>
+    <li>aymane</li>
+    <li>21</li>
+    </ul>*7

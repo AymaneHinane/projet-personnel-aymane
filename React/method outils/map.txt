@@ -1,0 +1,48 @@
+map() — crée un nouveau tableau avec les résultats de l'appel
+d'une fonction fournie sur chaque élément du tableau appelant.
+_____________________________
+Pendant ce temps, la map()méthode appellera également une 
+fonction fournie sur chaque élément du tableau. La différence
+est que map()utilise des valeurs de retour et renvoie en 
+fait un nouveau tableau de la même taille.
+______________________________
+En effet, forEach() affecte et modifie notre tableau d'origine, 
+tandis que map()renvoie un tout nouveau tableau, laissant ainsi 
+le tableau d'origine inchangé.
+______________________________
+-map()alloue de la mémoire et stocke des returnvaleurs.
+-map()renverra à la place un nouveau tableau.
+______________________________
+
+
+let arr = [3, 4, 5, 6];
+
+let modifiedArr = arr.map(function(element){
+    return element *3;
+});
+
+console.log(modifiedArr); // [9, 12, 15, 18]
+
+_____________________________________________
+
+let users = [
+  {firstName : "Susan", lastName: "Steward"},
+  {firstName : "Daniel", lastName: "Longbottom"},
+  {firstName : "Jacob", lastName: "Black"}
+];
+
+let userFullnames = users.map(function(element){
+    return `${element.firstName} ${element.lastName}`;
+})
+
+console.log(userFullnames);
+// ["Susan Steward", "Daniel Longbottom", "Jacob Black"]
+
+_____________________________________________
+
+arr.map(function(element, index, array){
+    console.log(element);
+    console.log(index);
+    console.log(array);
+    return element;
+})

@@ -1,0 +1,89 @@
+//useMemo: Renvoie une valeur memorisee
+//si la fonction return une nouvelle valeur elle serat rexecuter
+//sinon elle ne serat pas rexecuter meme si le composant se mais a jour est que cette fonction est appeler dans le  return
+
+App.js
+
+import React,{useState,useEffect,useMemo} from 'react'
+import './App.css';
+import Prof from './components7/Prof';
+import axios from 'axios'
+
+const App = ()=>{   
+
+   
+   const [count,setCount]=useState(1)
+   const [profile,setProfile]=useState({})
+   const [btnShow,setBtnShow]=useState(false)
+   const [font,setFont]=useState('#fff')
+   
+   useEffect(()=>{
+            axios
+            .get(`https://jsonplaceholder.typicode.com/users/${count}`)
+            .then((res)=>{           
+                setProfile(res.data)
+                count>=10&&setBtnShow(true)
+            })
+            .catch(err=>console.log(err))
+
+   },[count])
+  
+   const memorizedvalue=useMemo(()=>{
+      console.log('is over teen')
+
+      return count>=10&&true
+       },[count]
+   )
+   
+
+   const changeFont=()=>{
+      console.log('hangeFont')
+         if(font === '#fff')
+         {
+            setFont('rgb(48,48,48)')
+            document.body.style.backgroundColor=font
+            
+         }else{
+            setFont('#fff')
+            document.body.style.backgroundColor=font
+         }
+   }
+  
+   return (  
+      <div>
+         {memorizedvalue&&<h2 style={{color:'red'}}>Stop putain</h2>}
+         <h1>useMemo()</h1>
+         
+         <button onClick={()=>setCount(count+1)} disabled={btnShow}>{!btnShow?`Increment ${count}`:'Stop'}</button>
+         <button onClick={()=>changeFont()}>Changer</button>
+
+         <Prof count={count } profile={profile}/>
+      </div> 
+    );
+ 
+}
+ 
+export default App;
+
+-----------------------------------------------------------------------
+
+Prof.js
+
+import React,{useState,useEffect} from 'react'
+
+
+const Prof=({count,profile})=>{
+
+    console.log('profile0')
+    return (
+        <div>
+            <h2>ID: {count}</h2>
+            <ul>
+                <li>name: {profile.name}</li>
+                <li>email: {profile.email}</li>
+            </ul>
+        </div>
+    )
+}
+
+export default React.memo(Prof)

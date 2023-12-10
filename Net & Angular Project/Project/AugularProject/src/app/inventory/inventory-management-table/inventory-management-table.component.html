@@ -1,0 +1,78 @@
+ 
+<div>
+
+  <a [routerLink]="['/warehouse',warehouseId,'stockHistory',category]" routerLinkActive="router-link-active" >
+     <button type="button" class="btn btn-outline-warning" [style]="{'float':'right','margin-right':'20px'}">Historique</button>
+  </a>
+
+  <h2 *ngIf="category == 'rawMaterial'">{{rawMaterialStocks?.name}}</h2>
+  <h2 *ngIf="category == 'finishedProduct'">{{finishedProductStock?.name}}</h2>
+
+  <div class="input-group mb-3" [style]="{'width':'400px'}" *ngIf="category == 'finishedProduct'">
+    <input type="text" class="form-control" placeholder="ajouter un nouveau produit" aria-describedby="button-addon2" #npk>
+    <button class="btn btn-outline-dark" type="button" id="button-addon2" (click)="AddNewProduct(npk.value)">ajouter</button>
+  </div>
+
+<table class="table" *ngIf="category == 'rawMaterial'">  
+    <thead >
+        <tr class="table-light">
+            <th>Engrais</th>
+            <th>restant {{ this.year-1}}-{{this.year}}</th>
+            <th>commandée {{ this.year}}-{{this.year+1}}</th>
+            <th>receptionné A date</th>
+            <th>MP disponible</th>
+            <th>consommée</th>
+            <th scope="col">stocks sortants</th> 
+            <th scope="col">stocks entrants</th>
+            <th>restant  {{ this.year}}-{{this.year+1}} </th> 
+            <th></th>
+        </tr>
+      </thead>
+      
+    <tbody class="table-group-divider">
+        <tr *ngFor="let item of rawMaterialStocks?.stocks">
+            <th scope="row">{{ item.productName }}</th>
+            <td>{{ item.lastYearRemainingStock }}</td>
+            <td>{{ item.orderStock }}</td>
+            <td>{{ item.deliverStock }}</td>
+            <td>{{ item.dapStock }}</td>
+            <td>{{ item.consumeStock }}</td>
+            <td>{{item.transferedStockExitTotal}}</td>
+            <td>{{item.transferedStockEntryTotal}}</td>
+            <td>{{ item.remainingStock }}</td>
+            <td><button type="button" class="btn btn-outline-success"  [style]="{'float':'right'}"
+                (click)="UpdateRawMaterialStock(item)">
+                Modifier
+            </button></td>
+        </tr>
+    </tbody>
+  </table>
+
+
+  <table class="table" *ngIf="category == 'finishedProduct'">  
+    <thead>
+        <tr class="table-light">
+            <th>NPK</th>
+            <th>produit ACJ</th>
+            <th>livrée CDA ACJ</th>
+            <th>stock Sucrerie</th>
+            <th></th>
+        </tr>
+      </thead>
+      
+    <tbody class="table-group-divider">
+      <tr *ngFor="let item of finishedProductStock?.stocks"> 
+        <th scope="row">{{item.productName}}</th>
+        <td>{{item.stockProduced}}</td>
+        <td>{{item.transferedStockExitTotal}}</td>
+        <td>{{item.remainingStock}}</td>
+        <td><button type="button" class="btn btn-outline-success"  [style]="{'float':'right'}"
+            (click)="UpdateFinishedProductStock(item)">
+            Modifier
+        </button></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+

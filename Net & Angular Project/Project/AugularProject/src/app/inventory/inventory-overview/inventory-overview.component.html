@@ -1,0 +1,107 @@
+
+
+<div class="container" [style]="{'margin-top':'20px'}">
+  <div class="row justify-content-center" >
+
+
+
+    <div class="col-10">
+
+
+
+    <div *ngIf="type == 'rawMaterial' ">
+
+      <div  *ngFor="let product of productStockInfo">
+        <h2>{{product.name}}</h2>
+
+            <table class="table">
+                <thead>
+                    <tr >
+                        <th>Site</th>
+                        <th>commandee {{ this.year-1}}-{{this.year}}</th>
+                        <th>restant {{ this.year-1}}</th>
+                        <th>total dap</th>
+                        <th>livrer</th>
+                        <th>consommer</th>
+                        <th>restant  {{ this.year}}</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let stock of product.stocks">
+                    <td>{{ stock.warehouse.name }}</td>
+                    <td>{{ stock.orderStock }}</td>
+                    <td>{{ stock.lastYearRemainingStock }}</td>
+                    <td>{{ stock.dapStock }}</td>
+                    <td>{{ stock.deliverStock }}</td>
+                    <td>{{ stock.consumeStock }}</td>
+                    <td>{{ stock.remainingStock }}</td>
+                  </tr>
+                  <tr class="table-primary">
+                    <td>Total:</td>
+                    <td>{{ calculateColumnSum(product.stocks, 'orderStock') }}</td>
+                    <td>{{ calculateColumnSum(product.stocks, 'lastYearRemainingStock') }}</td>
+                    <td>{{ calculateColumnSum(product.stocks, 'dapStock') }}</td>
+                    <td>{{ calculateColumnSum(product.stocks, 'deliverStock') }}</td>
+                    <td>{{ calculateColumnSum(product.stocks, 'consumeStock') }}</td>
+                    <td>{{ calculateColumnSum(product.stocks, 'remainingStock') }}</td>
+                  </tr>
+                </tbody>
+              </table>
+      </div>
+
+    </div>
+
+      <div *ngIf="type == 'finishedProduct' ">
+
+        <button type="button" 
+        class="btn btn-success" 
+        (click)="downloadExcel()" [style]="{'float':'right','margin-bottom':'30px'}">Downoald excel file</button>
+
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>NPK</th>
+                   <th>produit ACJ</th>
+                   <th>livrée CDA ACJ</th>
+                   <th>stock Sucrerie</th>
+                   <th>Site</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let product of productStockInfo">
+
+                    <td>{{product.name}}</td>
+
+                   <ng-template *ngIf="product.stocks.length==0; else stockShow">
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                   </ng-template>
+
+                    <ng-template #stockShow>
+                      <ng-container *ngFor="let stock of product.stocks" >
+                        <td>{{stock.stockProduced}}</td>
+                        <td>{{stock.transferedStockExitTotal}}</td>
+                        <td>{{stock.remainingStock}}</td>
+                        <td>{{stock.warehouse.name}}</td>
+                        </ng-container>
+                    </ng-template>
+
+
+
+                  </tr>
+                  <tr class="table-primary">
+                    <td>Total:</td>
+                    <td>{{finishedProductTotal.stockProduced}}</td>
+                    <td>{{finishedProductTotal.cdaDeliverStock !=0 ? 0: finishedProductTotal.cdaDeliverStock}}</td>
+                    <td>{{finishedProductTotal.remainingStock}}</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+      </div>
+
+        </div>
+    </div>
+</div>

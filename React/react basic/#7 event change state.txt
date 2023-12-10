@@ -1,0 +1,45 @@
+import React,{Component} from 'react'
+import Mycars from './components/Myscars';
+
+import './App.css';
+
+
+class App extends Component{
+  
+  state={
+    titre:'Mon catalogue Voitures'
+  }
+
+  changeTitle=(e)=>{
+    console.log(e.target)
+    this.setState({
+      titre:'Mon nouveau titre'
+    })
+  }
+
+  changeViaparam=(titre)=>{
+    this.setState({
+      titre
+    })
+  }
+
+  changeViaInput=(e)=>{
+    this.setState({
+      titre:e.target.value
+    })
+  }
+
+  render(){
+    return (
+    <div className="App">
+      <Mycars title={this.state.titre}/>
+      <button onClick={this.changeTitle}>changer le nom </button>
+      <button onClick={this.changeViaparam.bind(this,"change via param")}>change via param</button>
+      <input onChange={this.changeViaInput} value={this.state.titre}></input>
+    </div>
+  );
+  }
+  
+}
+
+export default App;

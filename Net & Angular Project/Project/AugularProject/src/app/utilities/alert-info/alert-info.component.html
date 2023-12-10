@@ -1,0 +1,10 @@
+
+
+<div *ngIf="alertInfo">
+  <div  *ngIf="alertInfo.iSvisible"  class="shadow"
+   [class]="'alert alert-' + getAlertType(alertInfo.alertType)"
+   [style]="{'position':'absolute','top':'80px','width':'500px','right':'25%','z-index': '9999','text-align':'center'}" 
+   role="alert">
+    {{alertInfo.message}}
+  </div>
+</div>

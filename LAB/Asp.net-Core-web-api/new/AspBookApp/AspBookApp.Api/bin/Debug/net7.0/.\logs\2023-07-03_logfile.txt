@@ -1,0 +1,239 @@
+2023-07-03 12:46:35.8489 INFO hello 1
+2023-07-03 12:51:39.1180 ERROR Something went wrong: AspBookApp.Entities.Exceptions.CompanyNotFoundException: The company with id: c9d4c053-49b6-410c-bc78-2d54a9991870 doesn't exist in thendatabase.
+   at AspBookApp.Service.CompanyService.GetCompany(Guid companyId, Boolean trackChanges) in /Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Service/CompanyService.cs:line 47
+   at AspBookApp.CompanyEmployees.Controller.CompaniesController.GetCompany(Guid id) in /Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.CompanyEmployees.Presentation/Controllers/CompaniesController.cs:line 33
+   at lambda_method1(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-07-03 12:51:48.7168 ERROR Something went wrong: AspBookApp.Entities.Exceptions.CompanyNotFoundException: The company with id: c9d4c053-49b6-410c-bc78-2d54a9991871 doesn't exist in thendatabase.
+   at AspBookApp.Service.CompanyService.GetCompany(Guid companyId, Boolean trackChanges) in /Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Service/CompanyService.cs:line 47
+   at AspBookApp.CompanyEmployees.Controller.CompaniesController.GetCompany(Guid id) in /Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.CompanyEmployees.Presentation/Controllers/CompaniesController.cs:line 33
+   at lambda_method1(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-07-03 12:52:35.7329 ERROR company not found
+2023-07-03 12:52:35.7542 ERROR Something went wrong: AspBookApp.Entities.Exceptions.CompanyNotFoundException: The company with id: c9d4c053-49b6-410c-bc78-2d54a9991871 doesn't exist in thendatabase.
+   at AspBookApp.Service.CompanyService.GetCompany(Guid companyId, Boolean trackChanges) in /Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Service/CompanyService.cs:line 58
+   at AspBookApp.CompanyEmployees.Controller.CompaniesController.GetCompany(Guid id) in /Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.CompanyEmployees.Presentation/Controllers/CompaniesController.cs:line 33
+   at lambda_method1(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-07-03 13:48:59.8466 ERROR company not found
+2023-07-03 13:48:59.8577 ERROR Something went wrong: AspBookApp.Entities.Exceptions.CompanyNotFoundException: The company with id: c9d4c053-49b6-410c-bc78-2d54a9991879 doesn't exist in thendatabase.
+   at AspBookApp.Service.CompanyService.GetCompany(Guid companyId, Boolean trackChanges) in /Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Service/CompanyService.cs:line 58
+   at AspBookApp.CompanyEmployees.Controller.CompaniesController.GetCompany(Guid id) in /Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.CompanyEmployees.Presentation/Controllers/CompaniesController.cs:line 33
+   at lambda_method1(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-07-03 16:08:53.9611 ERROR company not found
+2023-07-03 16:08:53.9803 ERROR Something went wrong: AspBookApp.Entities.Exceptions.CompanyNotFoundException: The company with id: c9d4c053-49b6-410c-bc78-2d54a9991879 doesn't exist in the database.
+   at AspBookApp.Service.CompanyService.GetCompany(Guid companyId, Boolean trackChanges) in /Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Service/CompanyService.cs:line 58
+   at AspBookApp.CompanyEmployees.Controller.CompaniesController.GetCompany(Guid id) in /Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.CompanyEmployees.Presentation/Controllers/CompaniesController.cs:line 28
+   at lambda_method27(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-07-03 16:19:55.5507 INFO Kane Miller
+2023-07-03 16:19:55.5639 INFO Kane Miller
+2023-07-03 16:20:52.3446 INFO step 1
+2023-07-03 16:20:52.3529 INFO Kane Miller
+2023-07-03 16:20:52.3584 INFO step 1
+2023-07-03 16:20:52.3584 INFO Kane Miller
+2023-07-03 16:21:14.0520 INFO step 1
+2023-07-03 16:21:14.0593 INFO Kane Miller
+2023-07-03 16:21:14.0650 INFO step 2
+2023-07-03 16:21:14.0651 INFO Kane Miller
+2023-07-03 16:22:59.6893 INFO step 1
+2023-07-03 16:22:59.6980 INFO Kane Miller
+2023-07-03 16:22:59.7041 INFO step 2
+2023-07-03 16:22:59.7041 INFO Kane Miller
+2023-07-03 16:23:13.7063 INFO step 1
+2023-07-03 16:23:13.7135 INFO Kane Miller
+2023-07-03 16:23:13.7189 INFO step 2
+2023-07-03 16:23:13.7189 INFO Kane Miller
+2023-07-03 16:25:04.0686 INFO step 1
+2023-07-03 16:25:04.0759 INFO Kane Miller
+2023-07-03 16:25:04.0813 INFO step 2
+2023-07-03 16:25:04.0813 INFO Kane Miller
+2023-07-03 16:25:05.3951 INFO step 1
+2023-07-03 16:25:05.3951 INFO Kane Miller
+2023-07-03 16:25:05.3951 INFO step 2
+2023-07-03 16:25:05.3951 INFO Kane Miller
+2023-07-03 16:25:16.3939 INFO step 1
+2023-07-03 16:25:16.4011 INFO Kane Miller
+2023-07-03 16:25:16.4065 INFO step 2
+2023-07-03 16:25:16.4066 INFO Kane Miller
+2023-07-03 20:29:06.5287 INFO step 1
+2023-07-03 20:29:06.5361 INFO Kane Miller
+2023-07-03 20:29:06.5415 INFO step 2
+2023-07-03 20:29:06.5416 INFO Kane Miller
+2023-07-03 20:32:09.6002 INFO step 1
+2023-07-03 20:32:09.6085 INFO Kane Miller
+2023-07-03 20:32:09.6139 INFO step 2
+2023-07-03 20:32:09.6139 INFO Kane Miller
+2023-07-03 20:32:13.6696 ERROR Something went wrong: System.NotSupportedException: Serialization and deserialization of 'System.Action' instances are not supported. Path: $.MoveNextAction.
+ ---> System.NotSupportedException: Serialization and deserialization of 'System.Action' instances are not supported.
+   at System.Text.Json.Serialization.Converters.UnsupportedTypeConverter`1.Write(Utf8JsonWriter writer, T value, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ThrowNotSupportedException(WriteStack& state, NotSupportedException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCoreAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteCore[TValue](Utf8JsonWriter writer, TValue& value, JsonTypeInfo jsonTypeInfo, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|8_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2023-07-03 20:32:47.7973 INFO step 1
+2023-07-03 20:32:47.8048 INFO Kane Miller
+2023-07-03 20:32:47.8105 INFO step 2
+2023-07-03 20:32:47.8105 INFO Kane Miller
+2023-07-03 20:38:34.4616 INFO step 1
+2023-07-03 20:38:34.4698 INFO Kane Miller
+2023-07-03 20:38:34.4752 INFO step 2
+2023-07-03 20:38:34.4752 INFO Kane Miller
+2023-07-03 20:38:58.0878 INFO step 1
+2023-07-03 20:38:58.0883 INFO Jana McLeaf
+2023-07-03 20:38:58.0883 INFO Sam Raiden
+2023-07-03 20:38:58.0883 INFO step 2
+2023-07-03 20:38:58.0883 INFO Jana McLeaf
+2023-07-03 20:38:58.0883 INFO Sam Raiden
+2023-07-03 20:39:29.8296 INFO step 1
+2023-07-03 20:39:29.8368 INFO Jana McLeaf
+2023-07-03 20:39:29.8368 INFO Sam Raiden
+2023-07-03 20:39:29.8424 INFO step 2
+2023-07-03 20:39:29.8424 INFO Jana McLeaf
+2023-07-03 20:39:29.8424 INFO Sam Raiden
+2023-07-03 20:56:09.0511 INFO step 1
+2023-07-03 20:56:09.0589 INFO Jana McLeaf
+2023-07-03 20:56:09.0589 INFO Sam Raiden
+2023-07-03 20:56:09.0644 INFO step 2
+2023-07-03 20:56:09.0644 INFO Jana McLeaf
+2023-07-03 20:56:09.0644 INFO Sam Raiden
+2023-07-03 20:56:10.2776 INFO step 1
+2023-07-03 20:56:10.2776 INFO Jana McLeaf
+2023-07-03 20:56:10.2776 INFO Sam Raiden
+2023-07-03 20:56:10.2780 INFO step 2
+2023-07-03 20:56:10.2780 INFO Jana McLeaf
+2023-07-03 20:56:10.2780 INFO Sam Raiden
+2023-07-03 20:56:11.0309 INFO step 1
+2023-07-03 20:56:11.0310 INFO Jana McLeaf
+2023-07-03 20:56:11.0310 INFO Sam Raiden
+2023-07-03 20:56:11.0310 INFO step 2
+2023-07-03 20:56:11.0310 INFO Jana McLeaf
+2023-07-03 20:56:11.0310 INFO Sam Raiden
+2023-07-03 20:56:19.3313 INFO step 1
+2023-07-03 20:56:19.3313 INFO Jana McLeaf
+2023-07-03 20:56:19.3319 INFO Sam Raiden
+2023-07-03 20:56:19.3319 INFO step 2
+2023-07-03 20:56:19.3319 INFO Jana McLeaf
+2023-07-03 20:56:19.3319 INFO Sam Raiden
+2023-07-03 20:56:46.4173 INFO step 1
+2023-07-03 20:56:46.4255 INFO Jana McLeaf
+2023-07-03 20:56:46.4255 INFO Sam Raiden
+2023-07-03 20:56:46.4311 INFO step 2
+2023-07-03 20:56:46.4311 INFO AspBookApp.Shared.EmployeeDto
+2023-07-03 20:56:46.4311 INFO AspBookApp.Shared.EmployeeDto
+2023-07-03 20:58:12.7950 INFO step 1
+2023-07-03 20:58:12.8023 INFO Jana McLeaf
+2023-07-03 20:58:12.8025 INFO Sam Raiden
+2023-07-03 20:58:12.8077 INFO step 2
+2023-07-03 20:58:12.8077 INFO Jana McLeaf
+2023-07-03 20:58:12.8077 INFO Sam Raiden
+2023-07-03 20:59:17.4709 INFO step 1
+2023-07-03 20:59:17.4783 INFO Jana McLeaf
+2023-07-03 20:59:17.4784 INFO Sam Raiden
+2023-07-03 20:59:17.4837 INFO step 2
+2023-07-03 20:59:17.4837 INFO Jana McLeaf
+2023-07-03 20:59:17.4837 INFO Sam Raiden
+2023-07-03 20:59:35.4241 INFO step 1
+2023-07-03 20:59:35.4315 INFO Jana McLeaf
+2023-07-03 20:59:35.4315 INFO Sam Raiden
+2023-07-03 20:59:35.4372 INFO step 2
+2023-07-03 20:59:35.4372 INFO Jana McLeaf
+2023-07-03 20:59:35.4372 INFO Sam Raiden
+2023-07-03 20:59:48.9143 INFO step 1
+2023-07-03 20:59:48.9216 INFO Jana McLeaf
+2023-07-03 20:59:48.9216 INFO Sam Raiden
+2023-07-03 20:59:48.9270 INFO step 2
+2023-07-03 20:59:48.9270 INFO Jana McLeaf
+2023-07-03 20:59:48.9270 INFO Sam Raiden

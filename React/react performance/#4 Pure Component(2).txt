@@ -1,0 +1,148 @@
+
+App.js
+--------------------
+
+App.js
+
+import ParentComponent from './components5/ParentComponent';
+
+class App extends Component{
+    
+   
+ render(){
+    return (  
+         <div>
+            <ParentComponent />
+         </div>    
+    );
+ }
+ 
+}
+ 
+export default App;
+-----------------------------------------------------
+ParentComponent.js
+
+import React, { Component, PureComponent } from 'react'
+import SimpleComponent from './SimpleComponent'
+import PureComp from './PureComponent'
+
+
+class ParentComponent extends Component {
+
+
+     constructor(props)
+     {
+         super(props)
+
+         this.state={
+             name:'SpiderMan'
+         }
+     }
+
+     changeToBatman=()=>{
+         this.setState({
+             name:'Batman'
+         })
+     }
+
+ /*    shouldComponentUpdate(nextPorps,nextState)
+     {
+         console.log('parent shouldComponentUpdate()')
+          
+         if(this.state.name !== nextState.name)
+          {
+              return true;
+          }
+          return false;
+
+         //return true   mise a jour du render
+         //return false  pas de mise a jour block le render 
+     }
+   */   
+    
+    render() {
+        console.log('render parent')
+        return (
+            <div>
+                <h2>ParentComponent</h2>
+                <SimpleComponent name={this.state.name} />
+                <PureComp name={this.state.name} />
+                <button onClick={this.changeToBatman}>changer en batman</button>
+            </div>
+        )
+    }
+}
+
+export default ParentComponent
+----------------------------------------------------------
+SimpleComponent.js
+
+import React from 'react'
+
+class SimpleComponent extends React.Component{
+
+    render(){
+        console.log('render enfant')
+       return (
+        <div>
+            <h2>SimpleComponent</h2>
+        </div>
+    ) 
+    }
+    
+}
+
+export default SimpleComponent
+
+--------------------------------------------------------------
+PureComponants.js
+
+import React,{PureComponent} from 'react'
+
+class PureComp extends PureComponent{
+
+    render(){
+        console.log('render PureComponant')
+       return (
+        <div>
+            <h2>PureComponent</h2>
+        </div>
+    ) 
+    }
+    
+}
+
+export default PureComp
+
+----------------------------------------------
+->click one
+render parent
+render enfant
+render PureComponant
+
+->click two
+render parent
+render enfant
+render PureComponant
+
+->click tree
+render parent
+render enfant
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

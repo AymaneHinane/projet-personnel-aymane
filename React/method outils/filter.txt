@@ -1,0 +1,12 @@
+- La méthode filter() crée et retourne un nouveau tableau contenant
+tous les éléments du tableau d'origine qui remplissent une 
+condition déterminée par la fonction callback.
+
+exemple:
+
+const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+const result = words.filter(word => word.length > 6);
+
+console.log(result);
+// expected output: Array ["exuberant", "destruction", "present"]

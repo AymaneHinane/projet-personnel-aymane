@@ -1,0 +1,23 @@
+function are object 
+-> method: call,apply...
+-> propriete: length...
+-> prototype -> is empty object + constructore
+
+exemple: function Player(){}
+         console.log(Player.prototype); //Player {}
+
+
+-pour ajouter des methodes au protoype:
+
+Player.prototype={
+   name:"aymane",
+   getFullName:function(){
+     return this.name;
+   }
+}
+Player.prototype.age=21;
+
+NB:
+  console.log(Player.name)//Error
+  console.log(Player.prototype.name) //aymane
+ 

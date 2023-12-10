@@ -1,0 +1,35 @@
+
+class User{
+     constructor(email,name)
+     {
+         this.email=email;  // this refere to the object
+         this.name=name;
+         this.age=0
+     }
+     login(){
+         console.log(this.email +' login')
+         return this;
+     }
+     logout(){
+        console.log(this.email +' logout')
+        return this;
+     }
+}
+
+
+class Admin extends User{
+    deleteUser(user){
+         users=users.filter(u =>{
+             return u.email != user.email
+         })
+    }
+}
+
+var userOne=new User('ryu@ninjas.com','Ryu');
+var userTwo=new User('yoshi@gmail.com','Yoshi');
+var admin=new Admin('admin@gmail.com','yohane')
+
+var users=[userOne,userTwo];
+
+admin.deleteUser(userOne)
+console.log(users)

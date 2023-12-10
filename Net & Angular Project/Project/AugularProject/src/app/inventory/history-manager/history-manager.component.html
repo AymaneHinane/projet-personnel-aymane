@@ -1,0 +1,29 @@
+<div class="container" [style]="{'height':'100vh'}">
+    <div class="row">
+        <div class="col-12">
+            <div [style]="{'border':'none'}" class="card text-center">
+                <div class="card-header">
+                  <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link" routerLinkActive="isActive"  aria-current="true" routerLink="stock" >Modifications sur tableaux</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" routerLinkActive="isActive" routerLink="transfer">Historique des transferts</a>
+                    </li>
+                    <li class="nav-item" *ngIf="productCategory == 'rawMaterial'">
+                      <a class="nav-link " routerLinkActive="isActive" routerLink="delivery">Historique des receptions</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-body">
+                   <router-outlet></router-outlet>
+                </div>
+              </div>
+        </div>
+        <div class="col-12  " [style]="{'position':'absolute','bottom':'0','right':'30px'}">
+          <app-paging></app-paging>
+        </div>
+    </div>
+</div>
+
+

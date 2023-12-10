@@ -1,0 +1,72 @@
+
+<div class="container" *ngIf="transferOperationInfo">
+    <div class="row ">
+        <div class="col">
+            <table class="table" [style]="{'margin-top':'50px'}">
+                <thead>
+                  <tr>
+                    <th scope="col">matricule</th>
+                    <th scope="col">vers</th>
+                    <th scope="col">Total</th>
+                    <th scope="col">envoie</th>
+                    <th scope="col">reception</th>
+                    <th scope="col">poids a la livraison</th>
+                    <th scope="col">poids receptionne</th>
+                    <th scope="col">perte</th>
+                    <th scope="col">bon de sortie</th>
+                    <th scope="col">bon d'entree</th>
+                    <th scope="col">status</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let item of transferOperationInfo">
+                    <th scope="row" [style]="{'min-width':'100px'}">{{item.truckNumber}}</th>
+                    <td [style]="{'min-width':'130px'}">
+                      <!-- <div [style]="{'height':'33px','overflow':'scroll'}"> -->
+                        <span *ngFor="let recipient of item.recipientTransfer" >
+                            {{recipient.name}} / <span [style]="{'color':'green'}">{{recipient.deliveredStock}}T</span><br>
+                        </span>
+                    </td>
+                    <td>{{calculTransferStockTotal(item.recipientTransfer)}}</td>
+                    <td [style]="{'min-width':'100px'}">{{ (item.deliveryDate | date: 'yyyy-MM-dd ') ?? '-' }}</td>
+                    <td [style]="{'min-width':'100px'}">{{ (item.shippedDate | date: 'yyyy-MM-dd ') ?? '-' }}</td>
+                    <td>{{item.exitStockWeight ?? '-' }}</td>
+                    <td>{{item.entryStockWeight ?? '-'}}</td>
+                    <td [style]="{'color':'red'}">{{item.entryStockWeight && item.exitStockWeight ? ( (item.exitStockWeight - item.entryStockWeight) | number:'1.2-2' )   :'-' }}</td>
+                    <td>
+                      <ng-container *ngIf="item.exitVoucherExist">
+                        <a href="transferOperation/{{item.id}}/voucher/exit"> <button type="button" class="btn btn-outline-secondary btn-sm">afficher</button></a>
+                      </ng-container>
+                      <ng-container *ngIf="!item.exitVoucherExist">
+                        -
+                      </ng-container>
+                    </td>
+                    <td>
+                      <ng-container *ngIf="item.entryVoucherExist">
+                        <a href="transferOperation/{{item.id}}/voucher/entry"> <button type="button" class="btn btn-outline-secondary btn-sm">afficher</button></a>
+                      </ng-container>
+                      <ng-container *ngIf="!item.entryVoucherExist">
+                        -
+                      </ng-container>
+                    </td> 
+                    <td [style]="{'min-width':'120px'}">
+                      
+                        <div *ngIf="item.transferStatus == 'delivery'" class="progress" role="progressbar" aria-label="Warning example" >
+                          <div class="progress-bar text-bg-warning" style="width: 50%">en cours</div>
+                        </div>
+                        <div *ngIf="item.transferStatus == 'shipped'" class="progress" role="progressbar" aria-label="Warning example" >
+                          <div class="progress-bar text-bg-success" style="width: 100%">terminer</div>
+                        </div>
+
+                    </td>
+                    <td>
+                       <app-tranfer-details-management-update [transferOperationInfo]="item"></app-tranfer-details-management-update>
+                    </td>
+
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>

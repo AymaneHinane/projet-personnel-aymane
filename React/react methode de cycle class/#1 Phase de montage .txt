@@ -1,0 +1,20 @@
+constructor
+render
+mise a jour du DOM
+componentDidMount: -> pour faire des requetes reseau
+                   -> s'execute une seul fois apres le premier render
+
+
+
+enchainement:
+
+constructor parent
+render parent
+mise a jour du DOM parent
+
+constructor enfant
+render enfant
+mise a jour du DOM enfant
+
+componentDidMount enfant
+componentDidMount parent

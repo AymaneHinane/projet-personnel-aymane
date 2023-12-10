@@ -1,0 +1,61 @@
+
+const car ={
+    name:"fiat",
+    model:500,
+    weight:850,
+    colors:{
+        red:true,
+        green:false,
+    }
+}
+
+
+
+const {name,model} = car;
+console.log(name+" "+model) //fiat 500
+__________________________________________
+
+const {colors}=car;
+console.log(colors);//{colors:{red:true,green:false}}
+__________________________________________
+
+const {colors:{red,green}}=car
+console.log(colors)//color is not defined
+console.log(red+" "+green)//true false 
+__________________________________________
+
+//ajouter une propriete qui n'existe pas dans mon obj
+
+const {
+    colors:{
+        red,
+        green,
+        white=true
+    }
+}=car
+console.log(white) //true
+___________________________________________
+
+
+//modifier le nom d'une key lors du destructuring
+const {
+    colors:{
+        red:redColor,
+        green,
+        white=true
+    }
+}=car
+console.log(red) red is not defined
+console.log(redColor)//true
+___________________________________________
+
+const {
+    colors:{
+        red:redColor=false,
+        green,
+        white=true
+    }
+}=car
+console.log(red) red is not defined
+console.log(redColor)//true 
+//la valeur de red color n'a pas changer

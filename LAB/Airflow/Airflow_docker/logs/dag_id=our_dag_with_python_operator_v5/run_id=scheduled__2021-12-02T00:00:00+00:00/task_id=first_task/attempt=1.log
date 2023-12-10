@@ -1,0 +1,28 @@
+[2023-10-29T16:25:02.684+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: our_dag_with_python_operator_v5.first_task scheduled__2021-12-02T00:00:00+00:00 [queued]>
+[2023-10-29T16:25:02.704+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: our_dag_with_python_operator_v5.first_task scheduled__2021-12-02T00:00:00+00:00 [queued]>
+[2023-10-29T16:25:02.705+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 6
+[2023-10-29T16:25:02.718+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): first_task> on 2021-12-02 00:00:00+00:00
+[2023-10-29T16:25:02.722+0000] {standard_task_runner.py:57} INFO - Started process 9213 to run task
+[2023-10-29T16:25:02.738+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'our_dag_with_python_operator_v5', 'first_task', 'scheduled__2021-12-02T00:00:00+00:00', '--job-id', '2530', '--raw', '--subdir', 'DAGS_FOLDER/create_dag_with_python_operator.py', '--cfg-path', '/tmp/tmpcwuapyvg']
+[2023-10-29T16:25:02.745+0000] {standard_task_runner.py:85} INFO - Job 2530: Subtask first_task
+[2023-10-29T16:25:02.921+0000] {task_command.py:416} INFO - Running <TaskInstance: our_dag_with_python_operator_v5.first_task scheduled__2021-12-02T00:00:00+00:00 [running]> on host 9bb87dc64328
+[2023-10-29T16:25:03.071+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='coder3j' AIRFLOW_CTX_DAG_ID='our_dag_with_python_operator_v5' AIRFLOW_CTX_TASK_ID='first_task' AIRFLOW_CTX_EXECUTION_DATE='2021-12-02T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2021-12-02T00:00:00+00:00'
+[2023-10-29T16:25:03.077+0000] {logging_mixin.py:151} INFO - Hello world!
+[2023-10-29T16:25:03.078+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-10-29T16:25:03.094+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=our_dag_with_python_operator_v5, task_id=first_task, execution_date=20211202T000000, start_date=20231029T162502, end_date=20231029T162503
+[2023-10-29T16:25:03.158+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-10-29T16:25:03.186+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-10-30T14:20:23.891+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: our_dag_with_python_operator_v5.first_task scheduled__2021-12-02T00:00:00+00:00 [queued]>
+[2023-10-30T14:20:23.898+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: our_dag_with_python_operator_v5.first_task scheduled__2021-12-02T00:00:00+00:00 [queued]>
+[2023-10-30T14:20:23.898+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 6
+[2023-10-30T14:20:23.941+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): first_task> on 2021-12-02 00:00:00+00:00
+[2023-10-30T14:20:23.946+0000] {standard_task_runner.py:57} INFO - Started process 1315 to run task
+[2023-10-30T14:20:23.954+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'our_dag_with_python_operator_v5', 'first_task', 'scheduled__2021-12-02T00:00:00+00:00', '--job-id', '3867', '--raw', '--subdir', 'DAGS_FOLDER/create_dag_with_python_operator.py', '--cfg-path', '/tmp/tmpbndu9bqn']
+[2023-10-30T14:20:23.958+0000] {standard_task_runner.py:85} INFO - Job 3867: Subtask first_task
+[2023-10-30T14:20:24.029+0000] {task_command.py:416} INFO - Running <TaskInstance: our_dag_with_python_operator_v5.first_task scheduled__2021-12-02T00:00:00+00:00 [running]> on host 9bb87dc64328
+[2023-10-30T14:20:24.128+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='coder3j' AIRFLOW_CTX_DAG_ID='our_dag_with_python_operator_v5' AIRFLOW_CTX_TASK_ID='first_task' AIRFLOW_CTX_EXECUTION_DATE='2021-12-02T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2021-12-02T00:00:00+00:00'
+[2023-10-30T14:20:24.139+0000] {logging_mixin.py:151} INFO - Hello world! name Jerry age: 23
+[2023-10-30T14:20:24.140+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-10-30T14:20:24.151+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=our_dag_with_python_operator_v5, task_id=first_task, execution_date=20211202T000000, start_date=20231030T142023, end_date=20231030T142024
+[2023-10-30T14:20:24.171+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-10-30T14:20:24.186+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,38 @@
+
+<div class="container" [style]="{'margin-top':'20px'}">
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Numero</th>
+                    <th scope="col">date</th>
+                    <th scope="col">categorie</th>
+                    <th scope="col">Montant HT</th>
+                    <th scope="col">Montant TTC</th>
+                    <th>Situation</th>
+                    <th>facture PDF</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let invoice of invoices">
+                    <th scope="row">{{invoice.invoiceNumber}}</th>
+                    <td>{{invoice.date | date: 'yyyy-MM-dd '}}</td>
+                    <td>{{invoice.category}}</td>
+                    <td>{{invoice.excl_taxes}}</td>
+                    <td>{{invoice.incl_taxes}}</td>
+                    <td></td>
+                    <td>
+                        <!-- <button type="button" class="btn btn-success">visionnez</button> -->
+                        <app-invoice-pdf  [invoiceId]="invoice.id"></app-invoice-pdf>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
+
+
+
+

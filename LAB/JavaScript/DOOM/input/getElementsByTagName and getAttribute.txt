@@ -1,0 +1,4 @@
+var input=document.getElementsByTagName("input");
+//<input type="text" name="stockage"></input>
+console.log(input.item(0).getAttribute("name"));
+//stockage

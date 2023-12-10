@@ -1,0 +1,37 @@
+const student={
+  name:"aymane",
+  age:21,
+  school:"Emsi"
+}
+
+let studentCopy={...student};
+
+const {name,...otherParam}=student
+
+console.log(name) //aymane
+console.log(otherParam.age)//21
+
+
+const {name:prenom}=student
+console.log(prenom) //aymane
+
+______________________________________________
+--to modify object value
+
+const student={
+    name:"aymane",
+    age:21,
+    school:"Emsi"
+  }
+  
+
+  const NewStudent={
+    ...student,
+    age:32
+ }
+ 
+ console.log(NewStudent) //{name: "aymane", age: 32, school: "Emsi"}
+
+
+
+

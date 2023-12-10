@@ -1,0 +1,5 @@
+--to return parent node of an childnod
+  childnod.parentNode
+          .parentElement ---> return null if the parent not exist
+
+

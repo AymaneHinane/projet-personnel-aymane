@@ -1,0 +1,106 @@
+// c'est une fonction qui accepte un composant et renvoie un nouveau composant amelliorer
+
+App.js
+
+import Vegeta from './componentsup/Vegeta';
+import Goku from './componentsup/Goku';
+class App extends Component{
+  
+    
+   state={
+     Goku:100,
+     Vegeta:100
+   }
+
+  render(){
+      
+    return (
+    <div className="App">
+          <Vegeta name="Vegeta" life={this.state.Vegeta}/>
+          <Goku name="Goku" life={this.state.Goku}/>
+    </div>
+  );
+  }
+  
+}
+
+export default App;
+
+--------------------------------------------------------------------
+Vegeta.js
+
+import React, { Component } from 'react'
+import countHits from './countHits'
+
+
+class Vegeta extends Component {
+
+    
+
+    render() {
+     const {name,addOneHit,hocsState,life}=this.props
+
+        return (
+            <div>
+                <p>{name}</p>
+                <button onClick={addOneHit}>{name} Frapper</button>
+                <p>{hocsState.hits} {life}</p>
+            </div>
+        )
+    }
+}
+
+export default countHits(Vegeta) 
+
+--------------------------------------------------------------------
+
+countHits.js
+
+import React,{Component} from 'react'
+
+const countHits=(WrappedComponent)=>{
+
+
+ class CountHits extends Component{
+
+    state={
+        hits:this.props.life
+    }
+   
+    addOne=()=>{
+        this.setState((prevState)=>{
+            return {
+                hits:prevState.hits-10
+            }
+        })
+    }
+
+      render(){
+          return(
+              <WrappedComponent addOneHit={this.addOne} hocsState={this.state} {...this.props}/>
+          )
+      }
+ }
+
+
+    return CountHits
+       
+ }
+
+
+export default countHits
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

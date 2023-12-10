@@ -1,0 +1,25 @@
+//dans une seule ligne
+
+//JavasScript
+  const get=function(name){
+      return "hello"+name
+     }
+     
+//JavasScript ES6
+   const get= name => 
+      "hello"+name
+
+---------with two params--------
+   const get= (name,prenom) =>
+            {
+               console.log("hello"+name)
+               console.log("hello"+prenom)
+             } 
+---------without params----------
+const sayHey= () => "Hey!"  
+
+--------function return object-----------    
+const getStudent= () => ({
+   age:34,
+   fullName:"aymane hinane"
+})

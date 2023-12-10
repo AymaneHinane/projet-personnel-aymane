@@ -1,0 +1,44 @@
+
+let studentInfo={
+    firstName:"Arbaoui",
+    lastName:"Mehdi",
+};
+
+//Property - Data
+Object.defineProperty(studentInfo,"college",{
+    value:"Emsi",
+    writable:false,  //true:  La propriete peut etre modifier
+                     //false: La propriete ne peut pas etre modifier
+    enumerable:true, //true -->  firstName lastName college
+                     //false --> firstName lastName
+    configurable:false //true: je peux supprimer la propriete
+                       //false: je ne peut pas supprimer la propriete
+});                    
+
+studentInfo.college="SAFIR"
+console.log(studentInfo.college) //SAFIR
+
+for(const key in studentInfo)
+{
+    console.log(key)  //firstName
+                      //lastName
+                      //college
+}
+
+delete studentInfo.college
+console.log(studentInfo) //{firstName: "Arbaoui", lastName: "Mehdi", college: "Emsi"}
+
+//Property - Accessor
+Object.defineProperty(studentInfo,"age",{
+    get(){
+         return this._age
+    },
+    set(value){
+        this._age=value
+    },
+    // enumerable:false 
+    // value:0 --> error
+})
+
+studentInfo.age=20
+console.log(studentInfo.age) //20

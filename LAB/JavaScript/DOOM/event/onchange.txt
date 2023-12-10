@@ -1,0 +1,12 @@
+The onchange event occurs when the value of an element has been changed.
+<select onchange="myFunction()">
+
+//recuperer la valeur d'un input range on temp reel
+//var element = document.querySelector("form[name='second'] input[name='secondText']");
+var range = document.querySelector("input[name='volume']");
+range.onchange=function()
+{
+    var rangevalue=range.value;
+    console.log(rangevalue)
+}
+

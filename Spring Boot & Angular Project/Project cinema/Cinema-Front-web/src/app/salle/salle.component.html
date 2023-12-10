@@ -1,0 +1,65 @@
+
+
+<div class="card" >
+    <div class="card-header">
+      {{salle.name}}  {{salle.projections._embedded.projections[0].film.titre}}
+      <!-- salle.projections._embedded.projections[0].film.titre -->
+      
+    </div>
+    <div class="card-body" *ngIf="salle.projections">
+     
+        <div class="row">
+            <div class="col-4">
+                 <img src="{{cinemaService.host+'/images/'+salle.projections._embedded.projections[0].film.photo}}" width="100%" />                
+            </div>
+            <div class="col-8">
+                <div class="card" >
+                    <div class="card-header">
+                      Seances
+                    </div>
+                    <ul class="list-group list-group-flush" >
+                      <li (click)="onGetTicketsPlaces(p)" *ngFor="let p of salle.projections._embedded.projections" [ngClass]="{'list-group-item':true,'active':currentProjection && currentProjection.id == p.id}">
+                        {{p.seance.heureDebut}} => Prix: {{p.prix|number:'0.00'}} DH
+                    </li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row" *ngIf="currentProjection">
+            <!-- <div *ngIf="salle.id == currentProjection.salle.id">  btn btn-primary -->
+                <!-- {{t.selected == true?'disabled':''}} -->
+              <button (click)="onSelectTicket(t)"  class="col {{getTicketClass(t)}} " [ngStyle]="{margin:'5px 5px'}" *ngFor="let t of currentProjection.tickets._embedded.tickets">
+                {{t.place.numero}}
+              </button>
+        </div>
+
+        <br>
+      <div *ngIf="selectedTickets">
+
+        <div *ngIf="selectedTickets.length > 0">
+          <div class="row">
+            <form #f="ngForm" (ngSubmit)="onPayTickets(f.value)">
+                <div class="form-group">
+                    <label class="control-label">Nom client</label>
+                    <input class="form-control" type="text" name="nomClient" ngModel/>
+                </div>
+                <div>
+                    <label class="control-label">Code payment</label>
+                    <input class="form-control" type="text" name="codePayment" ngModel/>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-success">Payer</button>
+            </form>
+          </div>
+      </div>
+
+    </div>
+
+    </div>
+  </div>
+
+
+

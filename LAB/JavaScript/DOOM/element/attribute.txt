@@ -1,0 +1,10 @@
+
+var a=document.querySelector('a')
+//--to set attribute
+console.log(a.getAttribute('href'))//hello.com
+//to modifyattribute
+a.setAttribute('href','goby.com')
+
+var input=document.querySelector('input')
+console.log(input.getAttribute('type'))//text
+input.setAttribute('type','password')

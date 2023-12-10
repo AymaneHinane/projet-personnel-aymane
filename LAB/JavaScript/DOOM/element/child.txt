@@ -1,0 +1,20 @@
+--to return the last child
+  .lastElementChild  or   lastChild
+
+--remove child
+   parent.removeChild(child)
+
+--to remove the children how has the index
+  parent.removeChild(parent.childNodes[0])
+
+--to delete the first child
+  parent.removeChild(parent.firstChild)
+--to delete the last child
+  parent.removeChild(parent.lastChild)
+
+--to delete all child element 
+  parent.innerHTML = ' '
+
+
+
+const index=Array.from(parent.children).indexOf(child)

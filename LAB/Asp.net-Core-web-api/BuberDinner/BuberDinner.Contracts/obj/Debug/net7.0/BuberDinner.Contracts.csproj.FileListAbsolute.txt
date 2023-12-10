@@ -1,0 +1,12 @@
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/BuberDinner/BuberDinner.Contracts/bin/Debug/net7.0/BuberDinner.Contracts.deps.json
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/BuberDinner/BuberDinner.Contracts/bin/Debug/net7.0/BuberDinner.Contracts.dll
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/BuberDinner/BuberDinner.Contracts/bin/Debug/net7.0/BuberDinner.Contracts.pdb
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/BuberDinner/BuberDinner.Contracts/obj/Debug/net7.0/BuberDinner.Contracts.csproj.AssemblyReference.cache
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/BuberDinner/BuberDinner.Contracts/obj/Debug/net7.0/BuberDinner.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/BuberDinner/BuberDinner.Contracts/obj/Debug/net7.0/BuberDinner.Contracts.AssemblyInfoInputs.cache
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/BuberDinner/BuberDinner.Contracts/obj/Debug/net7.0/BuberDinner.Contracts.AssemblyInfo.cs
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/BuberDinner/BuberDinner.Contracts/obj/Debug/net7.0/BuberDinner.Contracts.csproj.CoreCompileInputs.cache
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/BuberDinner/BuberDinner.Contracts/obj/Debug/net7.0/BuberDinner.Contracts.dll
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/BuberDinner/BuberDinner.Contracts/obj/Debug/net7.0/refint/BuberDinner.Contracts.dll
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/BuberDinner/BuberDinner.Contracts/obj/Debug/net7.0/BuberDinner.Contracts.pdb
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/BuberDinner/BuberDinner.Contracts/obj/Debug/net7.0/ref/BuberDinner.Contracts.dll

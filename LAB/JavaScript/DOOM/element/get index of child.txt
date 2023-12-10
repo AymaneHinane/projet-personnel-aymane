@@ -1,0 +1,3 @@
+const parent=e.parentElement.parentElement.parentElement
+const child=e.parentElement.parentElement  
+const index=Array.from(parent.children).indexOf(child)

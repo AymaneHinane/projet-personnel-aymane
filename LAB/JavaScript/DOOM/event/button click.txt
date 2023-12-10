@@ -1,0 +1,7 @@
+btn.addEventListener('click',buttonClicked);
+
+function buttonClicked(ev){
+    console.log(ev.type) //click
+    console.log(ev.target)//<button id="btn">Button</button>
+    console.log(ev.currentTarget)//<button id="btn">Button</button>
+}

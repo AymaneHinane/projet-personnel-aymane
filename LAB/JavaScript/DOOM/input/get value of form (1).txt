@@ -1,0 +1,42 @@
+/*
+const nom=form.querySelector('input[name=nom]')
+const auteur=form.querySelector('input[name=auteur]')
+
+const genre=form.querySelector('select')
+genre.addEventListener('change',function(){
+   
+   switch(this.value)
+   { 
+       case '0':
+        console.log('no choise')
+       break;
+
+       case '1':
+           console.log('romance')
+        break;
+           
+       case '2':
+        console.log('histoque')
+       break;
+        
+       case '3':
+        console.log('nouvelle')
+       break;
+        
+       case '4':
+        console.log('comedy')
+       break;
+   }
+})
+
+
+const prix=form.querySelector('input[name=prix]')
+prix.onchange=function(){
+    console.log(prix.value)
+}
+
+const qte=form.querySelector('input[name=qte]')
+qte.onchange=function(){
+    console.log(qte.value) 
+}
+*/

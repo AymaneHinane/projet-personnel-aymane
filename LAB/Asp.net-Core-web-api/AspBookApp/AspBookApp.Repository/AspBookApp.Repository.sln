@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1706.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspBookApp.Repository", "AspBookApp.Repository.csproj", "{64284FAB-E4E5-44C1-8ED3-D66E6F9D8CE6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64284FAB-E4E5-44C1-8ED3-D66E6F9D8CE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64284FAB-E4E5-44C1-8ED3-D66E6F9D8CE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64284FAB-E4E5-44C1-8ED3-D66E6F9D8CE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64284FAB-E4E5-44C1-8ED3-D66E6F9D8CE6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A79E5A4E-981B-484D-9DB2-E0708180474B}
+	EndGlobalSection
+EndGlobal

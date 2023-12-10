@@ -1,0 +1,62 @@
+//pour passer un ref comme props a  UI component
+// pour passer un ref depuis un composant parent de type class a un
+// composant de type enfant function comme un props 
+//afin de pointer sur des composant html: input,p,h1,div
+//est pour les manipuler depuis le parent
+
+import React,{Component} from 'react'
+import MyRef from './components/MyRef';
+import './App.css';
+
+
+class App extends Component{
+  
+  constructor(props){
+    super(props)
+
+    this.refComp=React.createRef();
+  }
+  
+   handleClick=()=>{
+
+       console.log(this.refComp.current)
+       this.refComp.current.focus()
+   }
+
+  render(){
+      
+    return (
+    <div className="App">
+         
+         <MyRef name="Toto" ref={this.refComp}/>
+
+         <button onClick={this.handleClick}>Valider</button>
+         
+    </div>
+  );
+  }
+  
+}
+
+export default App;
+
+--------------------------------------------------------------------------
+
+import React, { Component } from 'react'
+
+
+
+const MyRef= React.forwardRef((props,ref)=>{
+
+       return (
+            <div>
+                <input ref={ref} type="text"  />
+            </div>
+        )
+
+})
+        
+
+
+export default MyRef
+

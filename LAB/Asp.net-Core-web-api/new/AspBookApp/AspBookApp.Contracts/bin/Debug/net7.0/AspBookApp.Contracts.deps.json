@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "AspBookApp.Contracts/1.0.0": {
+        "dependencies": {
+          "AspBookApp.Entities": "1.0.0",
+          "AspBookApp.Shared": "1.0.0"
+        },
+        "runtime": {
+          "AspBookApp.Contracts.dll": {}
+        }
+      },
+      "AspBookApp.Entities/1.0.0": {
+        "runtime": {
+          "AspBookApp.Entities.dll": {}
+        }
+      },
+      "AspBookApp.Shared/1.0.0": {
+        "runtime": {
+          "AspBookApp.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AspBookApp.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AspBookApp.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AspBookApp.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,78 @@
+//pour manipuler un element du DOM
+//pour acceder au methode d'un composant enfant de type class
+
+class App extends Component{
+  
+  constructor(props){
+    super(props)
+
+    this.refComp=React.createRef();
+  }
+  
+   handleClick=()=>{
+     console.log(this.refComp.current)
+       this.refComp.current.addFocus()
+   }
+
+  render(){
+      
+    return (
+    <div className="App">
+         
+         <MyRef ref={this.refComp}/>
+
+         <button onClick={this.handleClick}>Valider</button>
+         
+    </div>
+  );
+  }
+  
+}
+
+________________________________________________________________
+
+
+class MyRef extends Component {
+
+    constructor(props)
+    {
+        super(props)
+
+        this.state = {
+            value:''
+        }
+
+        this.myTitle = React.createRef();  
+        this.MyInput=React.createRef();
+    }
+    
+    update= (e)=>{
+        this.setState({
+            value:e.target.value
+        })
+    }
+    
+    addFocus = ()=>{
+        this.MyInput.current.focus();
+    }
+
+
+    componentDidMount()
+    {
+        this.MyInput.current.focus();
+    }
+
+   componentDidUpdate(prevProps, prevState) {
+       this.myTitle.current.style.color='red';
+   }
+   
+
+    render() {
+        return (
+            <div>
+                <h1 ref={this.myTitle}>Valeur: {this.state.value}</h1>
+                <input ref={this.MyInput} type="text" value={this.state.value} onChange={this.update} />
+            </div>
+        )
+    }
+}

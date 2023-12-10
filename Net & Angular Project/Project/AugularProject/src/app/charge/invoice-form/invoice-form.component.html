@@ -1,0 +1,67 @@
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-success shadow" data-bs-toggle="modal" data-bs-target="#exampleModal"
+[style]="{'float':'right','margin':'30px 15px 0px 0px'}">
+  ajouter nouvelle une facture
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+
+  <div class="container">
+    <div class="row">
+        <div class="col-12">
+
+            <form (ngSubmit)="submitForm()" enctype="multipart/form-data">
+                <div class="form-group">
+                  <label for="InvoiceNumber">Invoice Number</label>
+                  <input type="text" class="form-control" id="InvoiceNumber" name="InvoiceNumber" [(ngModel)]="formData.InvoiceNumber" required>
+                </div>
+                <div class="form-group">
+                  <label for="Excl_taxes">Excl Taxes</label>
+                  <input type="number" class="form-control" id="Excl_taxes" name="Excl_taxes" [(ngModel)]="formData.Excl_taxes" required>
+                </div>
+                <div class="form-group">
+                  <label for="Incl_taxes">Incl Taxes</label>
+                  <input type="number" class="form-control" id="Incl_taxes" name="Incl_taxes" [(ngModel)]="formData.Incl_taxes" required>
+                </div>
+                <br>
+                <div class="form-group" *ngIf="invoiceCategory">
+                  <select class="form-select" aria-label="Default select example"  name="InvoiceCategoryId" [(ngModel)]="formData.InvoiceCategoryId">
+                    <option disabled selected> choisiser une category</option>
+                    <option *ngFor="let category of invoiceCategory" [value]="category.id"  selected>{{category.category}}</option>
+                  </select>
+                </div>
+                <br>
+                <div class="form-group">
+                  <label for="InvoicePdf">Facture PDF :</label>
+                  <input type="file" class="form-control-file" id="InvoicePdf" name="InvoicePdf" (change)="onFileChange($event)" accept=".pdf" required>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+              </form>
+              
+        </div>
+    </div>
+</div>      
+
+
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+

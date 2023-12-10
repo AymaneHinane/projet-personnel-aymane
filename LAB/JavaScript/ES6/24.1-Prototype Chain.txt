@@ -1,0 +1,58 @@
+function Vehicule(name,year){
+    this.name=name;
+    this.year=year;
+  }
+  
+  Vehicule.prototype.getType=function(){
+      console.log("vehicule")
+  }
+
+  function Car(name,year){
+      Vehicule.call(this,name,year)
+  }
+
+
+
+  Car.prototype.start=function(){
+    console.log(`${this.name} ${this.year} is starting`);
+  }
+  
+  
+  const car_1=new Car("Mercedes",2019);
+  const car_2=new Car("dacia",2012);
+  car_1.start();
+  car_1.getType(); 
+  car_2.start();
+ 
+________________________________________________________
+
+//Sportcar ------> Car ------> VehiculeCar  
+---------------------------
+function Vehicule(){}
+Vehicule.prototype.getType=function(){
+    console.log("vehicule")
+}
+
+-------------------------------
+function Car(){}
+Car.prototype.start=function(){
+    console.log("the Car is starting")
+}
+Car.prototype.getType=function(){
+    console.log("Car")
+}
+
+Car.prototype=Object.create(Vehicule.prototype);
+
+function Sportcar() {}
+Sportcar.prototype.getType=function(){
+    console.log("Sportcar")
+}
+-----------------------------
+
+Sportcar.prototype=Object.create(Car.prototype);
+----------------------
+const c1 = new Sportcar();
+c1.getType(); //vehicule
+
+

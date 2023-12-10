@@ -1,0 +1,20 @@
+constructor(props) {
+  super(props);
+  // N’appelez pas `this.setState()` ici !
+  this.state = { counter: 0 };
+  this.handleClick = this.handleClick.bind(this);
+}
+
+handleClick() {
+    this.setState(state => ({
+      isToggleOn: !state.isToggleOn
+    }));
+  }
+
+render() {
+    return (
+      <button onClick={this.handleClick}>
+        {this.state.isToggleOn ? 'ON' : 'OFF'}
+      </button>
+    );
+  }

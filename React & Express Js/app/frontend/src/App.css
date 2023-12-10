@@ -1,0 +1,7 @@
+.border-red{
+  border: 2px solid rgb(244, 80, 80);
+}
+
+.row > *{
+  padding-left:0;
+}

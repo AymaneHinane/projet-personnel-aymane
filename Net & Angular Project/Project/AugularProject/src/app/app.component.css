@@ -1,0 +1,17 @@
+
+
+.borderRed{
+    border: red 1px solid;
+}
+
+.borderGreen{
+    border: rgb(79, 220, 66) 1px solid;
+
+}
+
+.row>* {
+   padding-left: 0;
+   padding-right: 0;
+}
+
+

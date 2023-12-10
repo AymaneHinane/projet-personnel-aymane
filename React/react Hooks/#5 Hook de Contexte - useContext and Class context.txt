@@ -1,0 +1,80 @@
+MyContent.js
+
+import React from 'react'
+
+const userContext = React.createContext();
+const ColorContext = React.createContext();
+
+export {userContext,ColorContext};
+
+-------------------------------------------------------
+
+import React,{Component} from 'react'
+import Profile from './components3/Profile';
+import {userContext,ColorContext} from './components3/MyContent'
+
+
+class App extends Component{
+    
+    state={
+      user:{
+        name: 'Lisa',
+        age:8
+      }
+
+    }
+ render(){
+    return (
+    <userContext.Provider  value={this.state.user}>
+      <ColorContext.Provider value={'red'}>
+         <Profile />
+      </ColorContext.Provider>    
+    </userContext.Provider>
+        
+    
+  );
+ }
+ 
+}
+ 
+export default App;
+
+--------------------------------------------------------------------
+
+import React, { Component } from 'react'
+import ContentData from './ContentData'
+import {userContext} from './MyContent'
+
+class ProfileData extends Component {
+    render() {
+         let value=this.context;
+        return (
+            <div>
+                <h1>ProfileData {value.name}</h1>
+                <ContentData />
+            </div>
+        )
+    }
+}
+ProfileData.contextType=userContext;
+
+export default ProfileData
+
+---------------------------------------------------------------------
+
+import React,{useContext} from 'react'
+import {userContext,ColorContext} from './MyContent'
+
+const ContentData=()=>{
+     
+    const user = useContext(userContext);
+    const color = useContext(ColorContext);
+
+    return (
+        <div>
+            <h1 style={{color:color}}> {user.name}</h1>
+        </div>
+    )
+}
+
+export default ContentData

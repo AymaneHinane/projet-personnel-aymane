@@ -1,0 +1,75 @@
+JavaScript est souvent décrit comme un langage basé sur les prototypes, chaque objet pouvant avoir un prototype
+ objet d'où il hérite des méthodes et des attributs. Un prototype peut lui aussi avoir son prototype objet duquel 
+il héritera des méthodes et des attributs et ainsi de suite. On parle alors de chaîne de prototypage (ou prototype chain en anglais).
+ Cela permet d'expliquer pourquoi différents objets possèdent des attributs et des méthodes définis à partir d'autres objets.
+
+En réalité, les méthodes et attributs sont définis dans l'attribut prototype , la fonction constructrice de l'objet et non pas dans les instances des objets elles-mêmes.
+
+En programmation orientée objet classique, les classes sont définies, puis lorsque des instances sont créées, l'ensemble des attributs et des méthodes sont copiés 
+dans l'instance. En JavaScript en revanche, tout n'est pas copié : on établit un lien entre l'objet instancié et son constructeur (c'est un lien dans la chaîne de prototypage).
+On détermine alors les méthodes et les attributs en remontant la chaîne.
+_______________
+
+function Car(name,year){
+    this.name=name;
+    this.year=year;
+  }
+  
+  Car.prototype.start=function(){
+    console.log(`${this.name} ${this.year} is starting`);
+  }
+  
+  
+  const car_1=new Car("Mercedes",2019);
+  const car_2=new Car("dacia",2012);
+  car_1.start();
+  car_2.start();
+ 
+console.log(Car.isPrototypeof(car_1));
+
+
+
+___________________________________________
+function Gamer(){}
+
+Gamer.prototype ---> by default prototype is empty
+____________________________________________
+
+
+const engine ={
+    type:"v8"
+}
+
+function Browser(name){
+    this.name=name;
+}
+
+Browser.prototype=engine;
+
+const browser=new Browser("google chrome")
+
+console.log(engine.isPrototypeOf(browser)) //true
+console.log(Object.getPrototypeOf(browser)) //{type: "v8"}
+
+console.log(Object.getPrototypeOf(browser) === engine) //true
+console.log(browser.__proto__ === engine) //true
+
+//est se que cette propriete appartient directment a cett function  
+console.log(Browser.hasOwnProperty("engine")) //false
+console.log(Browser.hasOwnProperty("name"))  //true
+
+console.log(Browser.prototype.isPrototypeOf(browser)) //true
+console.log(browser instanceof Browser) //true
+
+
+
+
+
+
+
+
+
+
+
+
+  

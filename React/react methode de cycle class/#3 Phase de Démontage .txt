@@ -1,0 +1,56 @@
+
+class App extends Component{
+  
+   state={
+     visible:true
+   }
+
+  render(){
+    return (
+    <div className="App">
+       {this.state.visible&&<LifeCycle></LifeCycle>}
+
+     <button onClick={()=>this.setState({visible:false})}>Cliquer ici</button>
+    </div>
+  );
+  }
+  
+}
+
+
+
+-----------------------------------------
+
+
+class LifeCycle extends Component {
+
+    constructor(props)
+    {
+        super(props)
+        console.log('constructor parent')
+        this.state= {
+            step:1
+        }
+    }
+
+
+    componentWillUnmount() {
+        console.log('je suis dans componentWillUnmout()')
+    } 
+     
+
+
+
+    render() { 
+        console.log('render')
+        return (
+            <div>
+               
+                bonjour
+                
+            </div>
+        )
+    }
+}
+
+

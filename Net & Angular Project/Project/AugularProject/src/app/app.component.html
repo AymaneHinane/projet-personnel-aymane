@@ -1,0 +1,64 @@
+
+
+<div class="container-fluid" >
+    <div class="row no-gutters min-vh-100">
+
+        <div class="col-2" *ngIf="loggedIn">       
+          <app-header-page></app-header-page>
+        </div>
+
+        <div [class]="loggedIn ?'col-10':'col-12'" [style]="{'min-height':'1000px','background-color':'white'}"> 
+
+            <!-- <nav class="navbar shadow-sm" style="background-color: #2e2b2b">
+              <div class="container-fluid" [style]="{'padding':'0px'}">
+              
+                <div class="row " [style]="{'width':'100%'}">
+                  <div class="col-11">
+                    <h2 [style]="{'color':'#3ab56c','margin-left':'13px','font-weight': 'bold'}">
+                      Green 
+                      <img [style]="{'width':'30px'}" src="https://www.pngfind.com/pngs/m/59-597457_green-leaves-logo-leaves-png-transparent-png.png"/>
+                      Tech
+                    </h2>
+                  </div>
+                  <div class="col-1 align-self-end" [style]="{'margin-right':'10px'}" *ngIf="loggedIn">
+                    <button [style]="{'width':'100%'}"  class="btn btn-sm btn-outline-danger" type="button"  (click)="logout()">logout</button> 
+                  </div>
+                  <div class="col-1 align-self-end" *ngIf="!loggedIn">
+                    <button [style]="{'width':'100%'}"  class="btn btn-sm btn-outline-success" type="button" routerLink="login">login</button> 
+                  </div>
+                </div>
+              </div>
+            </nav> -->
+
+            <nav class="navbar bg-body-tertiary">
+              <div class="container-fluid">
+                <a class="navbar-brand">
+                  <h2 *ngIf="!identity else welcome" [style]="{'color':'#3ab56c','margin-left':'13px','font-weight': 'bold'}">
+                    Green 
+                    <img [style]="{'width':'30px'}" src="https://www.pngfind.com/pngs/m/59-597457_green-leaves-logo-leaves-png-transparent-png.png"/>
+                    Tech
+                  </h2>
+                  <ng-template #welcome>
+                     <h4>welcome {{identity}}</h4>
+                  </ng-template>
+                </a>
+                <form class="d-flex" role="search">
+                  <div  [style]="{'margin-right':'10px'}" *ngIf="loggedIn">
+                    <button [style]="{'width':'100%'}"  class="btn btn-sm btn-outline-danger" type="button"  (click)="logout()">logout</button> 
+                  </div>
+                  <div  *ngIf="!loggedIn">
+                    <button [style]="{'width':'100%'}"  class="btn btn-sm btn-outline-success" type="button" routerLink="login">login</button> 
+                  </div>
+                </form>
+              </div>
+            </nav>
+
+            <app-alert-info></app-alert-info>
+            <router-outlet></router-outlet>
+
+        </div>
+
+    </div>
+</div>
+
+

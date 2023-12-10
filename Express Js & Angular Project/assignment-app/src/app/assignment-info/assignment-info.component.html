@@ -1,0 +1,27 @@
+
+
+
+
+
+
+
+<mat-card class="example-card" [ngStyle]="{'margin-top':'100px'}">
+    <mat-card-header>
+      <mat-card-title-group>
+        <mat-card-title>{{assignment?.nom}}</mat-card-title>
+        <br>
+        <mat-card-subtitle>
+            {{assignment?.description}}
+            <br>
+            <br>
+            <span [ngStyle]="{'color':'blue'}">{{assignment?.date_rendu | date:'dd/MM/yyyy' }} </span>
+            -
+            <span [ngStyle]="{'color':assignment?.rendu?'green':'red'}">{{assignment?.rendu?'rendu':'non rendu'}}</span>
+        </mat-card-subtitle>
+        <img mat-card-sm-image src="https://savedelete.com/wp-content/uploads/2018/06/assignment.jpg" >
+      </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-content>
+     
+    </mat-card-content>
+</mat-card>

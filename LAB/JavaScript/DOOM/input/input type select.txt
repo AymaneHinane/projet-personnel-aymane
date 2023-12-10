@@ -1,0 +1,30 @@
+    <form action="">
+        <select>
+           <option value="1">Choix 1</option>
+           <option value="2">Choix 2</option>
+           <option value="3">Choix 3</option>
+        </select>
+    </form>
+    
+    ----------------------------------------------------
+
+var list = document.querySelector('select')
+console.log(list)
+
+var tab=[]
+list.addEventListener('change',function(){
+  console.log('infdex: '+this.selectedIndex)
+  console.log('value: '+this.value)
+  tab.push(this.selectedIndex);
+  console.log(tab)
+})
+
+//pour se positionner sur un choix 
+list.selectedIndex=2
+
+//pour creer un nouveaux choix 
+var option4 = new Option('Choix 4','4');
+var elt = document.querySelector('select');
+elt.options[elt.options.length] = option4;
+
+

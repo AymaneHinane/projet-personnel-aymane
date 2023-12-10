@@ -1,0 +1,28 @@
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <table class="table table-borderless">
+                <thead>
+                  <tr>
+                    <th scope="col">colonne</th>
+                    <th scope="col">valeur precedente</th>
+                    <th scope="col">nouvele valeur</th>
+                    <th scope="col">date</th>
+                    <th>product</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let history of stockChangeHistories">
+                    <th scope="row" [style]="{'text-align':'start'}">{{history.propertyNameFr}}</th>
+                    <td>{{history.oldValue}}</td>
+                    <td>{{history.newValue}}</td>
+                    <td>{{history.updatedDate| date:'yyyy-MM-dd HH:mm:ss' }}</td>
+                    <td>{{history.productName}}</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>

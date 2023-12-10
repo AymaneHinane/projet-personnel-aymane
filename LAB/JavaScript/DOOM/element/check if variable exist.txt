@@ -1,0 +1,7 @@
+if (elem) { // or !elem
+or
+
+if (typeof(elem) !== 'undefined') {
+or
+
+if (elem != null) {

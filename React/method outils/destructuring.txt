@@ -1,0 +1,41 @@
+
+var tab=["aymane","yohane","justine","mark"]
+
+var [user1,user2,...rest]=tab;
+//user1 --> aymane
+//user2 --> yohane
+//rest  --> ["justine","mark"]
+
+-----------------------------------------------
+-----------------------------------------------
+
+var members={
+  userOne:"Mark",
+  userTwo:"Lea",
+  userThree:"Justine",
+  userFore:"leina",
+  userFive:"yohane"
+}
+
+const {userOne:One,userTwo,userThree,...rest}=members
+console.log(rest) //{userFore:"leina",userFive:"yohane"} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

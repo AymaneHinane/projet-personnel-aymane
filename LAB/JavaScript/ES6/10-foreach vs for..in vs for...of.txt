@@ -1,0 +1,29 @@
+const numbers=[45,78,95,36,47];
+//ES5
+//foreach return une fonction callback
+numbers.forEach((number,index)=>{
+    console.log(number) //45 78 95 36 47
+    console.log(index) // 0 1 2 3 4 
+    //break; error
+    //return false; error
+});
+
+//ES6
+//for in
+//meme avec le const index vat s'incrementer car a chaque itteration 
+//elle vat me cree un nouveau 'scoop'
+for(const index in numbers)
+{
+    console.log(index) //0 1 2 3 4
+    console.log(typeof index) //string string string string string 
+    console.log(numbers[index])//45 78 95 36 47
+}
+// au final j'aurais 5 scoop
+
+//for of
+// elle accepte break et return false
+// au contraire de foreach qui ne l'est accepte pas !!!
+for(const number of numbers){
+    console.log(number) //45 78 95 36 47
+}
+ 

@@ -1,0 +1,3 @@
+componentDidMount(){
+        console.log(this.props.match.params.profileId)
+    }

@@ -1,0 +1,15 @@
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Service.Contracts/bin/Debug/net7.0/AspBookApp.Service.Contracts.deps.json
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Service.Contracts/bin/Debug/net7.0/AspBookApp.Service.Contracts.dll
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Service.Contracts/bin/Debug/net7.0/AspBookApp.Service.Contracts.pdb
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Service.Contracts/bin/Debug/net7.0/AspBookApp.Shared.dll
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Service.Contracts/bin/Debug/net7.0/AspBookApp.Shared.pdb
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Service.Contracts/obj/Debug/net7.0/AspBookApp.Service.Contracts.csproj.AssemblyReference.cache
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Service.Contracts/obj/Debug/net7.0/AspBookApp.Service.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Service.Contracts/obj/Debug/net7.0/AspBookApp.Service.Contracts.AssemblyInfoInputs.cache
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Service.Contracts/obj/Debug/net7.0/AspBookApp.Service.Contracts.AssemblyInfo.cs
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Service.Contracts/obj/Debug/net7.0/AspBookApp.Service.Contracts.csproj.CoreCompileInputs.cache
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Service.Contracts/obj/Debug/net7.0/AspBookApp.Service.Contracts.csproj.CopyComplete
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Service.Contracts/obj/Debug/net7.0/AspBookApp.Service.Contracts.dll
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Service.Contracts/obj/Debug/net7.0/refint/AspBookApp.Service.Contracts.dll
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Service.Contracts/obj/Debug/net7.0/AspBookApp.Service.Contracts.pdb
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Service.Contracts/obj/Debug/net7.0/ref/AspBookApp.Service.Contracts.dll

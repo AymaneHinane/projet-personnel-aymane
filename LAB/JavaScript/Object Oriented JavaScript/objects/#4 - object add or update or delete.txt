@@ -1,0 +1,73 @@
+const student={
+    name:"aymane",
+    age:21
+};
+
+//Add property to an Object:
+
+//student.moy=17
+//console.log(student) //{name: "aymane", age: 21, moy: 17}
+//student["moy"]=17
+//console.log(student) //{name: "aymane", age: 21, moy: 17}
+
+//ES7 syntaxe
+//method1 if we know the name of property 
+const newStudent1={...student,moy:17}
+console.log(newStudent1) //{name: "aymane", age: 21, moy: 17}
+//if the property name is in a variable
+var input="moy"
+const newStudent2={...student,[input]:17}
+console.log(newStudent2)
+
+//_____________________________________________________________
+
+//Delete property from an Object:
+
+//delete student.age;
+console.log(student) //{name: "aymane"}
+
+//update the value of the existing property
+
+student.name="yohane"
+console.log(student) // {name: "yohane", age: 21}
+
+//__________________________________________________________
+//Add the properties to the array of Object
+//--> we want to add the property to every object in the array
+
+const Listeleve=[
+    {
+        name:"yohane",
+        age:15
+    },
+    {
+        name:"aymane",
+        
+    },
+    {
+       name:"omar",
+       age:17
+    }
+]
+
+//to add property
+Listeleve.forEach(eleve=>{
+    eleve.note=true
+})
+//to delete property
+Listeleve.forEach(eleve=>{
+    delete eleve.note
+})
+
+//to update propertie
+Listeleve.forEach(eleve=>{
+    if(eleve.age)
+    {
+        eleve.age=10
+    }
+    
+})
+
+
+
+console.log(Listeleve)

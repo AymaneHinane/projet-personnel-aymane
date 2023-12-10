@@ -1,0 +1,3 @@
+Break: arrete la boucle
+continue: saute une iteration dans la boucle
+return: pour sortir de la fonction 

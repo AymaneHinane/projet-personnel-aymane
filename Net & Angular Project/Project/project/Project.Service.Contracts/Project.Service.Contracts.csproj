@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Project.Entities\Project.Entities.csproj" />
+    <ProjectReference Include="..\Project.Shared\Project.Shared.csproj" />
+    <ProjectReference Include="..\Project.Contracts\Project.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Inventory\" />
+    <None Remove="Transfer\" />
+    <None Remove="Charge\" />
+    <None Remove="security\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Inventory\" />
+    <Folder Include="Transfer\" />
+    <Folder Include="Charge\" />
+    <Folder Include="security\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,9 @@
+.html
+<script type="module" src="pere.js"></script>
+
+pere.js
+import {add} from "./fils.js"
+
+fils.js
+
+export const func_name=()=>{return }

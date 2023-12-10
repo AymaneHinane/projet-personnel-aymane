@@ -1,0 +1,32 @@
+    <div id="parent1">
+        <div>
+           <p>1</p>
+        </div>
+        <div>
+           <p>2</p>
+        </div>
+    </div>
+
+     <div class="parent2">
+        <div class="child">
+           <p>1</p>
+         </div>
+         <div class="child">
+           <p>2</p>
+         </div>
+     </div>
+
+____________________________________
+
+
+const parent1=document.querySelector("#parent1")
+console.log(parent1) // <div id="parent1"></div>
+
+const parent2=document.querySelector(".parent2")
+console.log(parent2) // <div id="parent2"></div>
+
+const child=document.querySelectorAll(".child")
+console.log(child) // NodeList(2) [div.child, div.child]
+
+const first=document.querySelector("#parent1  div p");
+console.log(first) //<p> 1 </p>

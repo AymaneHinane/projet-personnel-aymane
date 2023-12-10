@@ -1,0 +1,27 @@
+import React,{useRef,useState} from 'react'
+
+const Input=()=>{
+
+
+    const [name,setName]=useState(null);
+
+    const usernameRef = useRef(null)
+    
+    const handleSubmit = (e) => {
+        usernameRef.current.focus()
+        setName(usernameRef.current.value)
+        console.log(name)
+        
+    }
+
+
+    return (
+        <div>
+            <p>{name!==null&&name}</p>
+            <input ref={usernameRef} type="text" />
+            <button onClick={handleSubmit}>Focus</button>
+        </div>
+    )
+}
+
+export default Input

@@ -1,0 +1,6 @@
+   
+    select = document.getElementById('selectElementId');
+    var opt = document.createElement('option');
+    opt.value = i;
+    opt.innerHTML = i;
+    select.appendChild(opt);

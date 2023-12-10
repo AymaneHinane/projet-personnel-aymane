@@ -1,0 +1,60 @@
+
+
+
+
+<!-- #313A47 -->
+<div class="container sticky-top ">
+<nav class="navbar navbar-expand-lg navbar-light " [style]="{'height': '100vh','background-color':'#f5f6f7'}">
+  <div class="container d-flex flex-column align-items-start  align-self-start " >
+    <h2 [style]="{'color':'#3ab56c','margin-left':'13px','font-weight': 'bold'}">
+      Green 
+      <img [style]="{'width':'30px'}" src="https://www.pngfind.com/pngs/m/59-597457_green-leaves-logo-leaves-png-transparent-png.png"/>
+      Tech
+    </h2>
+    <div class="navbar-nav flex-column justify-content-start " [style]="{'width':'100%','padding-right':'0px','margin-top':'100px'}">
+    
+
+      <a class="nav-link accordion-button" href="#"  data-bs-toggle="collapse" data-bs-target="#collapseOne" [style]="{'color':'black','padding':'10px 10px','font-size':'20px'}"> 
+        Gestion des Sites
+      </a>
+      <!-- collapse -->
+      <div id="collapseOne" class="accordion-collapse  ?" [style]="{'background-color':'white'}">
+        <div class="accordion-body">
+          <a class="dropdown-item ishover" routerLinkActive="isActive" [routerLink]="['inventory','overview','rawMaterial']" [style]="{'padding':'10px'}">stock matiere premiere</a>
+          <a class="dropdown-item ishover" routerLinkActive="isActive" [routerLink]="['inventory','overview','finishedProduct']" [style]="{'padding':'10px'}">stock produit NPK</a>
+
+          <a class="dropdown-item" href="#" *ngFor="let item of warehousesInfo">
+            <div class="btn-group dropend " [style]="{'width':'100%', 'display': 'flex', 'justify-content': 'space-between', 'align-items': 'center'}">
+
+              <button type="button" class="btn " data-bs-toggle="dropdown" aria-expanded="false" [style]="{'color':'black','text-align': 'left','padding-left':'10px','border':'none'}">
+                 {{item.name}}
+                 <span class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" [style]="{'color':'black','margin-right':'10px','float':'right'}">
+                  <span class="visually-hidden" >Toggle Dropdown</span>
+                </span>
+              </button>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item " routerLinkActive="isActive" [routerLink]="['inventory',item.id,'rawMaterial']" [style]="{'padding':'5px 20px'}">Gestion de la matiere premier</a></li>
+                <li><a class="dropdown-item " routerLinkActive="isActive" [routerLink]="['inventory',item.id,'finishedProduct']" [style]="{'padding':'5px 20px'}">Gestion des produits fini</a></li>
+                <li><a class="dropdown-item " routerLinkActive="isActive" [routerLink]="['transfer',item.id]" [style]="{'padding':'5px 20px'}">Gestion des transferts de stock</a></li>
+                <li><a class="dropdown-item " routerLinkActive="isActive" [routerLink]="['warehouse',item.id,'invoice']" [style]="{'padding':'5px 20px'}">Gestion des factures</a></li>
+              </ul>
+            </div>
+          </a>
+
+          <a *ngIf="this.identity == 'ADMIN' " class="dropdown-item ishover" routerLinkActive="isActive" [routerLink]="['admin']" [style]="{'padding':'10px'}">Page d'administration</a>
+
+
+        </div>
+     </div>
+    
+    </div>
+  </div>
+</nav>
+
+
+</div>
+
+
+
+

@@ -1,0 +1,9 @@
+HTTP Request:
+-Make HTTP request to get data from another server
+
+         -----http request------>
+Broawser                           server
+        <-----response(data)-----
+
+-We make these requests to API endpoints
+

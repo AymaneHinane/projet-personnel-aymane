@@ -1,0 +1,17 @@
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.CompanyEmployees.Presentation/bin/Debug/net7.0/AspBookApp.CompanyEmployees.Presentation.deps.json
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.CompanyEmployees.Presentation/bin/Debug/net7.0/AspBookApp.CompanyEmployees.Presentation.dll
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.CompanyEmployees.Presentation/bin/Debug/net7.0/AspBookApp.CompanyEmployees.Presentation.pdb
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.CompanyEmployees.Presentation/bin/Debug/net7.0/AspBookApp.Service.Contracts.dll
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.CompanyEmployees.Presentation/bin/Debug/net7.0/AspBookApp.Shared.dll
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.CompanyEmployees.Presentation/bin/Debug/net7.0/AspBookApp.Service.Contracts.pdb
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.CompanyEmployees.Presentation/bin/Debug/net7.0/AspBookApp.Shared.pdb
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.CompanyEmployees.Presentation/obj/Debug/net7.0/AspBookApp.CompanyEmployees.Presentation.csproj.AssemblyReference.cache
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.CompanyEmployees.Presentation/obj/Debug/net7.0/AspBookApp.CompanyEmployees.Presentation.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.CompanyEmployees.Presentation/obj/Debug/net7.0/AspBookApp.CompanyEmployees.Presentation.AssemblyInfoInputs.cache
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.CompanyEmployees.Presentation/obj/Debug/net7.0/AspBookApp.CompanyEmployees.Presentation.AssemblyInfo.cs
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.CompanyEmployees.Presentation/obj/Debug/net7.0/AspBookApp.CompanyEmployees.Presentation.csproj.CoreCompileInputs.cache
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.CompanyEmployees.Presentation/obj/Debug/net7.0/AspBookApp.CompanyEmployees.Presentation.csproj.CopyComplete
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.CompanyEmployees.Presentation/obj/Debug/net7.0/AspBookApp.CompanyEmployees.Presentation.dll
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.CompanyEmployees.Presentation/obj/Debug/net7.0/refint/AspBookApp.CompanyEmployees.Presentation.dll
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.CompanyEmployees.Presentation/obj/Debug/net7.0/AspBookApp.CompanyEmployees.Presentation.pdb
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.CompanyEmployees.Presentation/obj/Debug/net7.0/ref/AspBookApp.CompanyEmployees.Presentation.dll

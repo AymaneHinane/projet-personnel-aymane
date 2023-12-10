@@ -1,0 +1,10 @@
+expressions: qui return une valeur
+
+{},[],Number,class(NB: js est functionel n'on pas oop)
+ternary expression ?: //  function 
+
+-------------------------------------------------------
+Statements: ne return pas de valeur / est un ensemble d'action 
+var a=23+4;
+for loops
+conditions

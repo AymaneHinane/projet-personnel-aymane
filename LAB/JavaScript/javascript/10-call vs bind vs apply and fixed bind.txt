@@ -1,0 +1,72 @@
+
+//fixed bind
+function print()
+{
+  console.log(this.name);
+}
+
+var student1={name:"aymane"};
+var student2={name:"yohane"};
+
+
+var afficher=print;
+
+var print=function(){
+  afficher.call(student1);
+}
+
+print();//aymane
+print.call(student2);//aymane
+
+__________________________________________________
+
+
+let customer1 = { name: 'Leo', email: 'leo@gmail.com' };
+let customer2 = { name: 'Nat', email: 'nat@hotmail.com' };
+
+function greeting(text) {
+    console.log(`${text} ${this.name}`);
+}
+___________________________________________________
+
+greeting.call(customer1, 'Hello'); // Hello Leo
+
+____________________________________________________
+
+let helloLeo = greeting.bind(customer1);
+helloLeo('Hello'); // Hello Leo
+
+____________________________________________________
+
+let customer1 = { name: 'Leo', email: 'leo@gmail.com' };
+
+function greeting(text, text2) {
+   console.log(`${text} ${this.name}, ${text2}`);
+}
+greeting.apply(customer1, ['Hello', 'How are you?']); 
+// output Hello Leo, How are you?
+
+_____________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

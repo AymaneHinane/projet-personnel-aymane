@@ -1,0 +1,10 @@
+   useEffect(()=>{
+            axios
+            .get(`https://jsonplaceholder.typicode.com/users/${count}`)
+            .then((res)=>{           
+                setProfile(res.data)
+                count>=10&&setBtnShow(true)
+            })
+            .catch(err=>console.log(err))
+
+   },[count])

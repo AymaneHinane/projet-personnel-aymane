@@ -1,0 +1,38 @@
+--> Les prototypes sont un mécanisme au sein de JavaScript qui permettent aux objets
+ JavaScript d'hériter des propriétés d'autres objets.
+
+--> chaque objet pouvant avoir un prototype objet d'où il hérite des méthodes et des attributs.
+
+-->En JavaScript en revanche, tout n'est pas copié : on établit un lien entre l'objet instancié 
+et son constructeur (c'est un lien dans la chaîne de prototypage).
+
+
+____________________________
+exemple:
+
+function Personne(prenom, nom, age, genre, interets) {
+
+  // property and method definitions
+
+};
+
+var personne1 = new Personne('Bob', 'Smith', 32, 'homme', ['musique', 'ski']);
+______________________________
+
+           herite du prototype             herite du prototype
+Personne1 ---------------------> Personne ---------------------> Object
+
+Note : Encore une fois, il est important d'insister sur le fait que les méthodes et attributs ne sont 
+pas copiés d'un objet à un autre, mais qu'on y accède à chaque fois en remontant la chaine de prototypage.
+
+
+--> les éléments hérités sont ceux définis au niveau de l'attribut prototype d'Object (on peut voir cet 
+    attribut comme un sous espace de noms). Ainsi, les éléments listés sont ceux sous Object.prototype.
+    et pas ceux situés juste sous Object.
+
+                prototype (valueOf...)
+                ---------->                   herite 
+Personne ------>                            ------------> valueOf
+                ---------->
+                object constructeur(is,keys()...)                
+

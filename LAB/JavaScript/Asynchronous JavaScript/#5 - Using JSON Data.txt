@@ -1,0 +1,43 @@
+
+
+
+const getData=(link,callback)=>{
+
+     const request=new XMLHttpRequest();
+
+        request.addEventListener('readystatechange',()=>{
+         // console.log(request.readyState,request)
+            if(request.readyState === 4 && request.status === 200){
+                 // console.log(request.responseText)//the data {...}
+                 const data=JSON.parse(request.responseText)  <--------------       
+                 callback(undefined,data)
+                 
+             }else if(request.readyState === 4 && request.status === 404){
+               // console.log('no data found')
+               callback('not data found',undefined)
+             }
+         });
+
+     request.open('GET',link); 
+     request.send()  
+
+}
+
+console.log(1)
+//getData('./products.json',(err,data)=>{
+getData('https://jsonplaceholder.typicode.com/todos/',(err,data)=>{
+    console.log(`I'm in callback`)
+    if(data)
+    {
+        console.log(data)
+    }else{
+        console.log(err)
+    }
+})
+console.log(2)
+
+// the code is asynchonous
+// 1
+// 2
+// I'm in callback
+// {...}

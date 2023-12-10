@@ -1,0 +1,94 @@
+ 
+ let player={};
+ player.name="aymane";
+ player.age=34;
+ player.energy=123;
+ 
+ player.run=function(speed){
+   this.energy -= speed;
+   console.log(this.energy);
+ }
+
+ player.jump=function(hight){
+  this.energy += hight;
+  console.log(this.energy);
+}
+
+player.KickBall=function(strength){
+  this.energy -= strength;
+  console.log(this.energy);
+}
+
+
+player.run(9)
+player.jump(12)
+
+//----------------------------------------------------------
+
+function Player(name,age,energy){
+  let player={};
+  player.name=name;
+  player.age=age;
+  player.energy=energy;
+
+  player.run=function(speed){
+    this.energy -= speed;
+    console.log(this.energy);
+  }
+ 
+  player.jump=function(hight){
+   this.energy += hight;
+   console.log(this.energy);
+ }
+ 
+ player.KickBall=function(strength){
+   this.energy -= strength;
+   console.log(this.energy);
+ }
+
+ return player;
+}
+//pour chaque objet instancier les methodes seront copier 
+
+const player_1=Player("yohane",25,10)
+player_1.run(5);
+player_1.jump(20); 
+
+//----------------------------------------------------------
+
+//on a resulut le probleme des methodes copier car elle sont juste referencier
+const playerMethods={
+
+  run:function(speed){
+    this.energy -= speed;
+    console.log(this.energy);
+  },
+ 
+  jump:function(hight){
+    this.energy += hight;
+    console.log(this.energy);
+  },
+ 
+  KickBall:function(strength){
+    this.energy -= strength;
+    console.log(this.energy);
+  },
+ 
+}; 
+
+function Player(name,age,energy){
+  let player={};
+  player.name=name;
+  player.age=age; 
+  player.energy=energy;
+
+  player.run=playerMethods.run;
+  player.jump=playerMethods.jump;
+  player.KickBall=playerMethods.KickBall;
+
+ return player;
+}
+
+const player_2=Player("yohane",25,10)
+player_2.run(5);
+player_2.jump(20); 

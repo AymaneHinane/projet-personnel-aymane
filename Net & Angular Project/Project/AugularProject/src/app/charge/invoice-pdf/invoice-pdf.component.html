@@ -1,0 +1,36 @@
+
+<!-- Button trigger modal -->
+
+
+
+             <button type="button" class="btn btn-outline-light shadow-sm" [style]="{'color':'green'}" data-bs-toggle="modal" [attr.data-bs-target]="'#pdfModel' + invoiceId" (click)="getInvoice()">
+                consulter
+              </button>
+              
+              <!-- Modal id="pdfModel"-->
+              <div class="modal" [id]="'pdfModel' + invoiceId" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Facture</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" *ngIf="invoicePdf">
+                                            
+                        
+                          <object [data]="invoicePdf" type="application/pdf" width="100%" height="100%">
+                            <p>Unable to display PDF file. <a [href]="invoicePdf">Download</a> instead.</p>
+                          </object>
+
+                    </div>
+                    <div class="modal-footer">
+                        <a [href]="invoicePdf" download="your_file_name.pdf" >
+                            <button type="button" class="btn btn-outline-info">Download PDF</button>
+                        </a> 
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            

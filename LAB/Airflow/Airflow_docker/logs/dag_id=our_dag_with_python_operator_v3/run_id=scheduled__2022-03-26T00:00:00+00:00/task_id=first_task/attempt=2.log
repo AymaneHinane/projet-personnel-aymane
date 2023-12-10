@@ -1,0 +1,5 @@
+[2023-10-29T22:18:06.764+0000] {task_command.py:416} INFO - Running <TaskInstance: our_dag_with_python_operator_v3.first_task scheduled__2022-03-26T00:00:00+00:00 [None]> on host 9bb87dc64328
+[2023-10-29T22:18:09.133+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='coder3j' AIRFLOW_CTX_DAG_ID='our_dag_with_python_operator_v3' AIRFLOW_CTX_TASK_ID='first_task' AIRFLOW_CTX_EXECUTION_DATE='2022-03-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-03-26T00:00:00+00:00'
+[2023-10-29T22:18:09.173+0000] {logging_mixin.py:151} INFO - Hello world! name aymane age: 23
+[2023-10-29T22:18:09.179+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-10-29T22:18:09.357+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=our_dag_with_python_operator_v3, task_id=first_task, execution_date=20220326T000000, start_date=20231029T221756, end_date=20231029T221809

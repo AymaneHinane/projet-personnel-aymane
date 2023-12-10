@@ -1,0 +1,69 @@
+MyContext.js
+
+import React from 'react'
+
+const MyContext=React.createContext();
+export {MyContext}
+----------------------------------------------------------
+Profile.js
+
+import React, { Component } from 'react'
+import User from './User'
+import {MyContext} from './MyContext'
+
+class Profile extends Component {
+
+    state={
+        id:null,
+        name:"aymane"
+    }
+    
+    componentDidMount(){
+        this.setState({
+           id: this.props.match.params.profileId
+        })
+        
+    }
+
+    render() {
+        return (
+            <div>
+                <MyContext.Provider value={this.state.name}>
+                   <h1>profile1</h1>
+                   <User /> 
+                </MyContext.Provider>
+                
+            </div>
+        )
+    }
+}
+
+export default Profile
+----------------------------------------------------------
+User.js
+
+import React from 'react'
+import {MyContext} from './MyContext'
+
+
+const User=(props)=>{
+
+    console.log(props)
+    return (
+
+        <MyContext.Consumer>
+            {
+                data =>{
+                   return(
+                     <div>
+                         <p>hello</p>
+                           <h2>{data}</h2>
+                     </div>
+                   )
+                }
+            }
+        </MyContext.Consumer>
+    )       
+}
+
+export default User

@@ -1,0 +1,10 @@
+--> Javascript has 5 data types that are passed by value (primitive types):
+ Boolean, null, undefined, String, and Number. We’ll call these primitive types.
+--> Javascript has 3 data types that are passed by reference (Objects):
+   Array, Function, and Object. These are all technically Objects, so we’ll refer to 
+   them collectively as Objects.
+
+
+-->Objects are created at some location in your computer’s memory. When we write 
+arr = [], we’ve created an array in memory. What the variable arr receives is the 
+address, the location, of that array.

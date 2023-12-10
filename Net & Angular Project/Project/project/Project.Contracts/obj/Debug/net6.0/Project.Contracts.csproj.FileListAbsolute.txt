@@ -1,0 +1,17 @@
+/Users/aymanehinane/Desktop/Project/project/Project.Contracts/bin/Debug/net6.0/Project.Contracts.deps.json
+/Users/aymanehinane/Desktop/Project/project/Project.Contracts/bin/Debug/net6.0/Project.Contracts.dll
+/Users/aymanehinane/Desktop/Project/project/Project.Contracts/bin/Debug/net6.0/Project.Contracts.pdb
+/Users/aymanehinane/Desktop/Project/project/Project.Contracts/bin/Debug/net6.0/Project.Entities.dll
+/Users/aymanehinane/Desktop/Project/project/Project.Contracts/bin/Debug/net6.0/Project.Shared.dll
+/Users/aymanehinane/Desktop/Project/project/Project.Contracts/bin/Debug/net6.0/Project.Entities.pdb
+/Users/aymanehinane/Desktop/Project/project/Project.Contracts/bin/Debug/net6.0/Project.Shared.pdb
+/Users/aymanehinane/Desktop/Project/project/Project.Contracts/obj/Debug/net6.0/Project.Contracts.csproj.AssemblyReference.cache
+/Users/aymanehinane/Desktop/Project/project/Project.Contracts/obj/Debug/net6.0/Project.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aymanehinane/Desktop/Project/project/Project.Contracts/obj/Debug/net6.0/Project.Contracts.AssemblyInfoInputs.cache
+/Users/aymanehinane/Desktop/Project/project/Project.Contracts/obj/Debug/net6.0/Project.Contracts.AssemblyInfo.cs
+/Users/aymanehinane/Desktop/Project/project/Project.Contracts/obj/Debug/net6.0/Project.Contracts.csproj.CoreCompileInputs.cache
+/Users/aymanehinane/Desktop/Project/project/Project.Contracts/obj/Debug/net6.0/Project.Contracts.csproj.CopyComplete
+/Users/aymanehinane/Desktop/Project/project/Project.Contracts/obj/Debug/net6.0/Project.Contracts.dll
+/Users/aymanehinane/Desktop/Project/project/Project.Contracts/obj/Debug/net6.0/refint/Project.Contracts.dll
+/Users/aymanehinane/Desktop/Project/project/Project.Contracts/obj/Debug/net6.0/Project.Contracts.pdb
+/Users/aymanehinane/Desktop/Project/project/Project.Contracts/obj/Debug/net6.0/ref/Project.Contracts.dll

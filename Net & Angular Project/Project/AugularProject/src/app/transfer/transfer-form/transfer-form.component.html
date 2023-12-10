@@ -1,0 +1,89 @@
+<div class="container-fluid">
+
+
+    <div class="row" [style]="{'padding':'20px 0px 10px 20px'}" >
+        <div class="col-12" >
+            <h3>nouveau transfert de stock</h3>
+        </div>
+         <div class = "col-3" [style]="{'margin-top':'20px'}">
+            <select class="form-select" aria-label="Default select example" (change)="ResetForm($event.target)">
+                <option value="menu" [selected]="destination == 'menu'">type de destination</option>
+                <option value="site">Site</option>
+                <option value="distributionCenter">Centre de distribution</option>
+            </select>
+        </div>
+
+        <div class = "col-3" *ngIf="destination == 'site' " [style]="{'margin-top':'20px'}">
+            <select class="form-select" aria-label="Default select example" (change)="UpdateTransferInsert('Recipients',$event.target)">
+                <option selected [value]="null">choisissez une destination</option>
+                <ng-container *ngFor="let item of this.WarehouseInfo">
+                    <option *ngIf="item.id !== warehouseId" [value]="item.id">{{item.name}}</option>
+                </ng-container>
+            </select>
+        </div> 
+
+        <div class = "col-3" *ngIf="destination == 'distributionCenter' " [style]="{'margin-top':'20px'}">
+            <select [disabled]="dcNotSelected" class="form-select" aria-label="Default select example" (change)="GetDestributionCenters($event.target)">
+                <option selected [value]="null">choisissez une region</option>
+                <option *ngFor="let item of this.TransferRegion" [value]="item.warehouseRegion">{{item.warehouseRegion}}</option>
+            </select>
+            <input (click)="dcNotSelected = !dcNotSelected" class="form-check-input" type="checkbox" [value]="dcNotSelected" id="flexCheckDefault">
+        </div> 
+
+
+        <div class = "col-3" *ngIf="destination == 'distributionCenter' && this.DestributionCenters?.length! > 0 " [style]="{'margin-top':'20px'}" >
+            <select class="form-select" aria-label="Default select example"  (change)="UpdateTransferInsert('Recipients',$event.target)">
+                <option selected [value]="null">choisissez un dca</option>
+                <option *ngFor="let item of this.DestributionCenters" [value]="item.id">{{ item.name }}</option>
+              </select>
+        </div>
+
+        <div class="col-3"  *ngIf="destination == 'distributionCenter' || destination == 'site'  ">
+         <div class="col-12" *ngIf="transferInsert.Recipients?.length! > 0">
+            destination sélectionnée
+         </div>
+         <div class = "col-12" *ngIf="destination == 'distributionCenter' " [style]="{'height':'80px','overflow':'auto'}">
+            <span class="badge  dcSelected" [style]="{'margin':'0px 5px 5px 5px'}" *ngFor="let item of transferInsert.Recipients" (click)="deleteRecipient(item.RecipientId)" >
+                {{getDcRecipientName(item.RecipientId)}} 
+                <button type="button" class="btn-close" aria-label="Close"></button>
+            </span>
+        </div>
+
+        <div class = "col-12 " *ngIf="destination == 'site' " [style]="{'height':'80px','overflow':'auto'}">
+            <span class="badge  dcSelected" [style]="{'margin':'0px 5px 5px 5px'}" *ngFor="let item of transferInsert.Recipients" (click)="deleteRecipient(item.RecipientId)">
+                {{getSiteRecipientName(item.RecipientId)}}
+                <button type="button" class="btn-close" aria-label="Close"></button>
+            </span>
+        </div>
+        </div>
+
+    </div>
+
+    <div class="row" [style]="{'margin':'0px 10px','padding-bottom':'10px'}">
+
+        <div class = "col-3" *ngIf="destination == 'site' ">
+            <select class="form-select" aria-label="Default select example" (change)="UpdateTransferInsert('ProductId',$event.target)">
+                <option selected [value]="null">select product</option>
+                <option *ngFor="let item of this.rawMaterial" [value]="item.id">{{item.name}}</option>
+            </select>
+        </div>
+
+        <div class = "col-3" *ngIf="destination == 'distributionCenter' ">
+            <select class="form-select" aria-label="Default select example" (change)="UpdateTransferInsert('ProductId',$event.target)">
+                <option selected [value]="null">select product</option>
+                <option *ngFor="let item of this.finishedProduct" [value]="item.id">{{item.name}}</option>
+            </select>
+        </div>
+
+        <div class ="col-3" *ngIf="destination == 'site' || destination == 'distributionCenter' ">
+            <div class="mb-3">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="quantiter a transferer" (input)="UpdateTransferInsert('TransferedStockQuantity',$event.target)">
+              </div>
+        </div>
+        <div class="col-auto" *ngIf="destination == 'site' || destination == 'distributionCenter' ">
+            <button type="submit" class="btn btn-outline-primary mb-3" (click)="AddNewTransfer()" [disabled]="!( transferInsert.ProductId != null && transferInsert.TransferedStockQuantity != null)" >Confirmer le transfer</button>
+          </div> 
+
+    </div>
+       
+</div>

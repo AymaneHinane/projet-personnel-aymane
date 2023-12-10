@@ -1,0 +1,12 @@
+   
+ state={
+        hits:0
+    }
+   
+    addOne=()=>{
+        this.setState((prevState)=>{
+            return {
+                hits:prevState.hits+1
+            }
+        })
+    }

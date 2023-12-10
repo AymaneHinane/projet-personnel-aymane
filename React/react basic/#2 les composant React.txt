@@ -1,0 +1,7 @@
+state Component:
+-Class
+-State
+
+UI Component: 
+-Functions
+-State (React Hooks)

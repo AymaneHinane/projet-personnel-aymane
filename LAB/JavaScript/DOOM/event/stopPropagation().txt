@@ -1,0 +1,21 @@
+
+//l'event se propage de l'enfant vers le parent d'une
+//facon ascendante 
+// ^^^^
+// ||||
+
+p.addEventListener('click',(e)=>{
+     
+     
+     console.log('p')
+})
+
+
+
+btn.addEventListener('click',(e)=>{
+     
+    e.stopPropagation();
+    console.log('btn')
+})
+
+

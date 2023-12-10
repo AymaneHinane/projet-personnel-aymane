@@ -1,0 +1,96 @@
+//ES5
+const getStudentInfos=()=>{
+  const student={ 
+      name:"John Doe",
+      age:22
+   };
+  return student;
+};
+
+//ES6
+
+const getStudentInfos=()=>({
+     name:"John Doe",
+     age:22
+});
+
+___________________________________________
+------------function destructuring---------
+
+const {name,age}=getStudentInfos() 
+___________________________________________
+___________________________________________
+const getFullName=(
+  firstName="John",
+  lastName="Doe",
+)=>{
+  return `${fistName} ${lastName}`
+};
+
+console.log(getFullName()) //John Doe
+_______________________________________
+______________________________________
+_______________________________________
+//syntaxe error
+const getFullName1=(
+    firstName="John",
+    lastName="Doe",
+  )=>{
+    return `${firstName} ${lastName}`
+  };
+  
+
+const person=getFullName1({
+ lastName:"Doe",
+    firstName:"John",
+});
+
+console.log(person) //[object Object] Doe
+
+
+//Good syntaxe
+const getFullName1=({
+    firstName="John",
+    lastName="Doe",
+})=>{
+    return `${firstName} ${lastName}`
+  };
+  
+
+const person=getFullName1({
+ lastName:"Doe",
+    firstName:"John",
+});
+
+console.log(person) //John Doe
+
+_____________________________________
+//reellement se qui se passe
+const {
+    firstName="John",
+    lastName="Doe"
+}={
+    lastName:"Doe",
+    firstName:"John",
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

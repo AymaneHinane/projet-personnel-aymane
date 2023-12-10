@@ -1,0 +1,13 @@
+const parent=document.querySelector(".parent2")
+console.log(parent)
+const input=parent.getElementsByTagName("input")
+console.log(input) // HTMLCollection [input#name, name: input#name]
+console.log(input.item(0)) // <input id="name" value>
+console.log(input[0])      // <input id="name" value>
+
+
+const input2=document.querySelector("input")
+console.log(input2) //<input id="name" value>
+
+const input3=document.querySelector("input[value=hello]")
+console.log(input3)//<input id="name" value>

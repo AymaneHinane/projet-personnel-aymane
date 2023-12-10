@@ -1,0 +1,182 @@
+
+
+<div class="container-fluid" [style]="{'margin':'10px 0px 30px 0px'}" *ngIf="transferFilter">
+    <div class="row">
+        <div class="col">
+
+            <div class="accordion accordion-flush shadow-sm" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      <h5 *ngIf="transferFilterApplied.length == 0">Appliquer un filtre</h5>
+                      <ng-container *ngFor="let filter of transferFilterApplied">
+                        <h6 [style]="{'margin-left':'5px'}"><span class="badge bg-secondary" (click)="updateTransferFilter(filter.filterProperty,null)" >{{filter.filterPropertyName}}:{{filter.value}}</span></h6>
+                      </ng-container>                      
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                       
+
+
+
+
+                     <div class="container">
+                      <div class="row">
+
+
+                        <table class="table table-borderless">
+                          <tbody>
+                            <tr>
+
+                              <td *ngIf=" PageSelected == 'delivery' ">
+                                  <select class="form-select" aria-label="Default select example"  (change)="updateTransferFilter('sender',$event.target)">
+                                    <option >depuis</option>
+                                    <ng-container *ngFor="let warehouse of WarehouseList">
+                                      <ng-container *ngIf="warehouse.name">
+                                       <option  *ngIf="warehouse.id != warehouseId"   [selected]="transferFilter.sender == warehouse.name">{{warehouse.name}}</option>
+                                      </ng-container>
+                                    </ng-container> 
+                                  </select>
+                              </td>
+
+
+                              <td *ngIf=" PageSelected == 'transfer' ">
+                                  <select class="form-select" aria-label="Default select example"  (change)="updateTransferFilter('recipient',$event.target)">
+                                    <option >vers</option>
+                                    <ng-container *ngFor="let warehouse of WarehouseList">
+                                      <ng-container *ngIf="warehouse.name">
+                                       <option  *ngIf="warehouse.id != warehouseId" [selected]="transferFilter.recipient == warehouse.name">{{warehouse.name}}</option>
+                                      </ng-container>
+                                   </ng-container> 
+                                  </select>      
+                              </td>
+
+                              <td *ngIf=" PageSelected == 'transfer' || PageSelected == 'delivery' ">
+                                  <select class="form-select" aria-label="Default select example" (change)="updateTransferFilter('product',$event.target)">
+                                    <option >matieres premiere</option>
+                                    <ng-container *ngFor="let rawMaterial of rawMaterialAll">
+                                      <option *ngIf="rawMaterial.name" [value]="rawMaterial.name"  [selected]="rawMaterial.name == transferFilter.product">{{rawMaterial.name}}</option>
+                                    </ng-container>
+                                  </select>
+                              </td>
+
+
+                              <td *ngIf=" PageSelected == 'transfer' " [style]="{'width':'200px'}">
+                                  <select class="form-select" aria-label="Default select example" (change)="updateTransferFilter('product',$event.target)">
+                                    <option selected>produit fini</option>
+                                    <ng-container *ngFor="let finishedProduct of finishedProductSite">
+                                      <option *ngIf="finishedProduct" [value]="finishedProduct.name"  [selected]="finishedProduct.name == transferFilter.product" >{{finishedProduct.name}}</option>
+                                    </ng-container>                         
+                                  </select>      
+                              </td>
+
+                              <td>
+                                  <input [style]="{'width':'200px'}" type="date" [value]="transferFilter.deliveryDate" (input)="updateTransferFilter('deliveryDate',$event.target)"/>
+                                 <br><span >date de livraison</span>
+                              </td>
+
+                              <td>
+                                  <input [style]="{'width':'200px'}"  type="date" [value]="transferFilter.shippedDate" (input)="updateTransferFilter('shippedDate',$event.target)"/>
+                                  <br><span>date de reception</span>
+                              </td>
+
+                            </tr>
+                            <tr>
+                              <td>
+                                <input class="form-control form-control" type="text" placeholder="numero de transfert" [value]="transferFilter.numero" (input)="updateTransferFilter('numero',$event.target)" aria-label=".form-control-sm example">
+                              </td>
+                              <td>
+                                <input class="form-control form-control" type="text" placeholder="quantite" [value]="transferFilter.qte" (input)="updateTransferFilter('qte',$event.target)" aria-label=" .form-control-sm example">
+                              </td>
+                              <td *ngIf="PageSelected == 'transfer' ">
+                                <select class="form-select" aria-label="Default select example" [(ngModel)]="regionSelected">
+                                  <option selected>region</option>
+                                  <option [value]="region.warehouseRegion" *ngFor="let region of RecipientDcRegionList" #regionSelect>{{region.warehouseRegion}} </option>
+                                 </select>
+                                 <p>region </p>
+                              </td>
+                              <td *ngIf="PageSelected == 'transfer'">
+                                <select class="form-select" aria-label="Default select example" *ngIf="regionSelected" (change)="updateTransferFilter('recipient',$event.target)">
+                                  <option selected>cda</option>
+                                  <option [value]="dc.name" *ngFor="let dc of getDcByregion(regionSelected)">{{dc.name}}</option>
+                                 </select>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+
+                         <!-- 
+
+
+
+
+
+
+
+
+
+
+                        <div class="col-6" *ngIf=" PageSelected == 'transfer' ">
+
+                          <div class="container">
+                            <div class="row">
+
+
+                              <div class="col-6">
+                               <select class="form-select" aria-label="Default select example" [(ngModel)]="regionSelected">
+                                <option selected>region</option>
+                                <option [value]="region.warehouseRegion" *ngFor="let region of RecipientDcRegionList" #regionSelect>{{region.warehouseRegion}} </option>
+                               </select>
+                               <p>region </p>
+                              </div>
+
+
+                              <div class="col-4">
+                               <select class="form-select" aria-label="Default select example" *ngIf="regionSelected" (change)="updateTransferFilter('recipient',$event.target)">
+                                <option selected>cda</option>
+                                <option [value]="dc.name" *ngFor="let dc of getDcByregion(regionSelected)">{{dc.name}}</option>
+                               </select>
+                              </div>
+
+
+                            </div>
+                          </div>
+
+                        </div>
+
+
+                      </div>
+
+                     </div> -->
+
+
+
+
+
+
+
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+                        <!-- <div class="col-2"> !!
+                          <select class="form-select" aria-label="Default select example" (change)="updateTransferFilter('product',$event.target)">
+                            <option selected>matiere premiere</option>
+                            <option [value]="sender.name" *ngFor="let sender of rawMaterialSite">{{sender.name}}</option>
+                          </select>
+                        </div> -->
+
+                        <!-- <div class="col-2"> !!
+                          <select class="form-select" aria-label="Default select example" (change)="updateTransferFilter('product',$event.target)">
+                            <option selected>produits fini </option>
+                            <option [value]="sender.name" *ngFor="let sender of finishedProductAll">{{sender.name}}</option>
+                          </select>
+                        </div> -->

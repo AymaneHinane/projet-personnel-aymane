@@ -1,0 +1,20 @@
+
+<mat-icon class="home_icon" aria-hidden="false" aria-label="Example home icon" fontIcon="home" (click)="open()"></mat-icon>
+
+
+<div *ngIf="isOpen" class="sidebar-container" [ngStyle]="{'width': isOpen ? '300px' : '0px'}">
+
+    <button [ngStyle]="{'width':'100%'}"  (click)="open()">
+        <mat-icon class="btn_close">close</mat-icon>
+      </button>
+
+      
+    <div class="sidebar_link">
+      <a routerLink="/home" >
+        afficher les devoirs
+      </a>
+      <a routerLink="/register">
+        ajouter un user
+      </a>
+    </div>
+</div>

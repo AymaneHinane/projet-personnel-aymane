@@ -1,0 +1,33 @@
+//JavaScript HTML DOM EventListener
+var element=document.querySelector("#div2");
+element.addEventListener("click",function(){
+   element.style.color="red";
+});
+
+//we can also capte all athor events
+//element.addEventListener("click",(e)=>{
+//    console.log(e);
+// });
+
+ var element=document.querySelector("#div1");
+ element.addEventListener("click",function(){
+    element.style.color="blue";
+    console.log("-->"+element.firstChild.nodeValue);
+ });
+ 
+
+ //pour supprimer des element de mon html
+//let parent=document.querySelector("#div2");
+let parent2=document.getElementById("div2")
+console.log(parent);
+parent2.addEventListener("click",function(){
+    if(parent2.hasChildNodes())
+    {
+      //pour supprimer l'enfant qui a l'indice 0
+      parent.removeChild(parent.childNodes[0]);
+      //pour supprimer le premier enfant
+       parent.removeChild(parent.firstChild);
+       //pour supprimer tous les enfants
+       parent2.innerHTML="";
+    }
+})

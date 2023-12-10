@@ -1,0 +1,36 @@
+
+const [keyCode,setKeyCode] = useState('')
+
+const handleKeyCode = e =>{
+     setKeyCode(e.code)
+}
+
+
+useEffect(() =>{
+
+    document.addEventListener("keyup",handleKeyCode)
+
+    return () => {
+        document.removeEventListener("keyup",handleKeyCode)
+     }
+
+},[])
+
+
+-------------------------------------------------------------
+
+ constructor(props) {
+        super(props);
+        this.state = {
+              };
+        this.openMenu = this.openMenu.bind(this);
+        this.closeMenu = this.closeMenu.bind(this);
+    }
+
+    componentDidMount() {
+        document.addEventListener("click", this.closeMenu);
+    }
+
+    componentWillUnmount() {
+        document.removeEventListener("click", this.closeMenu);
+    }

@@ -1,0 +1,44 @@
+﻿<Properties StartupConfiguration="{F1027BFF-EFEF-443B-B608-F3E54CD19F9B}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.test2 PreferredExecutionTarget="/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="test2/Controllers/AuthorController.cs">
+    <Files>
+      <File FileName="test2/Controllers/AuthorController.cs" Line="19" Column="10" />
+      <File FileName="test2/Services/GenericServices/IGenericRepository.cs" Line="1" Column="1" />
+      <File FileName="test2/Services/GenericServices/GenericRepository.cs" Line="36" Column="22" />
+      <File FileName="test2/Services/BookServices/BookRepository.cs" Line="1" Column="1" />
+      <File FileName="test2/Program.cs" Line="21" Column="1" />
+      <File FileName="test2/Models/Client.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="test2" expanded="True">
+            <Node name="test2" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="AuthorController.cs" selected="True" />
+              </Node>
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="AuthorServices" expanded="True" />
+                <Node name="BookServices" expanded="True" />
+                <Node name="GenericServices" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

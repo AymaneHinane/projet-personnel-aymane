@@ -1,0 +1,19 @@
+let book={
+    nom:'',
+    auteur:'',
+    genre:'',
+    prix:'',
+    qte:''
+}
+
+const form=document.querySelector('.container-form form');
+const input=form.querySelectorAll('input,select')
+
+
+for(let i=0;i<input.length;i++)
+{
+
+   input[i].addEventListener('change',function(){
+       book={...book,[this.name]:this.value}
+   })
+}

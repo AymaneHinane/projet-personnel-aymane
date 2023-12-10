@@ -1,0 +1,17 @@
+-->currentTarget: l'element sur le qu'elle j'ai clicker
+-->target: l'element sur le qu'elle l'event est appliquer
+
+parent.addEventListener('click',(e)=>{   
+    console.log('p')  
+    console.log(e.target)           //parent
+     console.log(e.currentTarget)   //parent
+})
+
+
+Child.addEventListener('click',(e)=>{   
+    console.log('btn')  
+    console.log(e.target)          //chlid
+     console.log(e.currentTarget)  //parent
+}) 
+
+

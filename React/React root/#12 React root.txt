@@ -1,0 +1,65 @@
+npm install react-router-dom
+
+App.js
+
+import React,{Component} from 'react'
+import './App.css';
+import Docs from './header/Docs';
+import Forum from './header/Forum';
+import Tutorials from './header/Tutorials';
+import Menu from './header/Menu';
+import ErrorPage from './header/ErrorPage';
+import {BrowserRouter,Route,Switch} from 'react-router-dom'
+
+
+class App extends Component{
+  
+  render(){
+      
+    return (
+    <BrowserRouter>
+         <Menu />
+
+        <Switch>
+           <Route exact path="/" component={Docs} />
+           <Route path="/tutorials" component={Tutorials} />
+           <Route path="/forum" component={Forum} />
+           <Route component={ErrorPage} />
+       </Switch> 
+        
+    </BrowserRouter>
+  );
+  }
+  
+}
+
+export default App;
+
+------------------------------------------------------------------
+
+import React from 'react'
+import './header.css'
+import {Link,NavLink} from 'react-router-dom'
+
+
+function Menu() {
+    return (
+        <nav>
+            <ul>
+                <li><Link to="/" >Docs</Link></li>
+                <li><Link to="/forum" >forum</Link></li>
+                <li><NavLink to="/tutorials" >Tutorials</NavLink></li>
+            </ul>
+        </nav>
+    )
+}
+
+export default Menu
+
+---------------------------------------------------------------------
+
+.active{
+ border-bottom: 2px solid red;
+}
+
+

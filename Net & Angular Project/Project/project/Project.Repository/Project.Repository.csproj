@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.8" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Project.Entities\Project.Entities.csproj" />
+    <ProjectReference Include="..\Project.Contracts\Project.Contracts.csproj" />
+    <ProjectReference Include="..\Project.Shared\Project.Shared.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Configuration\ChargeConfiguration\" />
+    <None Remove="Inventory\" />
+    <None Remove="Transfer\" />
+    <None Remove="Charge\" />
+    <None Remove="Configuration\SecurityConfiguration\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Configuration\ChargeConfiguration\" />
+    <Folder Include="Inventory\" />
+    <Folder Include="Transfer\" />
+    <Folder Include="Charge\" />
+    <Folder Include="Configuration\SecurityConfiguration\" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,79 @@
+
+/*
+
+function hy()
+{
+    
+}
+
+hy.prototype.print=function(name){
+    console.log(name)
+}
+
+
+
+let person={
+    age:22,
+    name:"aymane"
+}
+
+
+//person.prototype=Object.create(hy) // 1
+person.prototype=Object.create(hy.prototype) // 2
+
+console.log(person.age)
+//person.prototype.prototype.print("fr") // 1
+person.prototype.print("fr") // 2
+
+//______________________________________________
+
+let elliot={
+   // name:"aymane"
+}
+
+
+const person1={
+    speak:function(){
+       console.log(this.name)
+    }
+}
+
+elliot=Object.create(person1);
+elliot.name="aymane"
+
+elliot.speak();
+
+//si le prototype de elliot est person
+console.log(elliot.__proto__ ) // person
+console.log(Object.getPrototypeOf(elliot)) //person
+console.log(elliot.__proto__ === person1) // true
+console.log(person1.isPrototypeOf(elliot)) //true
+
+*/
+
+//___________________________________________________________________
+/*
+const jedi={
+    force:"hola"
+}
+
+const obiwan={
+    lightsaber:'blue'
+}
+
+console.log(obiwan.force)  // undefined
+
+Object.setPrototypeOf(obiwan,jedi);
+console.log(obiwan.hasOwnProperty('force'))  //false
+
+//puisque force n'est pas une propriete de obiwan 
+//donc, comment on accede a cette proprite 
+console.log(obiwan.force)  // hola
+
+
+console.log(obiwan) // {lightsaber: "blue"}
+console.log(obiwan.__proto__) // {force: true}
+*/
+//__________________
+
+

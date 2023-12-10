@@ -1,0 +1,12 @@
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Shared/bin/Debug/net7.0/AspBookApp.Shared.deps.json
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Shared/bin/Debug/net7.0/AspBookApp.Shared.dll
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Shared/bin/Debug/net7.0/AspBookApp.Shared.pdb
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Shared/obj/Debug/net7.0/AspBookApp.Shared.csproj.AssemblyReference.cache
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Shared/obj/Debug/net7.0/AspBookApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Shared/obj/Debug/net7.0/AspBookApp.Shared.AssemblyInfoInputs.cache
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Shared/obj/Debug/net7.0/AspBookApp.Shared.AssemblyInfo.cs
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Shared/obj/Debug/net7.0/AspBookApp.Shared.csproj.CoreCompileInputs.cache
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Shared/obj/Debug/net7.0/AspBookApp.Shared.dll
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Shared/obj/Debug/net7.0/refint/AspBookApp.Shared.dll
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Shared/obj/Debug/net7.0/AspBookApp.Shared.pdb
+/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Shared/obj/Debug/net7.0/ref/AspBookApp.Shared.dll

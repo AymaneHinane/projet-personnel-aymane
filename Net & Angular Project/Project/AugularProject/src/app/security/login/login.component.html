@@ -1,0 +1,17 @@
+
+
+<div class="container" >
+    <div class="row justify-content-center align-items-center" [style]="{'height':'100vh'}">
+        <div class="col-3 shadow" [style]="{'border-radius': '10px','margin-top':'-20%','padding':'20px'}">
+
+        <form (submit)="login()">
+            <label for="exampleFormControlInput1" class="form-label">username</label>
+           <input type="text"  class="form-control" id="exampleFormControlInput1" [style]="{'width':'100%','margin-bottom':'20px'}" [(ngModel)]="username" name="username" placeholder="Username" />
+           <label for="exampleFormControlInput1" class="form-label">password</label>
+           <input type="password"  class="form-control" id="exampleFormControlInput1" [style]="{'width':'100%','margin-bottom':'20px'}" [(ngModel)]="password" name="password" placeholder="Password" />
+           <button type="submit"  class="btn btn-primary"  [style]="{'width':'100%'}">Login</button>
+        </form>
+
+        </div>
+    </div>
+</div>

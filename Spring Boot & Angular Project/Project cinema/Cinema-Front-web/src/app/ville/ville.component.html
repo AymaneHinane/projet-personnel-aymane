@@ -1,0 +1,9 @@
+
+
+
+
+    <ul *ngIf="villes" class="list-group">
+        <li [ngClass]="{'list-group-item':true, 'active':ville && ville.name == v.name}" *ngFor="let v of villes._embedded.villes; " (click)="sendFilm(v)"  >
+            {{v.name}}
+        </li>
+    </ul>

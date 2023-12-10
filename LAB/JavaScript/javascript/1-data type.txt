@@ -1,0 +1,28 @@
+-primitive values
+  Number(42,3.14),String,Boolean,null,undefined,Object
+
+  ->null: variable vide 
+   let a=null;
+   ----veut dire que a est vide
+
+  ->undefined: variable declarer mais non initialiser
+               si on ne lui assigne aucun valeur by default elle prend undefined 
+  exemple:
+   let b;
+   console.log(b);
+  // undefined
+
+  ->not defined: variable inexistante 
+------------------------------
+   var d = {};
+   console.log(d.fake);
+  // undefined
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+-complexe data
+  array [15,23,8]
+  object {age:23}
+__________________________________________________
+--to now the type
+exemple: typeof 5 --> Number
+exemple: typeof [] --> Object

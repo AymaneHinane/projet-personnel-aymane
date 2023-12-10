@@ -1,0 +1,40 @@
+﻿<Properties StartupConfiguration="{53F7CD8C-B33D-4C8D-8730-3EBF6E16DC36}|Default">
+  <MonoDevelop.Ide.ItemProperties.test5 PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="test5/Data/DBContext.cs">
+    <Files>
+      <File FileName="test5/Program.cs" Line="45" Column="1" />
+      <File FileName="test5/Data/DBContext.cs" Line="39" Column="34" />
+      <File FileName="test5/Models/Editor.cs" Line="16" Column="3" />
+      <File FileName="test5/Models/Studiot.cs" Line="1" Column="1" />
+      <File FileName="test5/Models/Game.cs" Line="22" Column="1" />
+      <File FileName="test5/Models/GameState.cs" Line="13" Column="19" />
+      <File FileName="test5/Models/Employee.cs" Line="35" Column="3" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="test5" expanded="True">
+            <Node name="test5" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" selected="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../../../test4/test4/Controllers/GameController.cs" line="17" column="24" endLine="17" endColumn="52" offsetX="-1" offsetY="-1" expression="context" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

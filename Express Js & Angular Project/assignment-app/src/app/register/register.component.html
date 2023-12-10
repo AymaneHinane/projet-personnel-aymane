@@ -1,0 +1,43 @@
+<!-- <div class="example-container">
+    <mat-form-field>
+      <input matInput placeholder="Input">
+    </mat-form-field>
+  <br>
+  <mat-form-field>
+    <input matInput placeholder="Input">
+  </mat-form-field>
+  <br>
+
+  <mat-form-field>
+    <mat-label>Role:</mat-label>
+    <mat-select [(ngModel)]="role" name="role">
+      <mat-option value="user">User</mat-option>
+      <mat-option value="admin">Admin</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  </div>
+   -->
+
+<br>
+<br>
+<br>
+<div  class="login-container mat-elevation-z2">
+    <h2 [style]="{'margin-left':'20px'}" >Register new student</h2>
+    <form (ngSubmit)="register()" class="login-form">
+      <mat-form-field appearance="fill" [style]="{'width':'20%','margin-left':'20px'}" >
+        <mat-label>Username</mat-label>
+        <input matInput type="text" id="username" [(ngModel)]="student.username" name="username" required>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill" [style]="{'width':'20%','margin-left':'20px'}">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" id="password" [(ngModel)]="student.password" name="password" required>
+      </mat-form-field>
+      <button mat-raised-button type="submit" [style]="{'width':'20%','height':'55px','margin-bottom':'16px','background-color':'orange','margin-left':'20px'}">add new Student</button>
+    </form>
+  </div>
+  
+
+  <app-student-table ></app-student-table>
+

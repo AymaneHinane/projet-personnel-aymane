@@ -1,0 +1,62 @@
+MyContext.js
+
+import React from 'react'
+
+const MyContext=React.createContext();
+export {MyContext}
+
+--------------------------------------------------------
+
+import {MyContext} from './MyContext'
+
+   <MyContext.Provider value={this.state.name}>
+                   <h1>profile1</h1>
+                   <User /> 
+    </MyContext.Provider>
+
+-------------------------------------------------------
+import {MyContext} from './MyContext'
+
+class User extends React.Component{
+
+  render(){
+
+    let value = this.context;
+    console.log(value)
+      return (
+        
+                     <div>
+                         <p>hello</p>
+                           <h2></h2>
+                     </div>                     
+              ) 
+          }        
+}
+
+
+User.contextType = MyContext;
+export default User
+
+
+________________
+_______________
+________________
+class MyClass extends React.Component {
+  componentDidMount() {
+    let value = this.context;
+    /* produit un effet de bord au montage sur la valeur de MyContext */
+  }
+  componentDidUpdate() {
+    let value = this.context;
+    /* ... */
+  }
+  componentWillUnmount() {
+    let value = this.context;
+    /* ... */
+  }
+  render() {
+    let value = this.context;
+    /* affiche quelque chose basé sur la valeur de MyContext */
+  }
+}
+MyClass.contextType = MyContext;

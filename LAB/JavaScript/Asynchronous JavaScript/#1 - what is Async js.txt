@@ -1,0 +1,19 @@
+javascript is a Single Threaded core, sow he can run just One statement at a time
+
+exemple:
+console.log(1);
+console.log(2);
+
+setTimeot(()=>{
+      console.log('callback function fired');      <-- does not block the code 
+},2000);
+
+console.log(3);
+console.log(4);
+
+-->result
+1
+2
+3
+4
+callback function fired

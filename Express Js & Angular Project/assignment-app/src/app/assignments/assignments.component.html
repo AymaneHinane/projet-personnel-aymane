@@ -1,0 +1,52 @@
+
+<!-- <h1 [ngStyle]="{'margin-top':'20px','color':'blue'}">Hello to this page</h1> -->
+
+<!-- <h1 [ngStyle]="{'margin-top':'40px'}">{{title}}</h1> -->
+
+<h2 appGreenColor  [ngStyle]="{'color': 'white','padding-left':'10px',
+'margin-top':'5px','height':'50px',
+'display': 'flex',
+'justify-content': 'center',
+'align-items': 'center'}">{{title}}</h2>
+
+
+
+<mat-tab-group preserveContent>
+  <mat-tab label="List of Assignment">
+
+
+    <br>
+    <app-assignments-form></app-assignments-form>
+    <br><br>
+
+
+    <app-assignment-table [state]="'delete'"></app-assignment-table>
+
+
+  </mat-tab>
+  <mat-tab label="Update Assignment">
+
+
+    <br>
+    <app-update-assignmentsform></app-update-assignmentsform>
+    <br><br>
+
+    <app-assignment-table [state]="'update'"></app-assignment-table>
+
+
+  </mat-tab>
+</mat-tab-group>
+
+
+
+<!-- <h3>add new assignments</h3>
+<app-assignments-form></app-assignments-form>
+<br>
+<h3>update assignments</h3>
+<app-update-assignmentsform></app-update-assignmentsform> -->
+
+
+
+
+
+

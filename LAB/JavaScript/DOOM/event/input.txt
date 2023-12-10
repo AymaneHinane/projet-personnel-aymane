@@ -1,0 +1,8 @@
+ txt.addEventListener('input',function(e){
+     console.log(e.target.value)
+     console.log(this.value)
+ });
+
+ function getValue(e){
+     console.log(e.target.value)
+ }

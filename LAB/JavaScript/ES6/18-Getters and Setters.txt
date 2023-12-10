@@ -1,0 +1,101 @@
+let studentInfo={
+   firstname: "John",
+   lastName: "Doe",
+   fullName:`${this.firstname} ${this.lastName}`, //undefined undefined 
+         //:this   <----  Windows
+    print1:()=>{
+        console.log(`${this.firstname} ${this.lastName}`) //undefined undefined 
+        return `${this.firstname} ${this.lastName}` //undefined undefined 
+    },
+    print2:function(){
+        console.log(`${this.firstname} ${this.lastName}`) //John Doe
+        return `${this.firstname} ${this.lastName}` //John Doe
+    }
+}
+
+
+console.log(studentInfo.fullName)  
+console.log(studentInfo.print1());
+console.log(studentInfo.print2());
+
+__________________________________________________________________________
+
+let studentInfo={
+    firstName:"Arbaoui",
+    lastName:"Mehdi",
+  
+    //Getter
+    get fullName(){
+        return `${this.firstName} ${this.lastName}`
+    },
+  
+    //Setter
+    set fullName(value){
+       [this.firstName,this.lastName]=value.split(" ")
+    },
+  };
+  
+  studentInfo.fullName="Michael Smith";
+  console.log(studentInfo.fullName);//Michael Smith
+
+//___________________________________________________________
+
+const student = {
+
+    // data property
+    firstName: 'Monica',
+    
+    // accessor property(getter)
+    get getName() {
+        return this.firstName;
+    },
+
+    set changeName(newName) {
+        this.firstName = newName;
+    }
+};
+
+// accessing data property
+console.log(student.firstName); // Monica
+
+// accessing getter methods
+console.log(student.getName); // Monica
+
+// trying to access as a method
+//console.log(student.getName()); // error
+
+student.changeName='a'
+console.log(student.getName) //a
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

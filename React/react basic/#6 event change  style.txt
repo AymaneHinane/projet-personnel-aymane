@@ -1,0 +1,31 @@
+class Mycars extends Component {
+
+    noCopy=()=>{
+        alert('merci de ne pas copier le texte')
+    }
+    changeColor=(e)=>{
+     // e.target.classList.toggle('red')
+      if(e.target.classList.contains('red'))
+       {
+         e.target.classList.remove('red')
+       }else{
+         e.target.classList.add('red')
+       }
+    }
+
+    render(){
+        return(
+            <div>
+                <h1>{this.props.title}</h1>
+                <p onCopy={this.noCopy}>elle etait belle</p>
+                <p onMouseOver={this.changeColor}>elle etait belle</p>
+                <Car color="red">Ford</Car>
+                <Car >Mercedes</Car>
+                <Car></Car>
+            </div>
+            
+        )
+    }
+} 
+
+export default Mycars;

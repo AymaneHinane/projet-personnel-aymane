@@ -1,0 +1,4 @@
+//lorse que ma page est charger completement  
+ document.addEventListener('DOMContentLoaded',(e)=>{
+
+ })

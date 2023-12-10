@@ -1,0 +1,110 @@
+
+<table class="table table-striped" *ngIf="category == 'rawMaterial'" [ngStyle]="{'height':'102%'}" >
+    <thead>
+      <tr>
+        <th>angrais</th>
+        <th scope="col">stock commandée</th>
+        <th scope="col">stock livrée</th>
+        <th scope="col">stock consommée</th>
+        <th scope="col">stocks sortants</th> 
+        <th scope="col">stocks entrants</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">{{rawMaterialStock?.productName == null ? '-':rawMaterialStock?.productName}}</th>
+        <td>{{rawMaterialStock?.orderStock == null ? '-':rawMaterialStock?.orderStock}}</td>
+        <td>{{rawMaterialStock?.deliverStock == null ? '-':rawMaterialStock?.deliverStock}}</td>
+        <td>{{rawMaterialStock?.consumeStock == null ? '-':rawMaterialStock?.consumeStock}}</td>
+        <td>{{rawMaterialStock?.transferedStockExitTotal == null ? '-':rawMaterialStock?.transferedStockExitTotal}}</td>
+        <td>{{rawMaterialStock?.transferedStockEntryTotal == null ? '-':rawMaterialStock?.transferedStockEntryTotal}}</td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-outline-danger" (click)="ResetNewStock('rawMaterial')" >effacer</button></td>
+        <td>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="0" #orderStock  #inputReset>
+                <button class="btn btn-outline-secondary" type="button" (click)="updateRawMaterialStock('orderStock',orderStock.value,'+')" >+</button>
+                <button class="btn btn-outline-secondary" type="button" (click)="updateRawMaterialStock('orderStock',orderStock.value,'-')">-</button>
+              </div>
+        </td>
+        <td>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="0" #deliverStock #inputReset>
+                <button class="btn btn-outline-secondary" type="button" (click)="updateRawMaterialStock('deliverStock',deliverStock.value,'+')">+</button>
+                <button class="btn btn-outline-secondary" type="button" (click)="updateRawMaterialStock('deliverStock',deliverStock.value,'-')">-</button>
+              </div>
+        </td>
+        <td>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="0" #consumeStock #inputReset>
+                <button class="btn btn-outline-secondary" type="button" (click)="updateRawMaterialStock('consumeStock',consumeStock.value,'+')">+</button>
+                <button class="btn btn-outline-secondary" type="button" (click)="updateRawMaterialStock('consumeStock',consumeStock.value,'-')">-</button>
+              </div>
+        </td>
+        <td>
+          <div class="input-group">
+              <input type="text" class="form-control" placeholder="0" #transferedStockExitTotal #inputReset>
+              <button class="btn btn-outline-secondary" type="button" (click)="updateRawMaterialStock('transferedStockExitTotal',transferedStockExitTotal.value,'+')">+</button>
+              <button class="btn btn-outline-secondary" type="button" (click)="updateRawMaterialStock('transferedStockExitTotal',transferedStockExitTotal.value,'-')">-</button>
+            </div>
+      </td>
+      <td>
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="0" #transferedStockEntryTotal #inputReset>
+            <button class="btn btn-outline-secondary" type="button" (click)="updateRawMaterialStock('transferedStockEntryTotal',transferedStockEntryTotal.value,'+')">+</button>
+            <button class="btn btn-outline-secondary" type="button" (click)="updateRawMaterialStock('transferedStockEntryTotal',transferedStockEntryTotal.value,'-')">-</button>
+          </div>
+    </td>
+      </tr>
+      <tr>
+        <th><button type="button" class="btn btn-outline-success" (click)="UpdateRawMaterialStockDB()">confirmée</button> </th>
+        <td>{{ newRawMaterialStock.orderStock == null ? '-' : newRawMaterialStock.orderStock }}</td>
+        <td>{{ newRawMaterialStock.deliverStock == null ? '-' : newRawMaterialStock.deliverStock }}</td>
+        <td>{{ newRawMaterialStock.consumeStock  == null ? '-' : newRawMaterialStock.consumeStock }}</td>
+        <td>{{ newRawMaterialStock.transferedStockExitTotal  == null ? '-' : newRawMaterialStock.transferedStockExitTotal }}</td>
+        <td>{{ newRawMaterialStock.transferedStockEntryTotal  == null ? '-' : newRawMaterialStock.transferedStockEntryTotal }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <table class="table table-striped" *ngIf="category == 'finishedProduct'" [ngStyle]="{'height':'102%'}">
+    <thead>
+      <tr>
+        <th scope="col">NPK</th>
+        <th scope="col">produit ACJ</th>
+        <th scope="col">livrée CDA ACJ</th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr>
+        <td scope="row">{{finishedProductStock?.productName == null ? '-':finishedProductStock?.productName}}</td>
+        <td>{{finishedProductStock?.stockProduced == null ? '-':finishedProductStock?.stockProduced}}</td>
+        <td>{{finishedProductStock?.transferedStockExitTotal == null ? '-':finishedProductStock?.transferedStockExitTotal}}</td>
+      </tr>
+      <tr>
+        <td><button type="button" class="btn btn-outline-danger" (click)="ResetNewStock('finishedProduct')" >effacer</button></td>
+        <td>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="0" #stockProduced #inputReset>
+                <button class="btn btn-outline-secondary" type="button" (click)="updateFinishedProductStock('stockProduced',stockProduced.value,'+')">+</button>
+                <button class="btn btn-outline-secondary" type="button" (click)="updateFinishedProductStock('stockProduced',stockProduced.value,'-')">-</button>
+              </div>
+        </td>
+        <td>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="0" #transferedStockExitTotal #inputReset>
+                <button class="btn btn-outline-secondary" type="button" (click)="updateFinishedProductStock('transferedStockExitTotal',transferedStockExitTotal.value,'+')">+</button>
+                <button class="btn btn-outline-secondary" type="button" (click)="updateFinishedProductStock('transferedStockExitTotal',transferedStockExitTotal.value,'-')">-</button>
+              </div>
+        </td>
+      </tr>
+      <tr>
+        <th><button type="button" class="btn btn-outline-success" (click)="UpdateFinishedProductStockDB()">confirmée</button> </th>
+        <td>{{newFinishedProductStock.stockProduced == null ? '-':newFinishedProductStock.stockProduced}}</td>
+        <td>{{newFinishedProductStock.transferedStockExitTotal == null ? '-':newFinishedProductStock.transferedStockExitTotal}}</td>
+      </tr>
+
+    </tbody>
+  </table>

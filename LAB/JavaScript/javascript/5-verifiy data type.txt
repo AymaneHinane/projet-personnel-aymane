@@ -1,0 +1,12 @@
+if(typeof 5  === "number")
+console.log("is number")
+else
+console.log("not number")
+----------------------------------
+if(!isNaN(5))
+console.log("is number")
+else
+console.log("not number")
+-----------------------------------
+Number.isInteger(90); //True
+Number.isInteger("37"); //False

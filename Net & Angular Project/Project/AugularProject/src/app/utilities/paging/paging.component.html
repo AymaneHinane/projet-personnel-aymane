@@ -1,0 +1,11 @@
+
+
+<nav [style]="{'float':'right'}" aria-label="Page navigation example" *ngIf="paginationInfo">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link"  (click)="goToPage(this.paginationInfo.currentPage - 1)">Previous</a></li>
+      <li class="page-item"><a class="page-link" >{{ this.paginationInfo.currentPage }}</a></li>
+      <li class="page-item"><a class="page-link" >/</a></li>
+      <li class="page-item"><a class="page-link" >{{this.paginationInfo. totalPages }}</a></li>
+      <li class="page-item"><a class="page-link"  (click)="goToPage(this.paginationInfo.currentPage + 1)" >Next</a></li>
+    </ul>
+</nav>

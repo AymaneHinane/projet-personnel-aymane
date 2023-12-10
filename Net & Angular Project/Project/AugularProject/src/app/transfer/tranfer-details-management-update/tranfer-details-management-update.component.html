@@ -1,0 +1,91 @@
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-success btn-sm " data-bs-toggle="modal" data-bs-target="#exampleModal"
+[attr.data-bs-target]="'#exampleModal' + transferOperationInfo?.id">
+    modifier
+  </button>
+  
+  <!-- Modal id="exampleModal"-->
+  <div  #modal class="modal fade modal-xl"  tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+  [id]="'exampleModal' + transferOperationInfo?.id">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modifier le Transfert</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12">
+              <table class="table table-borderless">
+                <thead>
+                  <tr>
+                    <th scope="col">matricule</th>
+                    <th scope="col">date envoie</th>
+                    <th scope="col">date reception</th>
+                    <th scope="col">poid de sortie</th>
+                    <th scope="col">poid de livraison</th>
+                    <th scope="col">status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"><input type="text" class="form-control" id="exampleFormControlInput1" [value]="transferOperationInfo?.truckNumber"  #truckNumberInput (input)="UpdateTransferOperation('truckNumber',truckNumberInput.value)"></th>
+                    <td><input type="date" [value]="transferOperationInfo?.deliveryDate" #deliveryDateInput (input)="UpdateTransferOperation('deliveryDate',deliveryDateInput.value)"></td>
+                    <td><input type="date" [value]="transferOperationInfo?.shippedDate" #shippedDateInput (input)="UpdateTransferOperation('shippedDate',shippedDateInput.value)"></td>
+                    <td><input type="text" class="form-control" id="exampleFormControlInput1" [value]="transferOperationInfo?.exitStockWeight" #exitStockWeightInput  (input)="UpdateTransferOperation('exitStockWeight',convertToNumber(exitStockWeightInput.value))"></td>
+                    <td><input type="text" class="form-control" id="exampleFormControlInput1" [value]="transferOperationInfo?.entryStockWeight" #entryStockWeightInput (input)="UpdateTransferOperation('entryStockWeight',convertToNumber(entryStockWeightInput.value))"></td>
+                    <td>
+                      <select class="form-select form-select-sm" aria-label="Small select example" #transferStatusInput (input)="UpdateTransferOperation('transferStatus',transferStatusInput.value)">
+                        <option value ="delivery" [selected]="transferOperationInfo?.transferStatus == 'delivery' ">en cours de livraison</option>
+                        <option value="shipped" [selected]="transferOperationInfo?.transferStatus == 'shipped' ">livraison terminer</option>
+                      </select>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+              <hr>
+              <div class="col-6">
+                 <h5>bon de sorti</h5>
+                 <input class="form-control form-control-sm" id="formFileSm" type="file" (change)="uploadPDF($event,'exit')">
+                 <br> 
+                 <h5>bon d'entree</h5> 
+                 <input class="form-control form-control-sm" id="formFileSm" type="file" (change)="uploadPDF($event,'entry')">
+              </div>
+              <div class="col-6">
+              <table class="table table-borderless">
+                <thead>
+                  <tr>
+                    <th scope="col">destination</th>
+                    <th scope="col">stock livrer</th>
+                    <th scope="col">status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let item of transferOperationInfo?.recipientTransfer">
+                    <th scope="row">{{item.name}}</th>
+                    <td ><input [style]="{'max-width':'150px'}" [value]="item.deliveredStock" #recipientDeliveredStockInput (input)="UpdateRecipientTransferUpdateDto(item.id,'deliveredStock',convertToNumber(recipientDeliveredStockInput.value))" type="email" class="form-control" id="exampleFormControlInput1" placeholder=""></td>
+                    <td>
+                      <select class="form-select form-select-sm" aria-label="Small select example" #recipientTransferStatusInput (input)="UpdateRecipientTransferUpdateDto(item.id,'transferStatus',recipientTransferStatusInput.value)">
+                        <option value ="delivery" [selected]="transferOperationInfo?.transferStatus == 'delivery' ">en cours de livraison</option>
+                        <option value="shipped" [selected]="transferOperationInfo?.transferStatus == 'shipped' ">livraison terminer</option>
+                      </select>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+            </div>
+          </div>
+           
+             
+
+        </div>
+        <div class="modal-footer">
+         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Annuler</button> 
+          <button type="button" class="btn btn-primary" (click)="saveUpdateDB()" data-bs-dismiss="modal">Appliquer les modifications</button>
+        </div>
+      </div>
+    </div>
+  </div>

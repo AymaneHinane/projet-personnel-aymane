@@ -1,0 +1,90 @@
+//useCallback: Renvoie une fonction de rappel memorisee
+//lorsque le state ou le props d'un parent change le composant est mis a jour
+//le meme cas pour les nested composant sinon il faut les englober dans React.memo
+//qui se chargerat de comparer prev.props !== props
+//néanmoins si le props est une methode declarer dans un uic est passer a un uic enfant
+// memo prendrat on compte que cette fonction est nouvelle
+//car lorque le uic parent a etait mis ajour les nested fonstion seront recharger´
+//a nouveau donc comme des nouvelle valeur
+
+
+App.js
+
+import React,{useState,useCallback} from 'react'
+import './App.css';
+import Button from './components6/Button';
+import Count from './components6/Count'
+
+const App = ()=>{
+    
+   const [countOne,setCountOne]=useState({value:0, btnColor:'#e05c4b', increment:25})
+   const [countTwo,setCountTwo]=useState({value:0, btnColor:'#4ba9e0', increment:20})
+
+   
+   const incrementCountOne = useCallback((val) =>{
+      console.log('func() 1')
+      countOne.value < 100 && setCountOne({...countOne,value:val+countOne.increment})
+   },[countOne]) 
+   
+   
+   
+   const incrementCountTwo =useCallback((val) =>{
+      console.log('func() 2')
+      countTwo.value < 100 && setCountTwo({...countTwo,value:val+countTwo.increment})
+   },[countTwo])
+    
+
+    return (  
+         <div>
+              <Count count={countOne} >count1</Count>
+              <Count count={countTwo} >count2</Count> 
+              <Button value={countOne.value} btnColor={countOne.btnColor} increment={countOne.increment} btnIncrement={incrementCountOne}>btn 1</Button>
+              <Button value={countTwo.value} btnColor={countTwo.btnColor} increment={countTwo.increment} btnIncrement={incrementCountTwo}>btn 2</Button>
+         </div>    
+    );
+ 
+ 
+}
+ 
+export default App;
+
+---------------------------------------------------------------------------------
+
+Button.js
+
+import React from 'react'
+
+
+const Button=({value,btnColor,increment,btnIncrement,children})=>{
+   
+    console.log(children)
+
+    return (
+        <button style={{backgroundColor:btnColor}} onClick={()=>btnIncrement(value)}>+{increment}%</button>
+    )
+}
+
+export default React.memo(Button)
+
+---------------------------------------------------------------------------------
+Count.js
+
+import React from 'react'
+
+const Count = ({count,children}) => {
+const {value,btnColor}=count
+     
+console.log(children)
+    return(
+        <>
+        
+          <div className="bar-container">
+            <h2 className="bar-pourcentage">{value} %</h2>
+               <div className="bar-progressive" style={{width: `${value}%`,  backgroundColor:`${btnColor}`}}>
+               </div>
+          </div>
+        </>
+    )
+}
+
+export default React.memo(Count)

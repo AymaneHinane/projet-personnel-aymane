@@ -1,0 +1,9 @@
+import React, {PureComponent } from 'react'
+
+export class Purecomponent extends PureComponent {}
+
+
+--elle fait une verification de surface paraport au props
+--qui lui est passer
+--si le props change le composant serat mis a jour sinon rien
+--la methode de cycle shouldComponentUpdate est implementer de base dans la class PureComponent

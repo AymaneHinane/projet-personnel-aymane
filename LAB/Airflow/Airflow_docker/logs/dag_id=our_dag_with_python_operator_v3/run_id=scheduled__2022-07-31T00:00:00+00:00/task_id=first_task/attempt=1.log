@@ -1,0 +1,11 @@
+[2023-10-29T22:25:08.586+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: our_dag_with_python_operator_v3.first_task scheduled__2022-07-31T00:00:00+00:00 [queued]>
+[2023-10-29T22:25:08.721+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: our_dag_with_python_operator_v3.first_task scheduled__2022-07-31T00:00:00+00:00 [queued]>
+[2023-10-29T22:25:08.726+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 6
+[2023-10-29T22:25:09.900+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): first_task> on 2022-07-31 00:00:00+00:00
+[2023-10-29T22:25:10.030+0000] {standard_task_runner.py:57} INFO - Started process 1263 to run task
+[2023-10-29T22:25:10.147+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'our_dag_with_python_operator_v3', 'first_task', 'scheduled__2022-07-31T00:00:00+00:00', '--job-id', '3618', '--raw', '--subdir', 'DAGS_FOLDER/create_dag_with_python_operator.py', '--cfg-path', '/tmp/tmp184kqzei']
+[2023-10-29T22:25:10.268+0000] {standard_task_runner.py:85} INFO - Job 3618: Subtask first_task
+[2023-10-29T22:25:11.523+0000] {task_command.py:416} INFO - Running <TaskInstance: our_dag_with_python_operator_v3.first_task scheduled__2022-07-31T00:00:00+00:00 [running]> on host 9bb87dc64328
+[2023-10-29T22:25:40.966+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='coder3j' AIRFLOW_CTX_DAG_ID='our_dag_with_python_operator_v3' AIRFLOW_CTX_TASK_ID='first_task' AIRFLOW_CTX_EXECUTION_DATE='2022-07-31T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-07-31T00:00:00+00:00'
+[2023-10-29T22:25:42.336+0000] {logging_mixin.py:151} INFO - Hello world! name aymane age: 23
+[2023-10-29T22:25:43.022+0000] {python.py:194} INFO - Done. Returned value was: None

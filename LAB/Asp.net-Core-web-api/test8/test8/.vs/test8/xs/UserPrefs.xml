@@ -1,0 +1,52 @@
+﻿<Properties StartupConfiguration="{AC342B9C-A3FB-436A-A23E-2137CCEAEE3A}|test6">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.test8 PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Model/Blog/Post.cs">
+    <Files>
+      <File FileName="DB/DbContext.cs" Line="115" Column="70" />
+      <File FileName="Model/Library/Review.cs" Line="7" Column="31" />
+      <File FileName="Model/Library/PriceOffers.cs" Line="13" Column="2" />
+      <File FileName="Model/Library/Tags.cs" Line="9" Column="2" />
+      <File FileName="Model/Library/Book.cs" Line="3" Column="2" />
+      <File FileName="Model/Library/BookAuthor.cs" Line="4" Column="21" />
+      <File FileName="Model/Library/Author.cs" Line="12" Column="65" />
+      <File FileName="Controllers/AuthorController.cs" Line="24" Column="1" />
+      <File FileName="Model/Blog/Author.cs" Line="1" Column="1" />
+      <File FileName="Model/Blog/Blog.cs" Line="1" Column="1" />
+      <File FileName="Model/Blog/Post.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="test8" expanded="True">
+            <Node name="test8" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="DB" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Model" expanded="True">
+                <Node name="Blog" expanded="True" />
+                <Node name="Library" expanded="True" selected="True" />
+                <Node name="Shop" expanded="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="BlogAuthorServices" expanded="True" />
+                <Node name="ClientServices" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint enabled="false" file="/Users/aymanehinane/Desktop/Asp.net-Core-web-api/test8/test8/Model/Shop/Product.cs" relfile="Model/Shop/Product.cs" line="13" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

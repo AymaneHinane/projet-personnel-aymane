@@ -1,0 +1,6 @@
+ if(input[i].type === 'text')
+            input[i].value=''     
+        else if(input[i].type === 'range')
+           input[i].value='0'
+        else if(input[i].id === 'select')
+           input[i].value='0'

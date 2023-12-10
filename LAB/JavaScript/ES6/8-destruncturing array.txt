@@ -1,0 +1,74 @@
+let id=43
+const student=[21,"aymane","Emsi"];
+
+____________________________________
+const [age,name,school]=student
+console.log(age) //21
+console.log(name) //aymane
+____________________________________
+
+const [name,age,school]=student
+console.log(age) //aymane
+console.log(name)//21
+____________________________________
+
+const [age,name,city,college]=student
+console.log(college) //undefined 
+____________________________________
+const [age,name,city,college="Harvard"]=student
+console.log(college) //Harvard
+____________________________________
+
+[id]=student
+console.log(id) //21
+____________________________________
+[id,name]=student
+console.log(id) //21
+console.log(name) //aymane
+___________________________________
+const [,,ecole]=student
+console.log(ecole) //Emsi
+
+___________________________________
+----------Array Swapping-----------
+let a=12
+let b=45
+
+[a,b]=[b,a]
+_________________________________
+const student=[
+ 45,
+ ["a","b","c"],
+ "aymane"
+]
+
+const [id,[note1,note2,note3],name]=student
+console.log(note1) //a
+console.log(note2) //b
+console.log(note3) //c
+
+_________________________________
+
+
+let student={
+    nom:'',
+    prenom:'',
+    set fullName(value)
+    {
+        [student.nom,student.prenom]=value.split(' ')
+    }
+}
+
+
+student.fullName="aymane hinane"
+
+console.log(`${student.nom} ${student.prenom}`) //aymane hinane
+
+
+
+
+
+
+
+
+

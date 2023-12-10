@@ -1,0 +1,26 @@
+- elements: est une HTMLCollection contenant les éléments trouvés, dans l'ordre dans
+  lequel ils apparaissent dans le sous-arbre. Si aucun élément n'a été trouvé, 
+  la HTMLCollection est vide.
+- element: est l'élément depuis lequel la recherche doit commencer. Notez que seuls 
+  les descendants de cet élément feront partie des résultats, mais pas l'élément
+  lui-même.
+- tagName: est le nom qualifié à rechercher. La chaîne spéciale "*" représente tous
+  les éléments possibles. Pour la compatibilité avec XHTML, les minuscules doivent
+  être utilisées.
+
+
+     <div class="parent2">
+        <div>
+           <p>1</p>
+        </div>
+        <input id="name" value="" />
+     </div>
+
+
+const parent=document.querySelector(".parent2")
+console.log(parent)
+const input=parent.getElementsByTagName("input")
+console.log(input) // HTMLCollection [input#name, name: input#name]
+console.log(input.item(0)) // <input id="name" value>
+console.log(input[0])      // <input id="name" value>
+

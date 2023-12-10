@@ -1,0 +1,34 @@
+- La méthode join() crée et renvoie une nouvelle chaîne de 
+ caractères en concaténant tous les éléments d'un tableau 
+ (ou d'un objet semblable à un tableau). La concaténation 
+ utilise la virgule ou une autre chaîne, fournie en argument,
+ comme séparateur.
+
+________________________________
+
+const elements = ['Fire', 'Air', 'Water'];
+
+console.log(elements.join());
+// expected output: "Fire,Air,Water"
+
+console.log(elements.join(''));
+// expected output: "FireAirWater"
+
+console.log(elements.join('-'));
+// expected output: "Fire-Air-Water"
+________________________________
+
+const name=['Fire', 'Air', 'Water'];
+const dispaly =name.map(item => {
+   return '<li>'+item+'</li>
+})
+
+const render ='<ul>'+display.join('')+'</ul>';
+
+<ul>
+  <li>Fire</li>
+  <li>Air</li>
+  <li>Water</li>
+</ul>
+
+

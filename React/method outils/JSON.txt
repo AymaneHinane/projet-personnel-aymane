@@ -1,0 +1,3 @@
+const obj = { age: 20, name: "hinane" }
+const stringObj = JSON.stringify(obj)
+console.log(stringObj); //'{age:20,name:"hinane"}'

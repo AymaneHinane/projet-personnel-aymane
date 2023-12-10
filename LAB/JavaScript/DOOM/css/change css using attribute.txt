@@ -1,0 +1,2 @@
+msg.setAttribute('class','succeess');
+msg.setAttribute('style','color:green;');

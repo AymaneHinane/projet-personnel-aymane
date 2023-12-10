@@ -1,0 +1,26 @@
+
+<div class="container" >
+    <div class="row">
+
+             <div class="col-3">
+<!-- [(ngModel)]="categoryValue" (ngModelChange)="updateFilter('category', $event)" -->
+                <select class="form-select" aria-label="Default select example" name="category"
+                (change)="updateFilter('category',$event.target)"
+                        >
+                   <option [selected]="true"  value="">toute les factures</option>
+                   <option *ngFor="let category of invoiceCategory" [value]="category.category" >{{category.category}}</option>
+                </select>
+
+
+             </div>
+
+              <div class="col-3">
+
+                <input type="text" class="form-control" placeholder="numero"  ngDefaultControl
+                [(ngModel)]="numeroValue" (ngModelChange)="updateFilter('numero', $event)">
+
+              </div>
+
+
+    </div>
+</div>

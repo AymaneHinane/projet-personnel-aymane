@@ -1,0 +1,8 @@
+[2023-10-29T22:25:07.501+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: our_dag_with_python_operator_v3.first_task scheduled__2022-08-03T00:00:00+00:00 [queued]>
+[2023-10-29T22:25:08.224+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: our_dag_with_python_operator_v3.first_task scheduled__2022-08-03T00:00:00+00:00 [queued]>
+[2023-10-29T22:25:08.455+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 6
+[2023-10-29T22:25:09.997+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): first_task> on 2022-08-03 00:00:00+00:00
+[2023-10-29T22:25:10.121+0000] {standard_task_runner.py:57} INFO - Started process 1264 to run task
+[2023-10-29T22:25:10.284+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'our_dag_with_python_operator_v3', 'first_task', 'scheduled__2022-08-03T00:00:00+00:00', '--job-id', '3613', '--raw', '--subdir', 'DAGS_FOLDER/create_dag_with_python_operator.py', '--cfg-path', '/tmp/tmp7fu0mlxc']
+[2023-10-29T22:25:10.545+0000] {standard_task_runner.py:85} INFO - Job 3613: Subtask first_task
+[2023-10-29T22:25:16.322+0000] {task_command.py:416} INFO - Running <TaskInstance: our_dag_with_python_operator_v3.first_task scheduled__2022-08-03T00:00:00+00:00 [running]> on host 9bb87dc64328

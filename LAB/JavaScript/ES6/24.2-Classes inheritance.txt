@@ -1,0 +1,26 @@
+
+class Vehicule{
+    constructor(name,year)
+    {
+        this.name=name;
+        this.year=year;
+    }
+
+    getType(){
+        console.log("vihicule")
+    }
+}
+
+class Car extends Vehicule{
+    constructor(name,year)
+    {
+        super(name,year)
+    }
+
+    start(){
+        console.log(`${this.name} ${this.year} is starting`);
+    }
+}
+
+const car_1=new Car("Mercedes",2019);
+car_1.start(); 

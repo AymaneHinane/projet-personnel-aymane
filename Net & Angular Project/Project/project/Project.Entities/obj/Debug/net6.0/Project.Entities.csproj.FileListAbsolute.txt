@@ -1,0 +1,12 @@
+/Users/aymanehinane/Desktop/Project/project/Project.Entities/bin/Debug/net6.0/Project.Entities.deps.json
+/Users/aymanehinane/Desktop/Project/project/Project.Entities/bin/Debug/net6.0/Project.Entities.dll
+/Users/aymanehinane/Desktop/Project/project/Project.Entities/bin/Debug/net6.0/Project.Entities.pdb
+/Users/aymanehinane/Desktop/Project/project/Project.Entities/obj/Debug/net6.0/Project.Entities.csproj.AssemblyReference.cache
+/Users/aymanehinane/Desktop/Project/project/Project.Entities/obj/Debug/net6.0/Project.Entities.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aymanehinane/Desktop/Project/project/Project.Entities/obj/Debug/net6.0/Project.Entities.AssemblyInfoInputs.cache
+/Users/aymanehinane/Desktop/Project/project/Project.Entities/obj/Debug/net6.0/Project.Entities.AssemblyInfo.cs
+/Users/aymanehinane/Desktop/Project/project/Project.Entities/obj/Debug/net6.0/Project.Entities.csproj.CoreCompileInputs.cache
+/Users/aymanehinane/Desktop/Project/project/Project.Entities/obj/Debug/net6.0/Project.Entities.dll
+/Users/aymanehinane/Desktop/Project/project/Project.Entities/obj/Debug/net6.0/refint/Project.Entities.dll
+/Users/aymanehinane/Desktop/Project/project/Project.Entities/obj/Debug/net6.0/Project.Entities.pdb
+/Users/aymanehinane/Desktop/Project/project/Project.Entities/obj/Debug/net6.0/ref/Project.Entities.dll

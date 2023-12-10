@@ -1,0 +1,267 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/aymanehinane/Desktop/Soutenance/Project/project/Project.Service.Contracts/Project.Service.Contracts.csproj": {}
+  },
+  "projects": {
+    "/Users/aymanehinane/Desktop/Soutenance/Project/project/Project.Contracts/Project.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/aymanehinane/Desktop/Soutenance/Project/project/Project.Contracts/Project.Contracts.csproj",
+        "projectName": "Project.Contracts",
+        "projectPath": "/Users/aymanehinane/Desktop/Soutenance/Project/project/Project.Contracts/Project.Contracts.csproj",
+        "packagesPath": "/Users/aymanehinane/.nuget/packages/",
+        "outputPath": "/Users/aymanehinane/Desktop/Soutenance/Project/project/Project.Contracts/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/aymanehinane/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/aymanehinane/Desktop/Soutenance/Project/project/Project.Entities/Project.Entities.csproj": {
+                "projectPath": "/Users/aymanehinane/Desktop/Soutenance/Project/project/Project.Entities/Project.Entities.csproj"
+              },
+              "/Users/aymanehinane/Desktop/Soutenance/Project/project/Project.Shared/Project.Shared.csproj": {
+                "projectPath": "/Users/aymanehinane/Desktop/Soutenance/Project/project/Project.Shared/Project.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/aymanehinane/Desktop/Soutenance/Project/project/Project.Entities/Project.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/aymanehinane/Desktop/Soutenance/Project/project/Project.Entities/Project.Entities.csproj",
+        "projectName": "Project.Entities",
+        "projectPath": "/Users/aymanehinane/Desktop/Soutenance/Project/project/Project.Entities/Project.Entities.csproj",
+        "packagesPath": "/Users/aymanehinane/.nuget/packages/",
+        "outputPath": "/Users/aymanehinane/Desktop/Soutenance/Project/project/Project.Entities/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/aymanehinane/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/aymanehinane/Desktop/Soutenance/Project/project/Project.Service.Contracts/Project.Service.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/aymanehinane/Desktop/Soutenance/Project/project/Project.Service.Contracts/Project.Service.Contracts.csproj",
+        "projectName": "Project.Service.Contracts",
+        "projectPath": "/Users/aymanehinane/Desktop/Soutenance/Project/project/Project.Service.Contracts/Project.Service.Contracts.csproj",
+        "packagesPath": "/Users/aymanehinane/.nuget/packages/",
+        "outputPath": "/Users/aymanehinane/Desktop/Soutenance/Project/project/Project.Service.Contracts/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/aymanehinane/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/aymanehinane/Desktop/Soutenance/Project/project/Project.Contracts/Project.Contracts.csproj": {
+                "projectPath": "/Users/aymanehinane/Desktop/Soutenance/Project/project/Project.Contracts/Project.Contracts.csproj"
+              },
+              "/Users/aymanehinane/Desktop/Soutenance/Project/project/Project.Entities/Project.Entities.csproj": {
+                "projectPath": "/Users/aymanehinane/Desktop/Soutenance/Project/project/Project.Entities/Project.Entities.csproj"
+              },
+              "/Users/aymanehinane/Desktop/Soutenance/Project/project/Project.Shared/Project.Shared.csproj": {
+                "projectPath": "/Users/aymanehinane/Desktop/Soutenance/Project/project/Project.Shared/Project.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/aymanehinane/Desktop/Soutenance/Project/project/Project.Shared/Project.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/aymanehinane/Desktop/Soutenance/Project/project/Project.Shared/Project.Shared.csproj",
+        "projectName": "Project.Shared",
+        "projectPath": "/Users/aymanehinane/Desktop/Soutenance/Project/project/Project.Shared/Project.Shared.csproj",
+        "packagesPath": "/Users/aymanehinane/.nuget/packages/",
+        "outputPath": "/Users/aymanehinane/Desktop/Soutenance/Project/project/Project.Shared/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/aymanehinane/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/aymanehinane/Desktop/Soutenance/Project/project/Project.Entities/Project.Entities.csproj": {
+                "projectPath": "/Users/aymanehinane/Desktop/Soutenance/Project/project/Project.Entities/Project.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+forEach() — exécute une fonction fournie une fois pour chaque
+élément du tableau.
+
+________________
+
+la forEach()méthode ne renvoie rien (indéfini). Il appelle 
+simplement une fonction fournie sur chaque élément de votre 
+tableau. Ce rappel est autorisé à muter le tableau appelant.
+
+exemple:
+
+soit arr = [1, 2, 3, 4, 5];
+
+arr.forEach((num, index) => { 
+    return arr[index] = num * 2; 
+});
+
+console.log(arr) // [2, 4, 6, 8, 10]
+
+-cela forEach()affecte et modifie notre tableau d'origine
+-forEach()peut être préférable lorsque vous n'essayez pas de 
+ modifier les données de votre tableau, mais que vous voulez
+ simplement en faire quelque chose , comme l'enregistrer dans
+ une base de données ou vous déconnecter.
+-forEach()supprime les valeurs de retour et renvoie toujours
+ undefined.
+-forEach()permettra à une fonction de rappel de muter le
+ tableau actuel.
+

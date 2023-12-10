@@ -1,0 +1,16 @@
+input.focus()
+input.value
+input.select()
+
+<input type="text" disabled="disabled" />
+//or...
+<input type="text" readonly="readonly" />
+
+document.getElementById('foo').disabled = true;
+or
+document.getElementById('foo').readOnly = true;
+
+input.type=='checkbox'
+
+--Check Whether a Checkbox is Checked
+if (checkBox.checked == true){}

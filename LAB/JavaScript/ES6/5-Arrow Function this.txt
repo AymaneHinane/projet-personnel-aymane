@@ -1,0 +1,49 @@
+When you use an arrow function in JavaScript, the value of the this keyword doesn’t get rebound.
+ It’s does inherited from the parent scope 
+
+let obj={
+    name:"aymane",
+    print:function(){
+        console.log(this.name)
+    }
+}
+
+obj.print()
+_____________________
+
+let incNumber={
+    num:12,
+    increment:function(){
+        console.log(this) // obj incNumber
+        setTimeout(function(){ //window
+            console.log(this)
+        },1000)
+    }
+}
+
+_______________________
+
+let incNumber={
+    num:12,
+    increment:function(){
+        console.log(this) // obj incNumber
+        setTimeout(function(){ 
+            console.log(this)//obj incNumber
+        }.bind(this),1000)
+    }
+}
+__________________________
+
+let incNumber={
+    num:12,
+    increment(){
+        console.log(this) // obj incNumber
+        setTimeout(()=>{ 
+            console.log(this)//obj incNumber
+        },1000)
+    }
+}
+
+
+
+incNumber.increment() 

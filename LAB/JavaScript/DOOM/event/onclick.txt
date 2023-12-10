@@ -1,0 +1,9 @@
+//lorsque je click sur mon botton;
+//je recupere la valeur de mon input
+var bouton=document.querySelector("button");
+//<button>click me</button>
+bouton.onclick=function()
+{   
+    let Inputvalue=document.querySelector("input")
+    console.log(Inputvalue.value);
+}

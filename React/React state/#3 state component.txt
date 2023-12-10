@@ -1,0 +1,14 @@
+class Mycars extends Component {
+
+    render(){
+        return(
+            <div>
+                <h1>hello wold</h1>
+                <Car color="red">Ford</Car>
+                <Car >Mercedes</Car>
+                <Car></Car>
+            </div>
+            
+        )
+    }
+} 

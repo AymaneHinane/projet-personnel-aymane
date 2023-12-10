@@ -1,0 +1,23 @@
+function hy()
+{
+    
+}
+
+
+hy.prototype.print=function(name){
+    console.log(name)
+}
+
+
+let person={
+    age:22,
+    name:"aymane"
+}
+
+
+person.prototype=Object.create(hy) // 1
+//person.prototype=Object.create(hy.prototype) // 2
+
+console.log(person)
+person.prototype.prototype.print("fr") // 1
+//person.prototype.print("fr") // 2

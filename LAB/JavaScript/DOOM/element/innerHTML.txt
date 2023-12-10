@@ -1,0 +1,6 @@
+//to get the html content
+
+const first=document.querySelector("#parent1  div p");
+console.log(first) //<p> 1 </p>
+first.innerHTML+=' hello wold'
+console.log(first); //<p> 1 hello wold</p>

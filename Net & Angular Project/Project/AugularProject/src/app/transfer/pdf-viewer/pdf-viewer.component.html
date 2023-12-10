@@ -1,0 +1,12 @@
+<!-- <div *ngIf="pdfUrl">
+    <img [src]="pdfUrl" width="100%" height="500px" />
+  </div> -->
+  
+ <a [href]="pdfUrl" download="your_file_name.pdf" [style]="{'position':'absolute','right':'73%','top':'5px'}">
+    <button type="button" class="btn btn-outline-info">Download PDF</button>
+</a> 
+
+
+  <object [data]="pdfUrl" type="application/pdf" width="100%" height="100%">
+    <p>Unable to display PDF file. <a [href]="pdfUrl">Download</a> instead.</p>
+  </object>

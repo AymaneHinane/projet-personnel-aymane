@@ -1,0 +1,68 @@
+render(){
+
+  if(this.sate.winner){
+      return(
+         <div>
+           <h1> Bravo {this.state.name} </h1>
+         </div>
+       )  
+  }else{
+     return(
+        <div>
+           <h1>rate </h1>
+        </div>
+     )
+
+ }
+
+}
+------------------------------------------------
+
+render(){
+    let result;
+    if(this.sate.winner)
+     {
+       result=<h1> Bravo {this.state.name} </h1>
+     } else {
+       result= <h1> rate </h1>
+     }
+            
+      return result;  
+
+}
+---------------------------------------------
+
+render(){
+     return(
+       this.state.winner ? (
+            <h1> Bravo {this.state.name} </h1>
+        ):(
+            <h1> rate </h1>
+        )
+     )
+}
+
+---------------------------------------------
+
+render(){
+
+     return this.state.winner ? <h1> Bravo {this.state.name} </h1>:<h1> rate </h1>
+}
+--------------------------------------------
+
+
+render(){
+
+     return this.state.winner && <h1> Bravo {this.state.name} </h1>
+}
+
+
+
+
+
+
+
+
+
+
+

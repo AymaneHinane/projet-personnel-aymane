@@ -1,0 +1,26 @@
+__proto__: est un moyen d'hériter des propriétés d'un objet en JavaScript.
+____________________________
+
+exemple:
+   const obj1={
+       name:"aymane"
+      }
+   console.log(obj1)
+
+   const obj2={};
+   console.log(obj2)
+//obj2 erite de toutes les proprietes de obj1
+   obj2.__proto__=obj1;
+   console.log(obj2)
+______________________________
+
+__proto__: peut être utilisé pour hériter des propriétés d'un objet de classes JS définies avec class.
+
+_____________________________
+__proto__: est une propriété dans un objet. Donc __proto__peut être défini à l'intérieur d'un objet 
+           littéral comme ceci 
+exemple: 
+
+const obj = { 
+    __proto__: D.prototype 
+} 

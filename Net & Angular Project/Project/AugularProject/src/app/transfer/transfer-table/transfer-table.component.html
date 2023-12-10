@@ -1,0 +1,142 @@
+
+
+<div class="container" >
+  <div class="row">
+
+    <!-- <div class="col-12">
+      <app-transfer-form></app-transfer-form>
+    </div> -->
+
+    <div class="col-12">
+      <div class="card text-center" [style]="{'border':'none'}">
+        <!-- #edf7f0 #d9ecfa '#d9e2fa'-->
+        <div class="card-header" [style]="{'background-color':'#b0c8d1'}">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item" (click)="UpdateSelectedPage('transfer')" >
+              <a class="nav-link"  [class.active]="pageSelected === 'transfer' && !showTranferForm" aria-current="true" >Liste des transfers</a>
+            </li>
+            <li class="nav-item" (click)="UpdateSelectedPage('delivery')">
+              <a class="nav-link" [class.active]="pageSelected === 'delivery' && !showTranferForm">Liste des receptions</a>
+            </li>
+            <li class="nav-item" (click)="showTranferForm = true">
+              <a class="nav-link" [class.active]="showTranferForm" >nouveau transfert</a>
+            </li>
+          </ul>
+        </div>
+
+
+
+        <div class="card-body">
+          <div class="row" *ngIf="transfers.length>0">
+
+            <div class="col-12" *ngIf="!showTranferForm">
+                <table class="table table-borderless " *ngIf="transfers[0]">
+                    <thead>
+                      <tr>
+                        <th scope="col">numero</th>
+                        <th>{{pageSelected=='transfer'?'vers':'depuis'}}</th>
+                        <th scope="col">produit</th>
+                        <th scope="col">quantite</th>
+                        <th scope="col">suivis</th>
+                        <th scope="col">date</th>
+                        <!-- <th scope="col">date de livraison</th> -->
+                      </tr>
+                    </thead>
+                    <tbody >
+                      <tr *ngFor="let transfer of transfers"  >
+                        <th scope="row">{{transfer.numero}}</th>
+    
+    
+                        <td *ngIf="pageSelected == 'transfer' else deleveryName">
+
+                         
+                            <ul class="list-group" *ngIf="transfer.recipients.length > 1 else dsmany" [style]="{'width':'100px','height':'50px','overflow':'scroll'}">                
+                                <li class="list-group-item" *ngFor="let recipient of transfer.recipients">
+                                  {{recipient.name}}
+                                 </li>       
+                            </ul> 
+    
+                            <ng-template #dsmany>
+                              <ng-container  *ngIf="transfer.recipients[0]">
+                                {{transfer.recipients[0].name!}}
+                              </ng-container>                         
+                            </ng-template>
+                          
+                     
+
+                          <ng-container *ngIf="transfer.recipients.length == 0">
+                               <p>cda</p>
+                          </ng-container>
+                          
+                          
+    
+
+                        </td>
+    
+                        <ng-template #deleveryName>
+                          <td *ngIf="transfer.sender">
+                            {{transfer.sender.name}}
+                          </td>
+                        </ng-template>
+                        
+                        <td>{{transfer.product.name}}</td>
+                        <td>{{transfer.transferedStockQuantity}}</td>
+
+                        <td *ngIf="transfer.transferStatus == 'delivery' ">
+                            <div  class="progress"  [style]="{'min-width':'140px','height':'20px'}" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped bg-warning" style="width: 50%">en cours</div>
+                            </div>
+                        </td>
+
+                        <td *ngIf="transfer.transferStatus == 'shipped' ">
+                          <div  class="progress"  [style]="{'min-width':'140px','height':'20px'}" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar progress-bar-striped bg-success" style="width: 100%">livrer</div>
+                          </div>
+                      </td>
+
+
+                        <td>{{transfer.deliveryDate | date: 'yyyy-MM-dd HH:mm:ss' }}</td>
+                        <!-- <td>{{transfer.shippedDate ? (transfer.shippedDate | date: 'yyyy-MM-dd HH:mm:ss'):'-' }}</td> -->
+                        <td>                    
+                            <button class="btn btn-outline-light shadow-sm" [style]="{'color':'green'}" (click)="shippedConfirm(transfer.id,transfer.transferedStockQuantity)" >confimer</button>
+                        </td>
+                        <td>
+                            <a href="transfer/{{transfer.id}}/transferDetails"> 
+                              <button class="btn btn-outline-light shadow-sm" [style]="{'color':'blue'}" >consulter</button>
+                            </a> 
+                        </td>
+                      </tr>
+    
+                    </tbody>
+                  </table>
+                  
+            </div>
+
+            <div  *ngIf="!showTranferForm">
+              <nav [style]="{'float':'right'}" aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link"  (click)="goToPage(this.paginationInfo.currentPage - 1)">Previous</a></li>
+                  <li class="page-item"><a class="page-link" >{{ this.paginationInfo.currentPage }}</a></li>
+                  <li class="page-item"><a class="page-link" >/</a></li>
+                  <li class="page-item"><a class="page-link" >{{this.paginationInfo. totalPages }}</a></li>
+                  <li class="page-item"><a class="page-link"  (click)="goToPage(this.paginationInfo.currentPage + 1)" >Next</a></li>
+                </ul>
+            </nav>
+            </div>
+            
+        </div>
+
+        <app-transfer-form *ngIf="showTranferForm"></app-transfer-form>
+
+        
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+

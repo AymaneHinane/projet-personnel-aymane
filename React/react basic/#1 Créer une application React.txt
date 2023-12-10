@@ -1,0 +1,23 @@
+-->instalation on local
+
+npx create-react-app mon-app
+ou
+npm init react-app mon-app
+
+cd mon-app
+npm start
+                                                                   
+-->instalation on globale
+
+npm install create-react-app -g
+create-react-app nom
+
+cd mon-app
+npm start
+
+  
+-->connaitre la version
+
+create-react-app --version
+npm --version
+node --version

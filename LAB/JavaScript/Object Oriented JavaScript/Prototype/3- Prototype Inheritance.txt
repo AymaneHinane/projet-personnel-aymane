@@ -1,0 +1,41 @@
+
+function User(email,name)
+{
+    this.email=email;
+    this.name=name;
+    this.online=false;
+   
+}
+
+
+User.prototype.login=function(){
+    this.online=true;
+    console.log(this.email, 'has logged in')
+}
+
+
+
+function Admin(...args){
+   console.log(args); //["admin@gmail.com", "Shaun"]
+   //pour appeler le constructeur du parent
+   User.apply(this,args);
+   this.role='super admin';
+}
+
+//pour pointer sur le prototype du parent
+Admin.prototype=Object.create(User.prototype)
+//add new method to the admin prototype
+Admin.prototype.deleteUser=function(user){
+      users=users.filter(u=>{
+          return u.email !== user.email
+      })
+}
+
+var userOne=new User('ryu@ninjas.com','Ryu');
+var userTwo=new User('yoshi@mariokorp.com','Yoshi')
+var admin=new Admin('admin@gmail.com','Shaun')
+
+var users=[userOne,userTwo,admin]
+
+admin.deleteUser(userOne)
+console.log(users)

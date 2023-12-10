@@ -1,0 +1,23 @@
+//Array.some --> si une seule condition est vrai elle return true
+const numbers=[4,6,16,22]
+
+
+const isTrue=numbers.some(number => {
+return numbers > 20;
+});
+
+//syntaxe simplifier
+const isTrue=numbers.some(
+      number => number > 20;
+);
+
+console.log(isTrue); //true 
+____________________________________________
+
+//Array.every() --> elle return true si tous les testes sont vrai
+const tabs=[3,1,4,15]
+
+const isTrue=numbers.every(number=>{
+   return number > 2
+})
+console.log(isTrue) //false

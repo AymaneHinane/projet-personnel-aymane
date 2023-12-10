@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b1c7fb04-e122-41c5-95aa-194a2dc71ccc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Gestion_Cinema/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gestion_Cinema/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gestion_Cinema/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cinema-Front-web/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cinema-Front-web/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cinema-Front-web/.vscode/extensions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cinema-Front-web/.vscode/launch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cinema-Front-web/.vscode/tasks.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cinema-Front-web/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cinema-Front-web/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cinema-Front-web/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cinema-Front-web/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cinema-Front-web/src/app/app-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cinema-Front-web/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cinema-Front-web/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cinema-Front-web/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cinema-Front-web/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cinema-Front-web/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cinema-Front-web/src/app/cinema/cinema.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cinema-Front-web/src/app/cinema/cinema.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cinema-Front-web/src/app/cinema/cinema.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cinema-Front-web/src/app/cinema/cinema.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cinema-Front-web/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cinema-Front-web/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cinema-Front-web/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cinema-Front-web/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cinema-Front-web/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cinema-Front-web/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cinema-Front-web/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cinema-Front-web/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/.idea/jpa-buddy-datasource.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/src/main/java/org/cinema/CinemaApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/src/main/java/org/cinema/dao/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/src/main/java/org/cinema/dao/CinemaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/src/main/java/org/cinema/dao/FilmRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/src/main/java/org/cinema/dao/PlaceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/src/main/java/org/cinema/dao/ProjectionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/src/main/java/org/cinema/dao/SalleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/src/main/java/org/cinema/dao/SeanceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/src/main/java/org/cinema/dao/TicketRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/src/main/java/org/cinema/dao/VilleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/src/main/java/org/cinema/entities/Categorie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/src/main/java/org/cinema/entities/Cinema.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/src/main/java/org/cinema/entities/Film.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/src/main/java/org/cinema/entities/Place.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/src/main/java/org/cinema/entities/Projection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/src/main/java/org/cinema/entities/Salle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/src/main/java/org/cinema/entities/Seance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/src/main/java/org/cinema/entities/Ticket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/src/main/java/org/cinema/entities/TicketFrom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/src/main/java/org/cinema/entities/Ville.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/src/main/java/org/cinema/service/CinemaInitServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/src/main/java/org/cinema/service/ICinemaInitService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/src/main/java/org/cinema/web/CinemaRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/src/main/resources/static/images/CatWomen.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/src/main/resources/static/images/GameOfThrones.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/src/main/resources/static/images/IronMan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/src/main/resources/static/images/SeigneurDesAnneaux.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/src/main/resources/static/images/SpiderMan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/Gestion_Cinema-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/classes/org/cinema/CinemaApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/classes/org/cinema/dao/CategoryRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/classes/org/cinema/dao/CinemaRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/classes/org/cinema/dao/FilmRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/classes/org/cinema/dao/PlaceRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/classes/org/cinema/dao/ProjectionRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/classes/org/cinema/dao/SalleRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/classes/org/cinema/dao/SeanceRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/classes/org/cinema/dao/TicketRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/classes/org/cinema/dao/VilleRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/classes/org/cinema/entities/Categorie.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/classes/org/cinema/entities/Cinema.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/classes/org/cinema/entities/Film.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/classes/org/cinema/entities/Place.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/classes/org/cinema/entities/Projection.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/classes/org/cinema/entities/Salle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/classes/org/cinema/entities/Seance.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/classes/org/cinema/entities/Ticket.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/classes/org/cinema/entities/TicketFrom.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/classes/org/cinema/entities/Ville.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/classes/org/cinema/service/CinemaInitServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/classes/org/cinema/service/ICinemaInitService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/classes/org/cinema/web/CinemaRestController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/classes/static/images/CatWomen.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/classes/static/images/GameOfThrones.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/classes/static/images/IronMan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/classes/static/images/SeigneurDesAnneaux.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/classes/static/images/SpiderMan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gestion_Cinema/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2Q94P3seBmBFgQiBpBSnnyQ2CV5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b1c7fb04-e122-41c5-95aa-194a2dc71ccc" name="Changes" comment="" />
+      <created>1684752436487</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684752436487</updated>
+    </task>
+    <servers />
+  </component>
+</project>

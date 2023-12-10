@@ -1,0 +1,72 @@
+App.js
+
+import React,{Component} from 'react'
+import './App.css';
+import Vegeta from './componentsup/Vegeta';
+
+
+class App extends Component{
+  
+  render(){
+      
+    return (
+    <div className="App">
+         <Vegeta age={18} />
+    </div>
+  );
+  }
+  
+}
+
+export default App;
+-----------------------------------------------------------
+
+Vegeta.js
+
+import React, { Component } from 'react'
+import Supsayen from './Supsayen'
+
+
+export class Vegeta extends Component {
+
+
+    render() {
+        const {name,age}=this.props
+        console.log(this.props)
+        return (
+            <div>
+                 <p>hello wold {name} {age}</p>
+            </div>
+        )
+    }
+}
+
+export default Supsayen(Vegeta)
+
+---------------------------------------------------------
+
+Supsayen.js
+
+import React,{Component} from 'react'
+
+const Supsayen=(Sayen)=>{
+     
+    class Supsayen extends Component{
+       state={
+          name:"sayen"
+       }
+
+        render(){
+            return(
+                <Sayen name={this.state.name} {...this.props}/>
+            )
+        }
+    }
+
+ return Supsayen
+        
+}
+
+export default Supsayen
+
+

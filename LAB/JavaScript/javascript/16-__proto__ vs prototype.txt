@@ -1,0 +1,23 @@
+Repartons de zéro avec les points suivants :
+ 1-Tout en Javascript est un objet (sauf les types primitifs)
+ 2-Chaque objet a un prototype
+ 3-Le prototype par défaut d'un objet est Object.prototype
+ 4-Lorsqu'on accède à une propriété sur un objet, l'objet examine ses propres propriétés.
+   S'il n'est pas trouvé, il examine les propriétés de son prototype. Et il continue de 
+   le faire à moins que la propriété ne soit trouvée ou qu'elle ait atteint le Object.prototype. 
+   Si la propriété n'est pas trouvée dans le Object.prototype, undefined est renvoyé.
+
+La __proto__: propriété est une propriété par défaut ajoutée à chaque objet. Cette propriété pointe 
+              vers le prototypede l'objet.
+
+NB:
+  Les fonctions sont des types particuliers d'objets. La __proto__propriété de la fonction pointe 
+  vers Function.prototype par opposition à Object.prototype.
+
+Mais quel est le but de la prototype propriété dans le Person constructeur?
+Il s'avère que chaque fois que nous instancions un objet avec le Personconstructeur, le constructeur
+ fait que la __proto__propriété du nouvel objet pointe vers le même objet que sa prototypepropriété.
+
+
+Par conséquent, le seul objectif de la prorotypepropriété d'une fonction constructeur est d'initialiser 
+la __proto__propriété des objets qui sont instanciés à l'aide de ce constructeur.

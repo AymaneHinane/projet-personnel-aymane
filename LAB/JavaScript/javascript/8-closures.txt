@@ -1,0 +1,39 @@
+function counter(){ // <-- est attacher au globale scope
+    let i=0;
+    return function inc(){ // <-- closure
+        return  i+=1; // <-- private variable
+    };
+}
+
+var inc=counter();
+console.log(inc()) //1
+console.log(inc()) //2
+console.log(inc()) //3
+console.log(inc()) //4
+
+____________________________________________
+
+function ajouterA(x) {
+    return function(y) {
+      return x + y;
+    };
+  };
+  
+  var ajouter_5 = ajouterA(5);
+  var ajouter_10 = ajouterA(10);
+  
+  console.log(ajouter_5(2));  // 7
+  console.log(ajouter_10(2)); // 12
+___________________________________
+function getName(name)
+{
+let nom;
+    return function(){
+        nom=name;
+        return nom
+    }
+}
+
+const get=getName('name')
+
+console.log(get('aymane')) // name

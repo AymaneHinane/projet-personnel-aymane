@@ -1,0 +1,25 @@
+--le number declarer dans le (globale-scope) n'est le meme number declarer dans le if (block-scope)
+--pour resumer meme s'il y'a 2 ou plusieur varibale avec le meme nom il n'y'aurait auncun permutation
+--car javascript ne prend on consideration que le scope ou cette variable est declarer
+ 
+let number=22;
+number=33;
+
+if(true)
+{
+   let number=33;
+   number=44;
+   console.log(number); 44
+}
+
+// Globale scope
+console.log(number); 33
+________________________________
+
+let a=5;
+
+function get(){
+    return a;
+
+}
+console.log(get()) //5

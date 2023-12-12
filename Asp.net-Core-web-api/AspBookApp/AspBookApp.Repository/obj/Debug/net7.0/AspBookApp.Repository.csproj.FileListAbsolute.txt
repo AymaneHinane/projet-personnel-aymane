@@ -1,5 +1,0 @@
-/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Repository/obj/Debug/net7.0/AspBookApp.Repository.csproj.AssemblyReference.cache
-/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Repository/obj/Debug/net7.0/AspBookApp.Repository.GeneratedMSBuildEditorConfig.editorconfig
-/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Repository/obj/Debug/net7.0/AspBookApp.Repository.AssemblyInfoInputs.cache
-/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Repository/obj/Debug/net7.0/AspBookApp.Repository.AssemblyInfo.cs
-/Users/aymanehinane/Desktop/Home/Asp.net-Core-web-api/new/AspBookApp/AspBookApp.Repository/obj/Debug/net7.0/AspBookApp.Repository.csproj.CoreCompileInputs.cache
